@@ -1,24 +1,40 @@
-# Athlete profile. current_maxes is deliberately EMPTY: the last hard data is
-# from the 2024 season (see notes) — too old to prescribe from. First
-# /plan-block must re-establish baselines (comfortable top sets @RPE 6-7 in
-# week 1) instead of trusting these.
+# Athlete profile. current_maxes re-baselined 2026-07-19 from his reported
+# recent PRs (he kept training after the 2024 sheets — no layoff): SQ 245x1
+# and 220x4 @9, BP 130x1, DL SUMO 250x1. e1RMs recalibrate automatically as
+# sessions get logged.
 
 name: Benjamin
 units: kg
 plate_increment: 2.5
 timezone: America/Santiago
-days_per_week: 5
+days_per_week: 4
 goals:
-  - "TODO onboarding: goals for the next season (meet? numbers? staying pain-free?)"
-current_maxes: {}
+  - "Fuerza SBD: subir los tres basicos con bloques de triples + backoff"
+  - "Manejar el patron de DOMS de aductores (sentadilla +4 reps) sin perder volumen"
+current_maxes:
+  squat:
+    weight: 255.0
+    date: 2026-07-19
+    source: estimated   # from 220x4 @9 (Epley+RPE ~257) and 245x1 — reported, not yet logged
+  bench:
+    weight: 130.0
+    date: 2026-07-19
+    source: tested      # 130x1, his reported best
+  deadlift:
+    weight: 250.0
+    date: 2026-07-19
+    source: tested      # 250x1 sumo, reported
 notes: |
-  Historical reference, 2024 season (HEAVY WEIGHT coach sheets, imported
-  2026-07 — treat as stale, NOT current ability):
-    - SENTADILLA LB: 220x3 @8 (e1RM ~257), 220x4, 200x5 @6
+  2026-07-19 onboarding: training consistently (no layoff since 2024 after
+  all). Was in week 1 of a self-run strength block (triples + backoff,
+  incrementing) — reset into 2026-07-strength-1. Prefers 4 dias/semana.
+  Known pattern: adductor DOMS after squat sessions of 4+ reps/set, which
+  interferes with sumo — schedule main DL before the volume-squat day.
+
+  Historical reference, 2024 season (HEAVY WEIGHT coach sheets):
+    - SENTADILLA LB: 220x3 @8, 220x4, 200x5 @6
     - SENTADILLA HB: 215x1 @8
-    - PRESS BANCA COMP: 100x3 @6 (e1RM ~123); SIN PAUSA 100x6 @7;
-      TEMPO 4.2.0 107.5x2 @6; touch-and-go 97.5x8 @8
+    - PRESS BANCA COMP: 100x3 @6; SIN PAUSA 100x6 @7; TEMPO 4.2.0 107.5x2 @6
     - PESO MUERTO SUMO: no per-set results captured in that sheet
-  Program heritage: 5 días/semana (SQ1+DL2 / BP1 / SQ2+BP3 / DL1+BP2 /
-  SQ3+BP3), prescripciones por RPE con singles/topes + backoffs, tempo work,
+  Program heritage: prescripciones por RPE con topes + backoffs, tempo work,
   bloques de ~5 semanas con semana puente.

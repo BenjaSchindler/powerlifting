@@ -15,7 +15,13 @@ Format:
 
 ## Volume & recovery
 
-_(nothing yet)_
+- 2026-07-19 — Adductor DOMS reliably follows squat sessions of 4+ reps/set
+  and interferes with sumo deadlift in the following days (his report at
+  onboarding of 2026-07-strength-1). Block layout rule: main DL day BEFORE
+  the volume-squat day; volume squat goes last in the week so the weekend
+  absorbs the DOMS; heavy squat day stays at triples (doesn't trigger it).
+  Copenhagen work placed same-day as volume squat to build adductor
+  tolerance — review whether the pattern fades after a few blocks.
 
 ## Exercise selection
 

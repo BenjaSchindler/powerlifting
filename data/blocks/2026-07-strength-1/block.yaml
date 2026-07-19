@@ -1,0 +1,138 @@
+# Bloque 1 en el sistema: fuerza SBD, 4 dias, 6 semanas (5 de carga + puente).
+# Estructura por su patron actual: tope x3 por RPE + backoffs por %.
+# Regla clave (su reporte 2026-07-19): DOMS de aductores tras sentadilla de
+# 4+ reps -> el DL principal va ANTES del dia de volumen de sentadilla, y el
+# volumen cae el ultimo dia (el finde absorbe el DOMS). El dia pesado de SQ
+# son triples, que no le disparan el patron.
+
+id: 2026-07-strength-1
+name: FUERZA SBD 1
+start_date: 2026-07-20
+weeks: 6
+focus: strength
+status: active
+
+sheet:
+  drive_file_id: 1Q_eTeB6iPJKiM_s3KY2UNpxqquebsCxsxJL2Sd-AdUU
+  title: FUERZA SBD 1 — 2026-07
+  url: https://docs.google.com/spreadsheets/d/1Q_eTeB6iPJKiM_s3KY2UNpxqquebsCxsxJL2Sd-AdUU/edit
+
+schemes:
+  - id: top3
+    kind: rpe_wave
+    week_rpes: [6.5, 7, 7.5, 8, 8.5, 6]
+  - id: back3
+    kind: percent_wave
+    week_percents: [0.78, 0.79, 0.80, 0.81, 0.82, 0.68]
+  - id: vol
+    kind: rpe_wave
+    week_rpes: [6, 6.5, 7, 7.5, 8, 5.5]
+  - id: acc
+    kind: double_progression
+    rep_quality_rpe: 8.0
+    increment_pct: 0.025
+
+default_scheme: acc
+
+days:
+  - day: 1
+    name: SQ PESADA
+    slots:
+      - exercise: squat
+        sets: 1
+        reps: "3"
+        scheme: top3
+        notes: "Tope del dia"
+      - exercise: squat
+        sets: 3
+        reps: "3"
+        scheme: back3
+        notes: "Backoffs"
+      - exercise: leg-curl
+        sets: 3
+        reps: "8-12"
+        notes: "Suave, sin fallo"
+      - exercise: rueda-abdominal
+        sets: 3
+        reps: "8-12"
+        notes: "De rodillas, sin arquear lumbar"
+
+  - day: 2
+    name: DL PRINCIPAL
+    slots:
+      - exercise: deadlift
+        sets: 1
+        reps: "3"
+        scheme: top3
+        notes: "Tope del dia"
+      - exercise: deadlift
+        sets: 3
+        reps: "3"
+        scheme: back3
+        notes: "Backoffs"
+      - exercise: traccion-vertical
+        sets: 3
+        reps: "8-12"
+      - exercise: remo
+        sets: 3
+        reps: "10-12"
+      - exercise: pallof
+        sets: 3
+        reps: "10-12"
+        notes: "Por lado"
+
+  - day: 3
+    name: BP PESADA
+    slots:
+      - exercise: bench
+        sets: 1
+        reps: "3"
+        scheme: top3
+        notes: "Tope, pausa de competencia"
+      - exercise: bench
+        sets: 3
+        reps: "3"
+        scheme: back3
+        notes: "Backoffs con pausa"
+      - exercise: press-militar
+        sets: 3
+        reps: "8-12"
+      - exercise: hombro-posterior-lateral
+        sets: 3
+        reps: "12-15"
+      - exercise: triceps
+        sets: 3
+        reps: "10-15"
+
+  - day: 4
+    name: VOLUMEN SQ+BP
+    slots:
+      - exercise: squat
+        sets: 4
+        reps: "5"
+        scheme: vol
+        notes: "Volumen — DOMS de aductores esperado; el finde recupera"
+      - exercise: bench-nopause
+        sets: 4
+        reps: "6"
+        scheme: vol
+        notes: "Sin pausa, tecnica identica a comp"
+      - exercise: plancha-copenhagen
+        sets: 3
+        reps: "8-10"
+        notes: "Progresion suave por lado — tolerancia de aductores"
+      - exercise: biceps
+        sets: 3
+        reps: "10-15"
+      - exercise: cuadrado-lumbar
+        sets: 3
+        reps: "30-45"
+        notes: "Segundos por lado"
+
+notes: |
+  Semanas 1-5 suben el tope de x3 de RPE 6.5 a 8.5 (con e1RMs iniciales:
+  SQ ~210->222.5, BP ~107.5->112.5, DL ~205->217.5) y los backoffs de 78% a
+  82%. Semana 6 = puente liviano. El volumen (D4) va al final de la semana
+  por el patron de DOMS de aductores; Copenhagen el mismo dia para
+  construir tolerancia y recuperar todo junto el finde. Frecuencia de banca
+  2x + press militar (estandar en split de 4 dias).
