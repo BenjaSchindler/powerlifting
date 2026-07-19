@@ -5,216 +5,1368 @@
 
 - id: squat
   name: SENTADILLA LB
-  aliases: [sentadilla, sentadilla lb, sq, back squat, low bar]
+  aliases:
+  - sentadilla
+  - sentadilla lb
+  - sq
+  - back squat
+  - low bar
   category: main
   pattern: squat
-  muscles: [quads, glutes, adductors, spinal_erectors]
-  joints: [knee, hip, lumbar]
-
+  muscles:
+  - quads
+  - glutes
+  - adductors
+  - spinal_erectors
+  joints:
+  - knee
+  - hip
+  - lumbar
+  playbook:
+    purpose: The competition lift itself — the most specific driver of his IPF
+      squat result and the anchor of every block's squat pattern. Builds quads,
+      glutes, adductors and erectors while grooving the exact low-bar skill (depth,
+      brace, walkout) he is judged on.
+    use_when:
+    - Default main lift in every block — keep at least one weekly low-bar exposure
+      year-round so the groove never detrains.
+    - 'Meet prep: from ~8 weeks out specificity rises — comp squat to IPF depth
+      dominates and variation work tapers off.'
+    - 'Rebuilding after a layoff: recalibrate with the lift itself — moderate
+      triples/fives capped at RPE 7, loads from current logs, never off the 2024
+      bests.'
+    - 'Technique drift (depth shy, late brace, hips shooting up early): raise
+      comp-squat frequency to 2-3x/week submaximal rather than adding variations.'
+    - 'Confirming a new baseline: after 2-3 re-entry weeks, top triple at RPE
+      7-8 with safeties set — feeds the e1RM model before planning a block.'
+    avoid_when:
+    - 'Open knee/hip/lumbar flag: never raise load without asking him; regress
+      load first, then ROM/tempo, then swap in-pattern — don''t push through.'
+    - Lumbar fatigue stacking with heavy sumo deadlift weeks — low-bar loads erectors
+      hard; lighten or move one squat day to squat-hb or squat-tempo.
+    - 'Post-meet week or deloads: no heavy comp squatting; keep the pattern light
+      or varied.'
+    - 'He trains alone: rack safeties set on every squat session; no RPE 9.5+
+      grinders and no true 1RM attempts — heaviest planned single ~RPE 9 in a
+      peak.'
+    swaps:
+    - squat-tempo
+    - squat-hb
+    - sentadilla-bulgara
+    - leg-press-unilateral
+    refs:
+    - 'JTS / Chad Wesley Smith — Periodization for Powerlifting: The Definitive
+      Guide'
+    - 'Barbell Medicine (Austin Baraki) — Pain in Training: What To Do? (barbellmedicine.com/blog/pain-in-training-what-do)'
+    notes: 'JTS reserves comp-lift focus for strength/peaking phases; SBS holds
+      comp-lift skill is specificity-sensitive — keep weekly LB exposure year-round,
+      variations early in blocks. Swap by flagged joint: knee → tempo or leg press/bulgara
+      (high-bar adds knee stress); lumbar → high-bar or tempo, load down.'
 - id: squat-hb
   name: SENTADILLA HB
-  aliases: [sentadilla hb, high bar]
+  aliases:
+  - sentadilla hb
+  - high bar
   category: variation
   parent: squat
   pattern: squat
-  muscles: [quads, glutes, adductors, spinal_erectors]
-  joints: [knee, hip, lumbar]
-
+  muscles:
+  - quads
+  - glutes
+  - adductors
+  - spinal_erectors
+  joints:
+  - knee
+  - hip
+  - lumbar
+  playbook:
+    purpose: Quad-biased, upright squat variation that lets Benjamin accumulate
+      squat volume at ~5-10% lighter loads with less low-back and rack-position
+      stress than SENTADILLA LB. Off-season pattern builder and pressure valve
+      for his lumbar-care theme without abandoning the squat.
+    use_when:
+    - Volume/hypertrophy phases 4+ weeks from meet-specific work — tolerates high
+      rep counts with less axial and low-back fatigue than LB
+    - 'Second squat slot in his 5-day week: adds quad volume mid-week without
+      doubling heavy low-bar spinal-erector load'
+    - LB forward lean irritates the lower back but squatting is otherwise pain-free
+      — swap to HB to keep the pattern (ask him first if a lumbar flag is open)
+    - Hips shoot up / quads limit him out of the hole — HB's knee-forward mechanics
+      bias the quads
+    - Low-bar rack position bothers shoulders/elbows/wrists — HB rack spares them
+      for PRESS BANCA COMP
+    avoid_when:
+    - 'Open knee-pain flag (patellar/quad tendon): HB adds forward knee travel
+      and knee-extensor load — ask before loading; prefer LB or machine work'
+    - Last 4-8 weeks of meet prep — the LB groove and its 5-10% heavier loads
+      must be locked in; HB out of primary slots
+    - Early layoff re-entry while the LB groove is still unstable — give scarce
+      squat slots to the comp lift before splitting across bar positions
+    - Lumbar flare where any axial squatting hurts — HB still compresses the spine;
+      move to unilateral/machine work instead
+    - 'Open hip flag (pinching in deep flexion): HB''s upright, deeper bottom
+      adds hip-flexion ROM — ask first; control depth or use leg-press-unilateral'
+    swaps:
+    - squat-tempo
+    - sentadilla-bulgara
+    - leg-press-unilateral
+    - extensiones
+    refs:
+    - Stronger By Science / G. Nuckols — High Bar vs. Low Bar Squatting (strongerbyscience.com)
+    - 'Barbell Rehab / M. Mash — High Bar vs. Low Bar Squat: Which One is Better?
+      (barbellrehab.com/high-bar-vs-low-bar)'
+    notes: 'Swap direction matters with his knee/lumbar history: HB spares the
+      low back (upright torso) but loads the knees more (forward knee travel).
+      Muscle-gain diff vs LB is trivial (Nuckols) — a comfort/volume tool, not
+      a magic quad builder. Trains alone: squat inside rack safeties on high-rep
+      sets.'
 - id: squat-tempo
   name: SENTADILLA LB TEMPO
-  aliases: [sentadilla lb 5.0.0, sentadilla tempo]
+  aliases:
+  - sentadilla lb 5.0.0
+  - sentadilla tempo
   category: variation
   parent: squat
   pattern: squat
-  muscles: [quads, glutes, adductors, spinal_erectors]
-  joints: [knee, hip, lumbar]
-
+  muscles:
+  - quads
+  - glutes
+  - adductors
+  - spinal_erectors
+  joints:
+  - knee
+  - hip
+  - lumbar
+  playbook:
+    purpose: 'Submaximal control tool for his competition low-bar squat: the slow
+      eccentric grooves depth, position and bar path while naturally capping load
+      — the right kind of squat stress for post-layoff re-entry and for keeping
+      knees and quad tendons happy while he trains alone.'
+    use_when:
+    - Technique breaks down with speed — dive-bombed descent, inconsistent depth,
+      lost low-bar position in the hole; tempo self-audits form since he trains
+      alone
+    - 'Re-entry/accumulation blocks 4+ weeks from any test: real squat stimulus
+      at loads sitting comfortably under the current RPE <=7 cap while tissues
+      re-adapt'
+    - 'Grumpy but tolerable knee/quad-tendon symptoms (<=3-4/10, settling by next
+      morning): 3-0-3 heavy-slow-resistance is a first-line tendinopathy loading
+      option'
+    - 'Second squat slot of the week: pattern frequency and quad volume without
+      another heavy axial/CNS hit'
+    avoid_when:
+    - Final 2-3 weeks before a meet or max test — peaking needs competition speed
+      and full loads; give the slot back to plain SENTADILLA LB
+    - 'Sharp or next-day-worse knee, hip or lumbar pain during the slow eccentric
+      — open-pain-flag rules apply: stop, ask him first, offer same-pattern swaps'
+    - Recovery already in the red — unaccustomed long-TUT eccentrics buy extra
+      soreness for little strength return; trim comp-squat volume instead of adding
+      tempo
+    - As the sole squat stressor for weeks on end — the ~10-15% load cap means
+      top-end strength and heavy-bar skill fade if it fully replaces SENTADILLA
+      LB
+    swaps:
+    - squat
+    - squat-hb
+    - sentadilla-bulgara
+    - leg-press-unilateral
+    - extensiones
+    refs:
+    - Barbell Medicine — The Barbell Medicine Guide to Tendinopathy (Derek Miles)
+    - 'Schoenfeld, Ogborn & Krieger 2015 (Sports Med) — rep-duration meta-analysis:
+      hypertrophy similar across 0.5-8 s reps'
+    - 'Barbell Medicine — Pain in Training: What Do?'
+    notes: 'Prescribe 3-0-0 (3 s down, drive up fast) in Indicaciones; 3-0-3 only
+      for tendon-rehab blocks. Rack safeties always — he lifts alone. Slower tempo
+      adds no hypertrophy benefit and slow concentrics cost strength (Schoenfeld
+      2015 meta): value = control, ~10-15% load cap, tendon-friendly loading.'
 - id: bench
   name: PRESS BANCA COMP
-  aliases: [press banca, bp, banca, bench, press banca comp]
+  aliases:
+  - press banca
+  - bp
+  - banca
+  - bench
+  - press banca comp
   category: main
   pattern: press
-  muscles: [pecs, front_delts, triceps]
-  joints: [shoulder, elbow, wrist]
-
+  muscles:
+  - pecs
+  - front_delts
+  - triceps
+  joints:
+  - shoulder
+  - elbow
+  - wrist
+  playbook:
+    purpose: 'The competed lift — the only movement that trains the IPF pause,
+      press-command timing, and his exact groove, and the primary driver of pec/front-delt/triceps
+      maximal strength. Right now it doubles as skill re-acquisition: submaximal
+      paused reps rebuild the motor pattern after the layoff.'
+    use_when:
+    - 'Default in every block: it is the competed lift — hold 2-3 weekly paused
+      comp-style slots (survey mean ~2.5x/wk among competitive powerlifters).'
+    - 'Meet prep, final 3-4 weeks: comp pause dominates and variations/accessories
+      are cut first (JTS peaking).'
+    - 'Post-layoff re-entry (now): re-groove pause timing and setup at RPE <=
+      7 — the point is skill practice at submax load, not tonnage.'
+    - 'Paused strength lags touch-and-go (e1RM gap vs bench-nopause beyond the
+      usual ~2-5%): bias extra comp-pause volume.'
+    - (Re)establishing the bench e1RM baseline for wave programming — test with
+      the comp movement, not a variation.
+    avoid_when:
+    - 'Open pain flag on shoulder, elbow, or wrist: never raise its load without
+      asking him first; swap within the press pattern meanwhile.'
+    - 'Training alone with no spotter or safety arms: no max attempts or grinders
+      past ~RPE 8 — cap the top set and bench without collars so plates can dump.'
+    - 'Anterior-shoulder/AC irritation aggravated by full-ROM touch: shift to
+      press-inclinado or flexiones-cerradas until the pain flag closes.'
+    swaps:
+    - bench-nopause
+    - bench-tempo
+    - press-inclinado
+    - flexiones-cerradas
+    refs:
+    - 'PubMed 41166696 (JSCR, Amdi et al.) — Exploring Exercise Specificity in
+      Powerlifting: A Survey of Powerlifters'' Training Practices and Demographic
+      Influences'
+    - Juggernaut Training Systems (C.W. Smith) — Peaking for Powerlifting
+    notes: 'Reduce, don''t remove, in volume blocks — ~half of surveyed lifters
+      keep exercise selection constant across comp periods, and JTS cuts variations,
+      not the comp lift, 3-4 wks out. Solo lifter: no collars or use safeties;
+      keep every pause honest to IPF press-command length.'
 - id: bench-nopause
   name: PRESS BANCA SIN PAUSA
-  aliases: [sin pausa, touch and go]
+  aliases:
+  - sin pausa
+  - touch and go
   category: variation
   parent: bench
   pattern: press
-  muscles: [pecs, front_delts, triceps]
-  joints: [shoulder, elbow, wrist]
-
+  muscles:
+  - pecs
+  - front_delts
+  - triceps
+  joints:
+  - shoulder
+  - elbow
+  - wrist
+  playbook:
+    purpose: 'Volume-accumulation bench: the stretch reflex lets Benjamin handle
+      ~5% more load or extra reps per set at the same RPE, building pressing mass
+      and work capacity cheaply while PRESS BANCA COMP keeps the pause skill grooved.
+      Strictly a secondary slot — never his main bench.'
+    use_when:
+    - Accumulation/hypertrophy weeks with no meet booked — as the second weekly
+      bench slot (rep work, e.g. 4x6-8) behind a paused PRESS BANCA COMP day
+    - He needs more pressing volume under a capped RPE (post-layoff RPE<=7 re-entry)
+      — TnG buys 1-2 extra reps per set without breaking the cap
+    - Comp bench has gone stale or grindy — rotate TnG back-offs in for a wave
+      to cut per-rep skill demand and keep bar speed up
+    - 'Overload feel only after the RPE<=7 re-entry is done: back-offs slightly
+      above paused-day loads, RPE<=8, in a rack with safeties set — he has no
+      spotter'
+    avoid_when:
+    - Last ~4 weeks before a meet — every comp-pattern rep should rehearse the
+      stop-on-command pause; TnG erodes that skill
+    - Pause control is the current weak point (bar sinking, heaving off the chest,
+      slowing descent) — TnG reinforces the bounce instead of fixing the stop
+    - Open pain flag on shoulder, elbow or wrist — faster eccentric plus heavier
+      loads spikes joint stress; use bench-tempo and ask him before loading
+    - AMRAPs or >RPE 8 sets without safeties — he benches alone; a missed TnG
+      rep at supra-paused loads has no bailout
+    swaps:
+    - bench
+    - bench-tempo
+    - press-inclinado
+    refs:
+    - Barbell Medicine Forum thread 'Touch and go bench vs paused' — forum.barbellmedicine.com/t/touch-and-go-bench-vs-paused/2270
+    notes: TnG e1RM overstates paused bench — keep it out of PRESS BANCA COMP
+      projections; typical gap ~2-7% with a crisp touch, a hard bounce inflates
+      it further. Cue "toca, no rebotes".
 - id: bench-tempo
   name: PRESS BANCA TEMPO
-  aliases: [press banca tempo 4.1.0, press banca tempo 4.2.0]
+  aliases:
+  - press banca tempo 4.1.0
+  - press banca tempo 4.2.0
   category: variation
   parent: bench
   pattern: press
-  muscles: [pecs, front_delts, triceps]
-  joints: [shoulder, elbow, wrist]
-
+  muscles:
+  - pecs
+  - front_delts
+  - triceps
+  joints:
+  - shoulder
+  - elbow
+  - wrist
+  playbook:
+    purpose: 'Movement-constraint bench: a fixed slow eccentric (e.g. 3-1-1) that
+      grooves bar path, touch point and upper-back tightness for PRESS BANCA COMP
+      better than cueing alone, while self-limiting load — suits RPE<=7 re-entry
+      blocks and his spotter-less training.'
+    use_when:
+    - Bar path or touch point wanders, or he crashes into the pause on PRESS BANCA
+      COMP — program the constraint instead of stacking more verbal cues
+    - 'Re-entry/rebuild weeks after a layoff: self-limiting load keeps sets honest
+      at RPE<=7 while re-grooving comp pause positions'
+    - 'Volume phase 4+ weeks out from a meet or max test: slot as the 2nd bench
+      day, ~10-20% under comp-bench load for the same reps'
+    - 'High-frequency pressing (5 d/wk) solo: adds a bench slot with low miss
+      risk — submaximal by design, but still bench inside rack safeties, no collars'
+    - 'Pauses go soft under fatigue: 3-s eccentric into a full 1-s pause rebuilds
+      tightness and position at the chest'
+    avoid_when:
+    - Final 2-3 weeks before a meet or max test — specificity window; keep PRESS
+      BANCA COMP only and press with fast intent
+    - Open shoulder/elbow/wrist pain flag aggravated by time under tension — the
+      long eccentric raises TUT on exactly those joints; ask him before programming
+      it
+    - Block goal is heavy handling/overload — tempo caps load ~10-20% below comp
+      bench; bench-nopause or comp singles do that job
+    swaps:
+    - bench
+    - bench-nopause
+    - press-inclinado
+    refs:
+    - 'Progressive Resistance Systems (prsontheplatform.com, 2023) — Tempo Bench
+      Press: The Most Impactful Movement Constraint Variation'
+    - 'Schoenfeld, Ogborn & Krieger 2015, Sports Med — repetition-duration meta-analysis:
+      similar hypertrophy across ~0.5-8 s reps'
+    notes: 'Fixed scheme (3-1-1, ~65-75%); Schoenfeld 2015 rep-duration meta:
+      no hypertrophy magic from slow tempo per se — value is constraint + load
+      control, so keep concentric intent fast. PRS runs it year-round for high-frequency
+      benchers; for Benjamin blockwise only, drop near tests.'
 - id: deadlift
   name: PESO MUERTO SUMO
-  aliases: [peso muerto, dl, sumo, deadlift]
+  aliases:
+  - peso muerto
+  - dl
+  - sumo
+  - deadlift
   category: main
   pattern: hinge
-  muscles: [glutes, hamstrings, quads, spinal_erectors, traps]
-  joints: [hip, knee, lumbar]
-
+  muscles:
+  - glutes
+  - hamstrings
+  - quads
+  - spinal_erectors
+  - traps
+  joints:
+  - hip
+  - knee
+  - lumbar
+  playbook:
+    purpose: 'His competition pull and the anchor of every block''s hinge slot:
+      nothing else grooves the sumo-specific start (wedge, knees out, patient
+      break off the floor) or builds meet-day strength. Its relatively upright
+      trunk also makes it his most back-tolerant heavy pull — relevant to his
+      low-back care history.'
+    use_when:
+    - Default in every block, 1-2x/week as hinge primary — the sumo start position
+      detrains fast, so keep at least one full-reset comp-stance exposure weekly.
+    - 'Post-layoff (now): re-baseline here first — triples/fives at RPE <=7 until
+      a current e1RM exists; variations wait until the comp lift has fresh numbers.'
+    - 'Meet prep: comp-spec singles/doubles with belt and chalk; last heavy pull
+      ~10-17 days out; deadlift volume gets cut earliest of the three lifts.'
+    - 'Technique drift off the floor (hips shoot up, knees cave, bar drifts forward):
+      add a lighter second weekly exposure instead of swapping the lift out.'
+    - 'Weekly lumbar budget tight: keep this and trim RDL/accessory hinge volume
+      first — more upright trunk costs less erector fatigue per kg pulled.'
+    avoid_when:
+    - 'Open lumbar, hip, or knee flag — or any groin/adductor tweak: no load raise
+      without asking him; the wide stance is adductor-hungry and knee-demanding.'
+    - 'Final ~10 days before a meet: openers at most — the deadlift is the most
+      systemically fatiguing lift and its volume is tapered earliest.'
+    - 'Within ~48h of top-end SENTADILLA LB work: shared lumbar-erector and hip
+      fatigue compounds — separate the heaviest lower days in his 5-day split.'
+    - 'Acute low-back flare: no grinding — cut load hard, shift to deadlift-tempo
+      at higher reps until symptoms are stable 24-48h post-session.'
+    swaps:
+    - deadlift-tempo
+    - rdl
+    - leg-curl
+    refs:
+    - Juggernaut Training Systems — Peaking for Powerlifting (jtsstrength.com)
+    - 'Barbell Medicine — Pain in Training: What To Do? (barbellmedicine.com/blog/pain-in-training-what-do)'
+    notes: 'Frequency evidence splits: extra exposures speed technique acquisition,
+      but heavy pulling recovers slower — start 1-2x/week and let bar speed decide.
+      Tempo/RDL keep the hinge; leg-curl is a zero-lumbar-load hamstring fallback,
+      not a hinge. Comp specificity is irreplaceable the last 4-6 weeks out.'
 - id: deadlift-tempo
   name: PESO MUERTO SUMO TEMPO
-  aliases: [peso muerto tempo, sumo tempo]
+  aliases:
+  - peso muerto tempo
+  - sumo tempo
   category: variation
   parent: deadlift
   pattern: hinge
-  muscles: [glutes, hamstrings, quads, spinal_erectors]
-  joints: [hip, knee, lumbar]
-
+  muscles:
+  - glutes
+  - hamstrings
+  - quads
+  - spinal_erectors
+  joints:
+  - hip
+  - knee
+  - lumbar
+  playbook:
+    purpose: 'Self-coached technique tool for a solo lifter: slow tempo exposes
+      sumo faults (hips shooting up, lumbar rounding off the floor) and caps load
+      by design, fitting his RPE <= 7 re-entry. Buys hinge time-under-tension
+      for hypertrophy and tendon tolerance at lower absolute lumbar load than
+      straight pulls.'
+    use_when:
+    - 'Re-entry block post-layoff: the tempo itself keeps loads honest at RPE
+      <= 7 — no percent anchor; no sumo baseline exists until week-1 top sets
+      rebuild one'
+    - Hypertrophy/volume phase 6+ weeks from a meet — primary or secondary hinge
+      slot before heavy pulling volume returns
+    - Video shows hips shooting up or lower back rounding as plates break the
+      floor — slow reps make the fault visible and fixable when training alone
+    - 'He needs hinge volume while managing erector fatigue: similar hypertrophy
+      stimulus per set at 10-20% lighter bar weight, cheaper on the lower back'
+    - Rushed setup or inconsistent bar path rep to rep — tempo forces the slack
+      pull and full brace before every rep
+    avoid_when:
+    - 'Final ~3 weeks pre-meet: peaking needs full-speed competition pulls — slow
+      reps add fatigue without specificity to the platform'
+    - Open pain flag on lumbar, hip, or knee — long time under tension concentrates
+      load on all three; never program or progress it without asking him first
+    - The week already carries heavy PESO MUERTO SUMO plus RDL volume — lower-back
+      recovery is the bottleneck on his 5-day split
+    - 'Never for max testing or e1RM anchoring: tempo loads do not map to competition
+      percentages — keep these sets out of e1RM math'
+    swaps:
+    - deadlift
+    - rdl
+    - leg-curl
+    refs:
+    - 'jtsstrength.com — Deadlift Variations: How, Why & When To Use Them'
+    - 'Stronger By Science — How to Deadlift: The Definitive Guide (diagnosing
+      hip-shoot and back-rounding faults)'
+    notes: Print tempo in Indicaciones ('3s bajada' or '3s subida hasta la rodilla');
+      load by RPE <= 7 until week-1 top sets set a baseline, then ~60-70% of that.
+      Expect hamstring/erector DOMS week 1. Per JTS, paused pulls are the later,
+      more meet-specific weak-point tool; tempo is the earlier, lighter phase.
 - id: rdl
   name: RDL STRAPS
-  aliases: [rdl, rumano, peso muerto rumano]
+  aliases:
+  - rdl
+  - rumano
+  - peso muerto rumano
   category: variation
   parent: deadlift
   pattern: hinge
-  muscles: [hamstrings, glutes, spinal_erectors]
-  joints: [hip, lumbar]
-
+  muscles:
+  - hamstrings
+  - glutes
+  - spinal_erectors
+  joints:
+  - hip
+  - lumbar
+  playbook:
+    purpose: Long-length hamstring/glute/erector work covering what sumo undertrains
+      (hamstrings, back positional strength) at a fraction of the load and recovery
+      cost of a second pull from the floor; straps remove grip as the limiter.
+      Safe alone — just set it down — and easy to hold at RPE <= 7 during re-entry.
+    use_when:
+    - 'Accumulation/volume phases 4+ weeks out from a meet: posterior-chain volume
+      without the recovery cost of a second heavy pull from the floor'
+    - 'Sumo weak points: back rounds off the floor or lockout stalls — builds
+      the hamstrings/erectors those expose (hips shooting up → deadlift-tempo
+      instead)'
+    - 'Layoff re-entry (his current situation): rebuilds hinge tissue tolerance
+      at submaximal loads, easy to cap at RPE <= 7'
+    - Second hinge slot of the week when another PESO MUERTO SUMO day would cost
+      too much recovery across 5 sessions
+    - Hamstring hypertrophy at long muscle lengths — pairs with leg-curl (knee
+      flexion) to cover both hamstring functions
+    avoid_when:
+    - 'Open lumbar pain flag: long-lever hinge with high erector demand — never
+      raise its load without asking him first; leg-curl instead (+ QL iso only
+      if tolerated)'
+    - 'Final 1-2 weeks of meet prep: cut it for freshness and specificity — long-length
+      eccentric DOMS lingers'
+    - 'Sharp pain at the sit bone/glute fold in the deep hinge (hip — proximal
+      hamstring): long-length loading aggravates it; drop to leg-curl and flag
+      it'
+    - Slotted 24-48h before the heaviest sumo session — hamstring DOMS and erector
+      fatigue bleed into the comp pull
+    swaps:
+    - deadlift-tempo
+    - leg-curl
+    - cuadrado-lumbar
+    refs:
+    - 'SoCal Powerlifting (Alex Gaynor) — Romanian Deadlifts: The Most Overpowered
+      Deadlift Variation (socalpowerlifting.net)'
+    notes: 'Hypertrophy tool, not a max lift: 2-4x6-10 at RPE 6-8 (cap 7 during
+      re-entry), 2-3s eccentric, straps on. The set ends when the back rounds,
+      not at muscular failure — a ground-out RDL trades hamstring stimulus for
+      lumbar risk with no carryover payoff.'
 - id: press-militar
   name: PRESS MILITAR
-  aliases: [ohp, militar]
+  aliases:
+  - ohp
+  - militar
   category: accessory
   pattern: press
-  muscles: [front_delts, side_delts, triceps]
-  joints: [shoulder, elbow]
-
+  muscles:
+  - front_delts
+  - side_delts
+  - triceps
+  joints:
+  - shoulder
+  - elbow
+  playbook:
+    purpose: Vertical-press accessory for front/side delts, triceps, and overhead
+      capacity his bench-only pressing doesn't train. Low systemic cost and safe
+      to fail alone (a miss just lowers back to the shoulders), so it fits his
+      solo 5-day week - program it as a delt builder, not a direct bench driver.
+    use_when:
+    - Hypertrophy/GPP blocks 6+ weeks from a meet - second press slot on a bench
+      day for delt/triceps volume without more paused-bench-specific stress
+    - Bench misses right off the chest (low touch, tucked elbows) - the one case
+      Nuckols flags where OHP helps; otherwise it's delt mass, not a bench fix
+    - 'Layoff re-entry now: pressing exposure at low systemic cost while bench
+      rebuilds - but the RPE <=7 cap applies to OHP too, it is not exempt'
+    - 'Training alone: the safest press to take near failure - a miss just lowers
+      back to the shoulders, none of solo bench''s grind risk'
+    - All weekly pressing is horizontal - add one vertical slot so delts get direct
+      pressing work alongside his rear/side-delt pull work
+    avoid_when:
+    - 'Open shoulder flag: full overhead flexion on a fixed bar path - the least
+      forgiving press here. Don''t raise load without asking; swap to press-hombros-db'
+    - 'Open elbow flag: every press loads the elbow, DB swaps included - hold
+      delt volume with hombro-posterior-lateral (no elbow demand) until it closes'
+    - 'Last 2-3 weeks of meet prep - specificity: keep the pressing fatigue budget
+      for PRESS BANCA COMP and close variants; OHP is the first cut'
+    - 'Low-back flare or lean-back reps: standing OHP loads the lumbar in extension
+      and no guardrail fires (lumbar not in its joint list) - press seated instead'
+    - Bench sessions degrading from accumulated pressing fatigue - OHP shares
+      the front-delt/triceps recovery pool and is the first press to drop
+    swaps:
+    - press-hombros-db
+    - press-inclinado
+    - hombro-posterior-lateral
+    refs:
+    - Stronger By Science (Nuckols), 'Some thoughts on overhead pressing' (2016)
+      - strongerbyscience.com/a-deadlift-pr-and-some-thoughts-on-overhead-pressing/
+    notes: Bench carryover is modest at his level (SBS) - the exception is low-touch
+      benchers missing right off the chest. Tolerates 2-3x/week; cheap to recover
+      from. Cue ribs down, glutes tight - no lean-back grinds; that is a low-back
+      guard as much as a technique point.
 - id: press-inclinado
   name: PRESS INCLINADO MANCUERNAS
-  aliases: [inclinado, incline db]
+  aliases:
+  - inclinado
+  - incline db
   category: accessory
   pattern: press
-  muscles: [pecs, front_delts, triceps]
-  joints: [shoulder, elbow]
-
+  muscles:
+  - pecs
+  - front_delts
+  - triceps
+  joints:
+  - shoulder
+  - elbow
+  playbook:
+    purpose: 'Main spotter-free hypertrophy press behind PRESS BANCA COMP: builds
+      upper-pec, front-delt and triceps mass through a longer ROM than the comp
+      bench, at no axial/low-back cost, with dumbbells he can dump safely training
+      alone. Per-hand loading also reveals left-right pressing asymmetries.'
+    use_when:
+    - Hypertrophy/volume weeks 4+ out from a meet — slot as 2nd press after PRESS
+      BANCA COMP, 3-4x8-15 double progression (DB jumps are coarse)
+    - Hypertrophy blocks where the press slot goes near failure while training
+      alone — DBs can be dumped, no spotter needed (not during RPE<=7 re-entry)
+    - Off-chest bench weakness blamed on under-muscled upper pec/front delts —
+      grow that tissue over a block; transfer via added muscle, not angle-specific
+      strength
+    - Bar tilt or one-arm lag on bench — independent per-hand DB loading exposes
+      the gap; match reps/load to the weaker side to close it
+    - 'Layoff re-entry: builds pressing muscle and work capacity at RPE<=7 without
+      grinding the barbell pattern'
+    avoid_when:
+    - Open shoulder pain flag — the deep bottom stretch stresses the anterior
+      shoulder; per guardrail never raise load without asking him; trim ROM or
+      swap
+    - 'Final 1-2 weeks before a meet — cut it: soreness and shoulder/elbow fatigue
+      with no comp-specific payoff that close in'
+    - 'Elbow irritation from accumulated pressing volume — first accessory press
+      to trim: it adds elbow load with the least comp-specific return'
+    - Whenever it would displace paused comp-bench volume — angle-specific strength
+      transfer is small (Chaves 2020); specificity wins
+    swaps:
+    - bench-nopause
+    - flexiones-cerradas
+    - press-hombros-db
+    - press-militar
+    refs:
+    - 'Chaves et al. 2020, Int J Exerc Sci (PMC7449336) — untrained men, 8wk:
+      similar (isometric) strength gains from incline vs horizontal bench; incline
+      grew the upper (2nd intercostal) pec region most'
+    - 'Rodriguez-Ridao et al. 2021, Int J Environ Res Public Health — bench press
+      EMG at 0/15/30/45/60deg: 30deg maximized upper-pec activity; front-delt
+      share rises as incline steepens'
+    notes: 'Set 30deg (upper-pec EMG peaks there; 45 shifts to front delt), full
+      controlled stretch, dump DBs on a failed rep. Disagreement: coaches sell
+      incline as flat-bench weak-point carryover; Chaves 2020 found similar strength
+      gains from either angle — program it for hypertrophy and safe solo volume.'
 - id: press-hombros-db
   name: PRESS HOMBROS SENTADO MANCUERNAS
-  aliases: [press hombros, shoulder press db]
+  aliases:
+  - press hombros
+  - shoulder press db
   category: accessory
   pattern: press
-  muscles: [front_delts, side_delts, triceps]
-  joints: [shoulder, elbow]
-
+  muscles:
+  - front_delts
+  - side_delts
+  - triceps
+  joints:
+  - shoulder
+  - elbow
+  playbook:
+    purpose: Delt-and-triceps hypertrophy that supports the paused comp bench
+      without adding bench-specific fatigue. Seated with back support it delivers
+      pressing volume at near-zero lumbar cost, and dumbbells are safe to bail
+      solo — his default overhead slot on high-axial-fatigue weeks.
+    use_when:
+    - Volume/hypertrophy phases 4+ weeks out from a meet — the overhead slot for
+      front/side delt and triceps size without more paused-bench fatigue
+    - 'Heavy SENTADILLA/PESO MUERTO weeks: back-supported seat keeps pressing
+      volume while sparing the lumbar spine vs standing PRESS MILITAR'
+    - Bench misses right off the chest with his tucked, low-touch style — Nuckols'
+      exact case where overhead work carries over to the bench
+    - 'Layoff re-entry (now): 8-12 reps at RPE 6-7 rebuilds pressing work capacity
+      and overhead tolerance while comp bench technique is re-grooved'
+    - 'Weeks where pressing is all horizontal: one overhead movement keeps full
+      shoulder ROM trained; pair with remo and hombro-posterior-lateral'
+    avoid_when:
+    - 'Open shoulder or elbow pain flag — overhead is typically the most provocative
+      pressing arc for both joints; house rules: ask him before loading it'
+    - 'Final ~2 weeks pre-meet: comp bench already saturates front delts; non-specific
+      overhead volume is fatigue without specificity'
+    - 'When high bench frequency already makes front delts/triceps the recovery
+      bottleneck — RP: they need little direct work on top of heavy benching'
+    - Target DBs too heavy to kick up solo — setup fails before the delts; PRESS
+      MILITAR off the rack works but re-adds lumbar load — avoid on heavy squat/DL
+      weeks
+    swaps:
+    - press-militar
+    - press-inclinado
+    - hombro-posterior-lateral
+    refs:
+    - Stronger By Science / G. Nuckols — Some thoughts on overhead pressing
+    - RP Strength / M. Israetel — Front Delt Size Training Tips
+    notes: Sources agree extra front-delt work is low-priority for heavy benchers
+      — cap at ~6-8 quality sets/wk, 8-12 reps; RP would skip it entirely if PRESS
+      MILITAR is already in. Its edge here is lumbar-free, bail-safe pressing
+      volume for a solo lifter with a low-back history.
 - id: flexiones-cerradas
   name: FLEXIONES DE BRAZOS CERRADAS
-  aliases: [flexiones, close pushups]
+  aliases:
+  - flexiones
+  - close pushups
   category: accessory
   pattern: press
-  muscles: [triceps, pecs]
-  joints: [shoulder, elbow, wrist]
-
+  muscles:
+  - triceps
+  - pecs
+  joints:
+  - shoulder
+  - elbow
+  - wrist
+  playbook:
+    purpose: Spotter-free bodyweight pressing volume biased to triceps and pecs
+      — cheap lockout and work-capacity support for PRESS BANCA COMP with freely
+      moving scapulae and near-zero setup or recovery cost. Well suited to his
+      solo 5-day setup and the current RPE<=7 re-entry.
+    use_when:
+    - 'Re-entry or deload weeks: easy pressing volume capped at RPE<=7 with zero
+      spotter risk — fits the current return-from-layoff block'
+    - 'Bench-day finisher when PRESS BANCA COMP lockout needs triceps volume:
+      2-4 hard sets after main work, minimal recovery cost'
+    - 'Shoulder cranky under barbell bench: free scapular movement often keeps
+      push-ups tolerable — swap in only if his reps are truly pain-free'
+    - 'Crowded-gym or travel days: keeps pressing frequency alive with no equipment,
+      so the 5-day schedule survives logistics'
+    - 'Double-progression slot: add reps weekly, then tempo/deficit, when you
+      want a press accessory he cannot be tempted to load heavy alone'
+    avoid_when:
+    - 'Open wrist pain flag: bodyweight on an extended wrist is the classic aggravator
+      — use neutral-wrist DB pressing or cable triceps instead'
+    - 'Open elbow/triceps-tendon flag: close hand position biases elbow extensors
+      — never stack high-rep sets on it without asking him first'
+    - 'Open shoulder flag that push-ups themselves reproduce: they still load
+      the joint — stop, log it, and choose a pain-free press variant with him'
+    - '>20 clean reps with no band/deficit/tempo added: unloaded sets drift far
+      from failure and stall — progress the load or swap to pushdowns/DB press'
+    - 'Meet week / final taper: no specificity to a paused comp bench — cut it
+      with the rest of the accessories'
+    swaps:
+    - press-inclinado
+    - triceps
+    - bench-nopause
+    refs:
+    - 'Calatayud et al. 2015, J Strength Cond Res (PMID 24983847): band-resisted
+      push-ups EMG-matched to 6RM bench gave similar bench strength gains'
+    - 'Kikuchi & Nakazato 2017, J Exerc Sci Fit: low-load push-ups vs 40%1RM bench
+      produced similar hypertrophy and strength over 8 wk'
+    notes: 'Progression when easy: reps to ~20, then deficit/tempo, then band-resisted
+      — EMG-matched band push-ups equaled bench strength gains (Calatayud 2015).
+      Hands just inside shoulder width, not diamond, to spare wrists and elbows.
+      Volume tool, not intensity; never a substitute for heavy pressing.'
 - id: traccion-vertical
   name: TRACCION VERTICAL A ELECCION
-  aliases: [jalon, dominadas, lat pulldown, pullups, traccion]
+  aliases:
+  - jalon
+  - dominadas
+  - lat pulldown
+  - pullups
+  - traccion
   category: accessory
   pattern: pull
-  muscles: [lats, biceps, rear_delts]
-  joints: [shoulder, elbow]
-
+  muscles:
+  - lats
+  - biceps
+  - rear_delts
+  joints:
+  - shoulder
+  - elbow
+  playbook:
+    purpose: 'Counterweight to the pressing volume across his 5-day week: lat/upper-back
+      mass and shoulder balance; a strong upper back supports bench setup and
+      keeps the bar close in sumo. Direct raw-bench carryover is small — year-round
+      hypertrophy/health accessory, near-zero SBD interference, fully solo-safe
+      on machines.'
+    use_when:
+    - 'Default in volume/hypertrophy phases 4+ weeks out: 2-4 sets of 8-15 after
+      bench work, double progression on one chosen variant'
+    - 'Any week with 2-3+ pressing sessions (bench comp, variant, press militar):
+      keep >=1 vertical pull so weekly pulling roughly tracks pushing'
+    - 'Layoff re-entry (his current state): choose lat pulldown — load dials to
+      RPE <=7; bodyweight dominadas likely exceed the cap after time off'
+    - 'He reports losing upper-back tightness or lat tension in bench/sumo setup:
+      add sets here plus remo — a base fix across blocks, not an overnight cue'
+    avoid_when:
+    - Open shoulder pain flag aggravated overhead/in full flexion — swap to remo;
+      never raise vertical-pull load over an open shoulder flag without asking
+      him
+    - 'Medial-elbow or biceps-tendon irritation: no weighted supinated chins;
+      switch to pronated/neutral pulldown at higher reps or shelve it'
+    - 'Meet week: cut with the other accessories — no direct contribution to the
+      total'
+    - Do not let 'a eleccion' become max-effort weighted dominadas — it stays
+      an accessory at RPE 7-9; heavy chins stack elbow stress onto heavy bench
+      blocks
+    swaps:
+    - remo
+    - hombro-posterior-lateral
+    - biceps
+    refs:
+    - 'Barbell Medicine — Pull-Ups for Hypertrophy: How to Use Them Effectively
+      (barbellmedicine.com/blog/pull-ups-hypertrophy/)'
+    - 'Stronger By Science / G. Nuckols — The Lats and the Bench Press: Much Ado
+      About Very Little (strongerbyscience.com)'
+    notes: 'Disagreement: Westside-school says strong lats drive the bench; Nuckols
+      finds minimal direct raw-bench carryover — program for shoulder balance/hypertrophy,
+      not as a bench fix. BBM: pull-up sets are usually stopped too early; pulldown
+      accumulates volume, weighted chins are the load variant.'
 - id: remo
   name: REMO A ELECCION
-  aliases: [remo, row]
+  aliases:
+  - remo
+  - row
   category: accessory
   pattern: pull
-  muscles: [lats, mid_back, biceps, rear_delts]
-  joints: [shoulder, elbow]
-
+  muscles:
+  - lats
+  - mid_back
+  - biceps
+  - rear_delts
+  joints:
+  - shoulder
+  - elbow
+  playbook:
+    purpose: 'Horizontal pulling volume for lats/mid-back/rear delts: builds the
+      upper-back shelf his bench arch and scapular retraction sit on, counterbalances
+      the week''s pressing volume for shoulder health, and keeps the bar dragged
+      close on sumo pulls. Low systemic cost, solo-safe, implement-flexible in
+      a commercial gym.'
+    use_when:
+    - 'Every block by default: weekly row volume at least matches pressing volume
+      — the shoulder-health counterweight to benching several days per week.'
+    - 'Bench stability degrades — losing scapular retraction/arch or wobbly bar
+      path as singles/triples get heavy: bias more mid-back row volume.'
+    - 'Layoff re-entry and volume phases (his current state): high-rep rows at
+      RPE 6-7 rebuild work capacity at minimal injury and technical cost.'
+    - 'Bar drifts off the legs on sumo or lockout turns grindy: rows plus vertical
+      pulling rebuild the lat strength that pins the bar to the body.'
+    - 'Crowded gym or low-energy day: ''a eleccion'' means cable, machine or chest-supported
+      DB all fill the slot — no reprogramming needed.'
+    avoid_when:
+    - 'Open elbow or biceps pain flag: rows load the elbow flexors — never raise
+      row load without asking him; use hombro-posterior-lateral meanwhile.'
+    - 'Lumbar flare or peak squat+sumo weeks: ban free-standing bent-over barbell
+      rows specifically; chest-supported and seated cable versions stay in.'
+    - 'Competition or test week: cut it — no carryover inside the final days,
+      keep the recovery budget for the big three.'
+    - 'Open shoulder flag that horizontal pulling reproduces (uncommon — rows
+      usually help): stop and adjust grip/angle before loading.'
+    swaps:
+    - traccion-vertical
+    - hombro-posterior-lateral
+    refs:
+    - jtsstrength.com/step-by-step-guide-to-better-bench-press-technique — scapular
+      retraction/depression as the bench base (verified 2026-07)
+    notes: 'Default variant steer: chest-supported/machine/cable to spare lumbar
+      erectors already taxed by squat and sumo; bent-over barbell row only when
+      the back is fresh. JTS and Stronger By Science agree rows are near-universal
+      accessories for raw benchers — the debate is variant choice, not inclusion.'
 - id: hombro-posterior-lateral
   name: HOMBRO POSTERIOR + LATERAL A ELECCION
-  aliases: [posteriores, laterales, face pull]
+  aliases:
+  - posteriores
+  - laterales
+  - face pull
   category: accessory
   pattern: pull
-  muscles: [rear_delts, side_delts]
-  joints: [shoulder]
-
+  muscles:
+  - rear_delts
+  - side_delts
+  joints:
+  - shoulder
+  playbook:
+    purpose: 'Cheap high-rep shoulder volume balancing a pressing-heavy 5-day
+      week: rear-delt work backs the retracted-scap bench setup and pads the low-bar
+      shelf; laterals are the catalog''s only isolation side-delt work (presses
+      hit side delts only secondarily). Near-zero axial/systemic fatigue; fully
+      safe to train alone.'
+    use_when:
+    - Default session-closer in volume/hypertrophy blocks, 2-3x/week — restores
+      press-to-pull balance when bench frequency is high.
+    - Bench setup (scap retraction, arch) feels shaky or shoulders look front-delt
+      dominant — bias the rear-delt half; high reps, RPE ≤7 in re-entry, 8 later.
+    - 'Layoff re-entry (now): adds productive volume while comp lifts sit at RPE
+      ≤7 — light isolation is among the lowest re-injury-risk work available.'
+    - 'Deload or knee/low-back flare weeks: loads only the shoulder, so it keeps
+      a training effect when squat/deadlift volume must be cut.'
+    - Low-bar rack position uncomfortable or bar wants to slip — extra rear-delt/upper-back
+      mass builds the shelf (months-scale payoff, not a same-week fix).
+    avoid_when:
+    - Open shoulder pain flag — never raise its load without asking him first;
+      switch to a pain-free variant (cable, changed angle, chest-supported) or
+      drop it.
+    - 'Final meet week: cut with the rest of the accessories — but cut it last,
+      its fatigue cost is near zero.'
+    - Day already stacked with high-volume REMO + TRACCION VERTICAL — the rear-delt
+      half turns redundant; trim to laterals only rather than stack junk volume.
+    - Time-crunched session where comp-lift work is at risk — lowest-priority
+      slot, skip it before touching main work or the big pulls.
+    swaps:
+    - remo
+    - press-hombros-db
+    - traccion-vertical
+    refs:
+    - Renaissance Periodization (M. Israetel) — Rear Delt Size Training Tips
+    - Renaissance Periodization (M. Israetel) — Side Delt Size Training Tips
+    notes: '10-20+ reps, any pain-free variant (face pull, aperturas posteriores,
+      laterales DB/cable). RP: heavy rowing nearly maintains rear delts; presses
+      hit side delts only weakly — laterals are the non-redundant half. Treat
+      as balance + hypertrophy, not prehab medicine.'
 - id: biceps
   name: BICEPS A ELECCION
-  aliases: [curl, biceps]
+  aliases:
+  - curl
+  - biceps
   category: accessory
   pattern: pull
-  muscles: [biceps]
-  joints: [elbow]
-
+  muscles:
+  - biceps
+  joints:
+  - elbow
+  playbook:
+    purpose: 'Direct elbow-flexor work the compounds don''t finish — remo/traccion
+      hit biceps only as a synergist — and the only flexor slot in a press-heavy
+      week (several bench slots + TRICEPS). Adds arm size at near-zero systemic
+      cost: no knee or lumbar load, so it fits his conservative re-entry.'
+    use_when:
+    - 'Accumulation blocks 4+ weeks from a meet: 2-4 sets of 8-15 at RPE 7-8,
+      last slot of an upper day after remo / traccion-vertical.'
+    - 'Re-entry blocks: productive volume at near-zero knee/lumbar/systemic cost
+      — but cap it at RPE <= 7 like the rest until baselines are rebuilt.'
+    - 'Press-heavy weeks (bench slots + PRESS MILITAR + TRICEPS): the sole direct
+      elbow-flexor work against a week full of extension volume.'
+    - 'Arm size is a stated goal: push 3-5 direct sets of 8-15 to 0-2 RIR (RPE
+      8-9) — but only once re-entry''s RPE <= 7 cap is lifted.'
+    - 'Motivation or time dips: ''a eleccion'' is a cheap adherence win — DB,
+      cable or bar all do the job in ~10 min at session''s end.'
+    avoid_when:
+    - 'Open elbow pain flag (distal biceps or medial elbow): don''t add load —
+      hammer/neutral grip, no loaded end-range extension, light cables, or drop
+      the slot.'
+    - 'Elbow/forearm irritation from the low-bar rack position: heavy supinated
+      curls keep it hot — light cable/hammer work only, or pause until it settles.'
+    - 'Meet week / final taper: zero platform carryover — first accessory to cut.'
+    - Time-capped sessions where it would displace remo or traccion-vertical,
+      which give biceps plus the upper back he actually needs.
+    swaps:
+    - traccion-vertical
+    - remo
+    refs:
+    - 'PMC8237209 — Kapicioglu et al. 2021, The Role of Deadlifts in Distal Biceps
+      Brachii Tendon Ruptures: An Alternative Mechanism Described With YouTube
+      Videos (pmc.ncbi.nlm.nih.gov)'
+    notes: 'Curls don''t insure against deadlift biceps tears — filmed ruptures
+      hit the supinated arm of mixed grip near elbow extension (PMC8237209); real
+      prevention is double-overhand/hook/straps. Standing cheat curls add a lumbar
+      moment: seated, cable or preacher keeps the slot truly spine-free.'
 - id: triceps
   name: TRICEPS A ELECCION
-  aliases: [triceps, extension triceps]
+  aliases:
+  - triceps
+  - extension triceps
   category: accessory
   pattern: press
-  muscles: [triceps]
-  joints: [elbow]
-
+  muscles:
+  - triceps
+  joints:
+  - elbow
+  playbook:
+    purpose: Direct elbow-extension volume that props up his paused-bench lockout
+      and builds elbow tendon capacity at minimal systemic cost. The free-choice
+      slot (pushdowns, cable/DB extensions) is spotter-free and easy to RPE-cap
+      — ideal filler for a 5-day solo, bench-centric week.
+    use_when:
+    - Bench misses or grinds above mid-range — lockout weakness points to triceps;
+      run 4-8 direct sets/week on top of pressing volume
+    - 'Volume/hypertrophy phases 4+ weeks out: pressing is shoulder/pec-limited,
+      pushdowns add triceps stimulus with near-zero recovery cost'
+    - 'Last slot of bench days: 2-4 sets of 8-15 after PRESS BANCA COMP and pressing
+      accessories, instead of another barbell press'
+    - 'Re-entry blocks like now: cable work caps cleanly at RPE 7 and fails safely
+      alone — rebuilds arm size and elbow tolerance before heavy benching returns'
+    - 'Grumpy but tolerable elbow: slow 3-0-3 unilateral pushdowns, pain <=3-4/10
+      that settles within 24 h; raise load only with his explicit OK'
+    avoid_when:
+    - Open elbow pain flag provoked by extension work — cut stretched-position
+      variants (skull crushers, overhead) first; if even light pushdowns hurt,
+      pull the slot
+    - 'Final 1-2 weeks before a meet: isolation adds nothing to peaking, drop
+      it so elbows are fresh for heavy singles'
+    - High-effort triceps the day before the priority bench session — pre-fatigued
+      triceps depress pressing numbers
+    - 'Weeks where pressing volume is already maximal and elbows are accumulating
+      ache: benching trains triceps too, this slot is the first redundancy to
+      trim'
+    swaps:
+    - flexiones-cerradas
+    - press-militar
+    refs:
+    - Barbell Medicine (D. Miles) — The Barbell Medicine Guide to Tendinopathy
+      (barbellmedicine.com/blog/the-barbell-medicine-guide-to-tendinopathy)
+    - Barbell Rehab (M. Mash) — elbow pain & the bench press
+    - RP Strength (Israetel) — Triceps Hypertrophy Training Tips
+    notes: 'Steer ''a eleccion'' toward cable pushdowns over skull crushers/overhead
+      extensions when elbows ache (stretched-position tendon load); rehab entry
+      is slow 3-0-3 pushdowns, not rest. RP volume ballpark: 4-18 direct sets/week
+      depending on pressing volume — he sits low-middle.'
 - id: leg-curl
   name: LEG CURL
-  aliases: [femoral, curl femoral]
+  aliases:
+  - femoral
+  - curl femoral
   category: accessory
   pattern: hinge
-  muscles: [hamstrings]
-  joints: [knee]
-
+  muscles:
+  - hamstrings
+  joints:
+  - knee
+  playbook:
+    purpose: 'His only knee-flexion hamstring exercise: grows the curl-biased
+      heads (semitendinosus, BF short head) that sumo and RDL hinging miss, and
+      buys hamstring volume plus knee-flexor balance at zero lower-back cost —
+      machine-based and safe to push hard training alone.'
+    use_when:
+    - 'Default 1 slot most weeks: pair a curl with a hinge — hinges bias the long
+      hamstring head, curls hit semitendinosus/short head that hip work barely
+      trains'
+    - Hamstring volume is needed but the lumbar fatigue budget is spent (heavy
+      sumo + LB squat week) — adds hamstring work at zero axial load, unlike RDL
+    - Open lower-back pain flag rules out loaded hinging — keeps hamstrings training
+      while the back calms; it loads only the knee
+    - 'Knee-care theme: when quad accessories run (EXTENSIONES, LEG PRESS UNILATERAL,
+      SENTADILLA BULGARA), keep a curl slot so knee flexors keep pace with quads'
+    - 'Layoff re-entry / RPE-capped blocks: start high-rep at RPE <= 7; curls
+      earn RPE 8-9 first since failure on a machine is safe alone'
+    avoid_when:
+    - Posterior-knee or distal hamstring-tendon pain reproduced by curling — this
+      is the direct loader; move hamstring work to the hip (RDL)
+    - 'Acute hamstring cramp or strain: no near-failure curls; re-enter with light
+      high-rep sets first'
+    - 'Meet week / final deload: cut it with the other accessories — no carryover
+      to expressing a 1RM'
+    - Never the only hamstring work in a block when pulling strength is the goal
+      — knee flexion adds little direct sumo-lockout carryover vs hinging
+    swaps:
+    - rdl
+    refs:
+    - 'Stronger By Science — Exercise selection for the hamstrings: a guide (strongerbyscience.com/exercise-selection-hamstrings)'
+    - RP Strength — Complete Hamstring Training Guide (rpstrength.com/blogs/articles/hamstring-hypertrophy-training-tips)
+    - 'Maeo et al. 2021, Med Sci Sports Exerc — seated vs prone leg curl: greater
+      biarticular hamstring growth at long lengths'
+    notes: Prefer seated over lying (long-length training grows the biarticular
+      heads more; Maeo 2021/SBS); 10-20 reps, 2-4 sets at session end; one hamstring
+      accessory per session is plenty alongside sumo/RDL (RP). No GHR in his gym,
+      so curl + RDL split the knee- and hip-side roles.
 - id: extensiones
   name: EXTENSIONES
-  aliases: [extensiones unilaterales, leg extension, cuadriceps]
+  aliases:
+  - extensiones unilaterales
+  - leg extension
+  - cuadriceps
   category: accessory
   pattern: squat
-  muscles: [quads]
-  joints: [knee]
-
+  muscles:
+  - quads
+  joints:
+  - knee
+  playbook:
+    purpose: 'Isolated quad volume with zero axial or hip load: builds knee-extension
+      strength for the squat and the sumo start while sparing Benjamin''s lower
+      back, grows the rectus femoris that squats barely touch, and doubles as
+      his knee/tendon-capacity tool — machine-based, low skill, safe trained alone.'
+    use_when:
+    - Squat slows or folds just above parallel / he can't feel quads out of the
+      hole — quad-strength limiter for low-bar squat and sumo off the floor
+    - 'Hypertrophy/volume phases 4+ weeks from testing or a meet: pair with squats
+      — extensions grow the rectus femoris that squat training doesn''t'
+    - Lumbar fatigue budget is spent (heavy squat + sumo week) but quad volume
+      is still owed — adds quad work with no spinal loading
+    - 'Knee niggle or patellar-tendon irritation: slow tempo or isometric holds
+      in the 90-45 deg mid-range as tolerable loading while squat load is reduced'
+    - 'Layoff re-entry (now): low-skill, low-systemic-cost quad work that fits
+      the RPE<=7 cap and solo training with no spotter'
+    avoid_when:
+    - Patellofemoral pain that flares near lockout — open-chain PF stress peaks
+      toward terminal extension; trim ROM to 90-45 deg or swap, don't push through
+    - 'Open knee pain flag in the pain log: never progress its load without asking
+      him first; hold at isometrics/mid-range meanwhile'
+    - Final 1-2 weeks of meet peak — zero specificity, pure recovery cost; cut
+      it
+    - Hard sets to failure the day before squatting — quad soreness bleeds into
+      the main lift; slot it after squats on the same day instead
+    swaps:
+    - leg-press-unilateral
+    - sentadilla-bulgara
+    refs:
+    - 'Physiotutors — Leg Extensions: Dangerous for your knees or great rehab
+      exercise?'
+    - 'StrengthLog — Squats vs. Leg Extensions For Quad Growth: New Study'
+    notes: 'The knee-safety reputation is backwards: in 90-45 deg of flexion the
+      extension stresses the patellofemoral joint LESS than squatting; terminal
+      extension is the sensitive zone. Jill Cook''s position: patellar tendinopathy
+      rehab is near-impossible without this machine.'
 - id: leg-press-unilateral
   name: LEG PRESS UNILATERAL
-  aliases: [leg press, prensa]
+  aliases:
+  - leg press
+  - prensa
   category: accessory
   pattern: squat
-  muscles: [quads, glutes]
-  joints: [knee, hip]
+  muscles:
+  - quads
+  - glutes
+  joints:
+  - knee
+  - hip
   unilateral: true
-
+  playbook:
+    purpose: Per-leg quad/glute hypertrophy with minimal spinal load (back supported,
+      no bar) — builds the quad mass a low-bar + sumo program undertrains, surfaces
+      left-right asymmetries, and lets Benjamin push leg volume hard while training
+      alone and managing lower-back fatigue.
+    use_when:
+    - Hypertrophy/volume phases 4+ weeks out when quad size limits the squat (forward
+      pitch, grinding out of the hole)
+    - Lumbar fatigue budget spent (heavy SENTADILLA + sumo week, or open low-back
+      flag) but quad volume still needed — back stays supported on the pad
+    - 'Visible asymmetry: bar shift in the squat or hips shifting in sumo — per-leg
+      loading exposes the weaker side so sets/load can be matched to it'
+    - Solo sessions where near-failure leg work must be safe without a spotter
+      — machine stops, easy bail
+    - 'Layoff re-entry weeks: machine stability, no balance demand — RPE <= 7
+      stays honest and repeatable'
+    avoid_when:
+    - 'Open knee pain flag: loaded deep knee flexion stresses the patellofemoral
+      joint — ask him first; higher foot placement/less depth, or swap'
+    - 'Open hip pain flag: the bottom stacks deep loaded hip flexion (anterior
+      pinch) — ask him first; cut depth or widen stance/toes out'
+    - 'Final ~2 weeks of meet prep: quad fatigue with no specificity while peaking
+      SENTADILLA — cut it'
+    - When it starts displacing barbell squat exposure — leg press strength does
+      not transfer 1:1 (specificity)
+    - 'Lumbar pain that flares with flexion: very deep ROM tucks the pelvis and
+      flexes the low back under load — cap ROM before the pelvis rolls'
+    swaps:
+    - sentadilla-bulgara
+    - extensiones
+    - squat-hb
+    refs:
+    - Barbell Medicine (Feigenbaum et al.) — Best Quad Exercises For Bigger, Stronger
+      Thighs — barbellmedicine.com/blog/best-quad-exercises-for-bigger-stronger-thighs/
+    - Chad Wesley Smith, Juggernaut Training Systems — The Best Accessory Lifts
+      For A Bigger Squat — jtsstrength.com/best-accessory-lifts-bigger-squat/
+    notes: BM doses leg press 2-4x6-10 as a secondary (bilateral data); JTS runs
+      unilateral accessories ~6-10/leg at 1-2 RIR. Lower feet biases quads; higher
+      feet spares the knee. More stable than SENTADILLA BULGARA — the entry point
+      for unilateral work post-layoff.
 - id: sentadilla-bulgara
   name: SENTADILLA BULGARA
-  aliases: [bulgara, split squat]
+  aliases:
+  - bulgara
+  - split squat
   category: accessory
   pattern: squat
-  muscles: [quads, glutes]
-  joints: [knee, hip]
+  muscles:
+  - quads
+  - glutes
+  joints:
+  - knee
+  - hip
   unilateral: true
-
+  playbook:
+    purpose: Unilateral quad/glute volume in the squat pattern at a fraction of
+      barbell lumbar cost — leg volume on top of SENTADILLA LB + PESO MUERTO SUMO
+      without spending his low-back budget; exposes left-right gaps. DB version
+      is solo-safe (just drop them) and easy to cap at RPE <= 7 in re-entry.
+    use_when:
+    - 'Hypertrophy/volume phase 4+ weeks out from a meet: quad-glute volume slotted
+      mid/late week, after the heavy SENTADILLA LB day'
+    - Lumbar fatigue from low-bar squat + sumo is capping squat-pattern volume
+      — this adds leg volume at minimal lumbar cost
+    - 'Left-right asymmetry shows up: bar shift or hip drop out of the hole, or
+      one leg clearly weaker'
+    - 'Layoff re-entry: DB load holds RPE <= 7 easily; start ~2 light sets/leg
+      the first week — first exposures cause outsized DOMS'
+    - 'Managed knee irritation, only after asking him: tempo (3-0-3), longer hip-biased
+      stance, RPE 6-8 (Barbell Medicine approach)'
+    avoid_when:
+    - 'Final 2-3 weeks pre-meet: per-leg DOMS and balance practice buy nothing
+      — keep squat volume in the comp pattern'
+    - 'Open knee or hip pain flag: deep rear-foot-elevated position loads the
+      flexed front knee and stretches the rear-leg hip flexor — ask before loading,
+      offer swaps'
+    - Placed <48 h before a heavy SENTADILLA LB or PESO MUERTO SUMO session —
+      its soreness bleeds into comp-lift quality
+    - Balance limits loading so much the stimulus is trivial — take LEG PRESS
+      UNILATERAL instead of grinding wobble
+    swaps:
+    - leg-press-unilateral
+    - extensiones
+    refs:
+    - Mackey & Riemann 2021, Int J Exerc Sci 14(1):533-43 (PMC8136570) — Biomechanical
+      Differences Between the Bulgarian Split-Squat and Back Squat
+    - 'Barbell Medicine — ''Pain in Training: What Do?'' (train around a sensitive
+      knee/back: reduced load, tempo work, RPE 6-8)'
+    notes: 'Hip-dominant with less knee demand than back squat (Mackey & Riemann)
+      — setup decides: short stance/upright torso = quad-knee bias; long stance
+      + slight lean = glute-hip bias (knee-friendlier). DBs at sides, never barbell
+      — he trains alone, DBs drop safely. ~8-15 reps/leg.'
 - id: pallof
   name: PRESS PALLOF
-  aliases: [pallof, press pallof iso 20seg]
+  aliases:
+  - pallof
+  - press pallof iso 20seg
   category: accessory
   pattern: core
-  muscles: [obliques, abs]
+  muscles:
+  - obliques
+  - abs
   joints: []
-
+  playbook:
+    purpose: 'Low-fatigue anti-rotation isometric: obliques resist cable torque
+      while he rehearses the hard exhale-and-brace behind SENTADILLA LB and PESO
+      MUERTO SUMO. No external spinal load — his cheapest low-back-friendly core
+      volume, already familiar from his previous coach''s program.'
+    use_when:
+    - 'Re-entry/post-layoff weeks: trunk volume at near-zero recovery cost while
+      barbell loads sit at RPE <= 7'
+    - 'Open or recent lumbar pain flag: keeps core training in the plan when rueda-abdominal
+      or heavy hinge accessories get pulled'
+    - 'Bracing rehearsal in warm-ups: 1-2 light sets per side before squat or
+      deadlift sharpen the brace without fatigue cost'
+    - End-of-session core slot on lower days, 2-3x/week, 2-3x8-12/side; progress
+      hold time and distance from the anchor before adding cable-stack load
+    - Lateral hip shift or one-sided bar tilt shows up on squat/deadlift video
+      — pair with unilateral leg work while the cause is addressed
+    avoid_when:
+    - As the only trunk stimulus once bar weights approach max — too regressed
+      and non-specific to keep driving trunk strength; shift to heavier loaded
+      core work
+    - 'Final 1-2 weeks pre-meet: cut non-essential accessories; heavy comp lifts
+      already supply the trunk stimulus'
+    - Right before heavy squat/deadlift top sets beyond 1-2 activation sets —
+      core pre-fatigue blunts bracing
+    - 'Cable and band stations busy (commercial gym rush hour): swap rather than
+      queue for a low-priority drill'
+    swaps:
+    - plancha-copenhagen
+    - cuadrado-lumbar
+    - rueda-abdominal
+    refs:
+    - T. Bonvechio — Core Training for Powerlifters (bonvecstrength.com, 2020)
+    - The Prehab Guys — Pallof Press variations & progressions (theprehabguys.com)
+    notes: 'Coaches split: Bonvechio calls it ''too regressed and non-specific''
+      for powerlifters; physios prize that lightness — in re-entry low cost wins.
+      Cue hard exhale, 2-3 s hold at chest height; filler, never the progression
+      driver. Under a lumbar flag swap to Copenhagen/QL, not rueda.'
 - id: plancha-copenhagen
   name: PLANCHA LATERAL PIERNA ELEVADA + COPENHAGEN
-  aliases: [plancha lateral, copenhagen]
+  aliases:
+  - plancha lateral
+  - copenhagen
   category: accessory
   pattern: core
-  muscles: [obliques, adductors]
-  joints: [hip]
-
+  muscles:
+  - obliques
+  - adductors
+  joints:
+  - hip
+  playbook:
+    purpose: Eccentric adductor strength and tissue tolerance for sumo width and
+      low-bar depth, plus anti-lateral-flexion trunk work (obliques/QL) in one
+      bodyweight slot. Near-zero systemic fatigue and bench-only setup — fits
+      his solo sessions and his groin/knee/low-back durability themes.
+    use_when:
+    - 'Re-entry/GPP and accumulation blocks 4+ weeks out: 2-3x/wk, ~30 quality
+      reps or 15-45 s holds per week over an 8-week runway; start short-lever
+      in week 1.'
+    - Before or while ramping sumo volume/width — eccentric adductor strength
+      is the best-evidenced CAE outcome; prep the groin ahead of heavy wide-stance
+      pulls.
+    - 'History of groin/adductor irritation after sumo but currently pain-free:
+      reintroduce short-lever (knee on bench) before lengthening the lever.'
+    - 'Lateral hip shift or bar tilt in the squat: the elevated-leg side plank
+      half trains anti-lateral-flexion endurance (obliques/QL).'
+    - End-of-session core slot on lower days, or circuited with pallof / cuadrado-lumbar
+      — minimal interference, no spotter or equipment beyond a bench.
+    avoid_when:
+    - Active adductor/groin strain or hip pain during the set — regress to short
+      lever or isometric squeeze and ask him first; early-cycle adductor DOMS
+      is common.
+    - 'Open medial-knee pain flag: long lever loads the bench-supported top knee''s
+      medial side — cap at short lever or skip.'
+    - 'Meet/test week: cut with the other nonessential accessories; no first-time
+      or long-lever exposure within ~10 days of max sumo (adductor DOMS).'
+    - Right before heavy sumo or low-bar top sets — pre-fatiguing the hip adductors
+      degrades the start position and depth control.
+    swaps:
+    - cuadrado-lumbar
+    - pallof
+    refs:
+    - 'PMC12363431 — The Copenhagen Adduction Exercise Effect on Sport Performance
+      and Injury Prevention: SR with Meta-Analysis (Scand J Med Sci Sports 2025;
+      groin-injury RR 0.83, n.s.)'
+    - E3 Rehab — How To Perform Copenhagen Planks (lever progressions; 2-3x/wk
+      for 8 weeks dosing)
+    notes: 'Progress lever (knee→ankle) before adding time/reps. Meta-analyses:
+      large eccentric-strength gains but no significant groin-injury reduction
+      (RR 0.83) — program as strength work, not insurance. No catalog swap covers
+      the adductor half; if dropped, add machine/cable adduction ad hoc.'
 - id: rueda-abdominal
   name: RUEDA ABDOMINAL
-  aliases: [rueda, ab wheel]
+  aliases:
+  - rueda
+  - ab wheel
   category: accessory
   pattern: core
-  muscles: [abs]
-  joints: [shoulder, lumbar]
-
+  muscles:
+  - abs
+  joints:
+  - shoulder
+  - lumbar
+  playbook:
+    purpose: 'Anti-extension anterior core strength: the abs learn to hold a rigid,
+      neutral trunk against an arching load — carryover to keeping the brace in
+      SENTADILLA LB and finishing PESO MUERTO SUMO without lumbar hyperextension.
+      Fills the anterior-core gap his Pallof/Copenhagen/QL menu leaves open; solo-friendly.'
+    use_when:
+    - Block's core slot lacks anti-extension work — pallof / plancha-copenhagen
+      / cuadrado-lumbar cover rotary and lateral patterns only
+    - Re-entry or volume phases 4+ wk from a meet — capped bar loads (e.g. RPE<=7
+      re-entry) don't challenge the brace; buy trunk stiffness directly
+    - 'Brace breaks into lumbar extension: ribs flare or he over-arches out of
+      the hole in SENTADILLA LB, or finishes sumo lockout by leaning back'
+    - Program 2-3x/week at the end of bench/upper days, kneeling 3x6-12; progress
+      ROM, then pauses, before ever going to standing
+    avoid_when:
+    - Open lumbar pain flag, especially extension-intolerant pain — a sagging
+      rep drives the lumbar facets to end-range extension; swap to pallof until
+      cleared
+    - Open shoulder pain flag or pain in deep flexion/overhead reach — the long
+      position loads shoulder and lats (high lat EMG) and can aggravate benching
+    - 'Form standard unmet: hips sag or low back arches before the abs fail —
+      shorten ROM or swap; a sagged rollout trains the exact fault it should fix'
+    - Don't introduce it (or jump its dose) inside a heavy week or before squat/deadlift
+      sessions — ab DOMS and brace pre-fatigue interfere; cut it in meet week
+    swaps:
+    - pallof
+    - plancha-copenhagen
+    refs:
+    - 'Escamilla et al. 2006, Phys Ther 86(5):656-71 (PMID 16649890) — EMG of
+      traditional and nontraditional abdominal exercises: power-wheel roll-out
+      among highest rectus abdominis + lat activity'
+    - 'McGill 2010, Strength Cond J 32(3):33-46 — Core training: evidence translating
+      to better performance and injury prevention (neutral-spine stiffness rationale)'
+    notes: 'Back risk is technique/ROM-dependent — hip sag = loaded lumbar extension;
+      cap ROM where the pelvis stays tucked: done right it''s a top-EMG rectus
+      pick with low paraspinal activity (Escamilla 2006). Fierce ab DOMS at first:
+      start ~2x/wk kneeling, pad under knees. No wheel? Barbell rollout works.'
 - id: cuadrado-lumbar
   name: CUADRADO LUMBAR STRAPS ISO
-  aliases: [cuadrado lumbar, ql iso]
+  aliases:
+  - cuadrado lumbar
+  - ql iso
   category: accessory
   pattern: core
-  muscles: [spinal_erectors, obliques]
-  joints: [lumbar]
+  muscles:
+  - spinal_erectors
+  - obliques
+  joints:
+  - lumbar
+  playbook:
+    purpose: Low-compression lateral-trunk isometric (QL/obliques/erectors) building
+      the lumbar endurance and stiffness his brace depends on in SENTADILLA LB
+      and PESO MUERTO SUMO. His cheapest lower-back durability work, already proven
+      tolerable in his previous program.
+    use_when:
+    - 'Default back-health slot in re-entry and volume blocks: 2-3x/week at session
+      end, 2-3 holds per side, rotated with pallof and plancha-copenhagen'
+    - 'Open or recent lumbar flag with axial loading capped: preferred trunk work
+      — high QL/oblique activation at low spinal compression, only if pain-free'
+    - 'Hip shift out of the hole in squat or lateral trunk lean at sumo lockout:
+      program it and test L/R hold-time asymmetry (>15% gap is worth closing)'
+    - He reports back fatigue or feeling 'unstable' under the bar before any pain
+      shows — near-zero recovery cost makes it cheap insurance
+    avoid_when:
+    - Acute lumbar flare where the hold itself reproduces pain — regress to short
+      10 s floor side planks or pallof, don't push through
+    - Support-arm shoulder or elbow irritation from the strap setup — regress
+      to floor side plank or swap to pallof
+    - Never right before heavy SENTADILLA/PESO MUERTO sets — pre-fatiguing the
+      trunk degrades the brace; end of session only
+    - 'Peak week: cut with other accessories, and never introduce as a new stimulus
+      inside the final 2 weeks before a meet'
+    swaps:
+    - plancha-copenhagen
+    - pallof
+    refs:
+    - Squat University (A. Horschig) — The McGill Big 3 For Core Stability
+    - E3 Rehab — Quadratus Lumborum Rehab (e3rehab.com/quadratus-lumborum-rehab/)
+    notes: 'Dosage split: McGill/Squat U favor repeated ~10 s holds (stiffness
+      without cramping), E3 uses 2-3x30-60 s. Use 10 s pyramids when the back
+      is irritable, 30-45 s holds in normal blocks. True QL isolation is a myth
+      — treat it as lateral-chain work.'
