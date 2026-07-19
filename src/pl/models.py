@@ -29,6 +29,7 @@ class Playbook(BaseModel):
     avoid_when: list[str] = Field(default_factory=list)
     swaps: list[str] = Field(default_factory=list)  # catalog ids, same pattern first
     refs: list[str] = Field(default_factory=list)  # sources behind the entry
+    notes: Optional[str] = None  # nuance worth keeping (tempo detail, disagreements)
 
 
 class Exercise(BaseModel):
