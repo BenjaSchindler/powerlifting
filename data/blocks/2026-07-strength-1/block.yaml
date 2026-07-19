@@ -13,9 +13,9 @@ focus: strength
 status: active
 
 sheet:
-  drive_file_id: 1Q_eTeB6iPJKiM_s3KY2UNpxqquebsCxsxJL2Sd-AdUU
-  title: FUERZA SBD 1 — 2026-07
-  url: https://docs.google.com/spreadsheets/d/1Q_eTeB6iPJKiM_s3KY2UNpxqquebsCxsxJL2Sd-AdUU/edit
+  drive_file_id: 1wX4k9KACdVblKhE3CfFlPzEnIMi7GYj2oS0pIxY-PUY
+  title: 202607strength1  # pretty workbook (Portada + SEMANA tabs), uploaded by Benjamin 2026-07-19
+  url: https://docs.google.com/spreadsheets/d/1wX4k9KACdVblKhE3CfFlPzEnIMi7GYj2oS0pIxY-PUY/edit
 
 schemes:
   - id: top3
