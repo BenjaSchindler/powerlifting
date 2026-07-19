@@ -1,0 +1,24 @@
+# Athlete profile. current_maxes is deliberately EMPTY: the last hard data is
+# from the 2024 season (see notes) — too old to prescribe from. First
+# /plan-block must re-establish baselines (comfortable top sets @RPE 6-7 in
+# week 1) instead of trusting these.
+
+name: Benjamin
+units: kg
+plate_increment: 2.5
+timezone: America/Santiago
+days_per_week: 5
+goals:
+  - "TODO onboarding: goals for the next season (meet? numbers? staying pain-free?)"
+current_maxes: {}
+notes: |
+  Historical reference, 2024 season (HEAVY WEIGHT coach sheets, imported
+  2026-07 — treat as stale, NOT current ability):
+    - SENTADILLA LB: 220x3 @8 (e1RM ~257), 220x4, 200x5 @6
+    - SENTADILLA HB: 215x1 @8
+    - PRESS BANCA COMP: 100x3 @6 (e1RM ~123); SIN PAUSA 100x6 @7;
+      TEMPO 4.2.0 107.5x2 @6; touch-and-go 97.5x8 @8
+    - PESO MUERTO SUMO: no per-set results captured in that sheet
+  Program heritage: 5 días/semana (SQ1+DL2 / BP1 / SQ2+BP3 / DL1+BP2 /
+  SQ3+BP3), prescripciones por RPE con singles/topes + backoffs, tempo work,
+  bloques de ~5 semanas con semana puente.

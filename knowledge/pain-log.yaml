@@ -1,0 +1,17 @@
+# Structured pain history — the safety layer of the planner.
+# Every entry links a body location to the exercise/block context it appeared in.
+# `pl suggest` warns whenever a planned exercise loads a joint with an open
+# (unresolved) entry. Claude keeps this file current during /log and /checkin.
+#
+# Schema (PainEvent):
+#   - date: 2026-08-05          # when it appeared
+#     location: left_knee       # body part, lowercase_with_underscores
+#     severity: 3               # 0-10 at its worst that day
+#     exercise: squat           # exercise id it showed up in (optional)
+#     context: "set 3 of 5x5 @140, felt on descent"
+#     block: 2026-08-strength-1
+#     resolved: null            # set to a date once it's gone
+#     followups:                # dated observations while it lasts
+#       - "2026-08-08: warmed up fine, only ache at top weight"
+
+[]

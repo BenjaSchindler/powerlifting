@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+dist/
+*.egg-info/
+.pytest_cache/
+
+# Generated gym sheets (uploaded to Drive, not tracked here)
+out/

@@ -1,0 +1,220 @@
+# Exercise catalog — the nodes of the training graph.
+# ids are stable slugs; names/aliases use the athlete's own gym vocabulary
+# (Spanish, from the historical HEAVY WEIGHT sheets) so sheet parsing and
+# chat both resolve. joints: drive the pain guardrails in `pl suggest`.
+
+- id: squat
+  name: SENTADILLA LB
+  aliases: [sentadilla, sentadilla lb, sq, back squat, low bar]
+  category: main
+  pattern: squat
+  muscles: [quads, glutes, adductors, spinal_erectors]
+  joints: [knee, hip, lumbar]
+
+- id: squat-hb
+  name: SENTADILLA HB
+  aliases: [sentadilla hb, high bar]
+  category: variation
+  parent: squat
+  pattern: squat
+  muscles: [quads, glutes, adductors, spinal_erectors]
+  joints: [knee, hip, lumbar]
+
+- id: squat-tempo
+  name: SENTADILLA LB TEMPO
+  aliases: [sentadilla lb 5.0.0, sentadilla tempo]
+  category: variation
+  parent: squat
+  pattern: squat
+  muscles: [quads, glutes, adductors, spinal_erectors]
+  joints: [knee, hip, lumbar]
+
+- id: bench
+  name: PRESS BANCA COMP
+  aliases: [press banca, bp, banca, bench, press banca comp]
+  category: main
+  pattern: press
+  muscles: [pecs, front_delts, triceps]
+  joints: [shoulder, elbow, wrist]
+
+- id: bench-nopause
+  name: PRESS BANCA SIN PAUSA
+  aliases: [sin pausa, touch and go]
+  category: variation
+  parent: bench
+  pattern: press
+  muscles: [pecs, front_delts, triceps]
+  joints: [shoulder, elbow, wrist]
+
+- id: bench-tempo
+  name: PRESS BANCA TEMPO
+  aliases: [press banca tempo 4.1.0, press banca tempo 4.2.0]
+  category: variation
+  parent: bench
+  pattern: press
+  muscles: [pecs, front_delts, triceps]
+  joints: [shoulder, elbow, wrist]
+
+- id: deadlift
+  name: PESO MUERTO SUMO
+  aliases: [peso muerto, dl, sumo, deadlift]
+  category: main
+  pattern: hinge
+  muscles: [glutes, hamstrings, quads, spinal_erectors, traps]
+  joints: [hip, knee, lumbar]
+
+- id: deadlift-tempo
+  name: PESO MUERTO SUMO TEMPO
+  aliases: [peso muerto tempo, sumo tempo]
+  category: variation
+  parent: deadlift
+  pattern: hinge
+  muscles: [glutes, hamstrings, quads, spinal_erectors]
+  joints: [hip, knee, lumbar]
+
+- id: rdl
+  name: RDL STRAPS
+  aliases: [rdl, rumano, peso muerto rumano]
+  category: variation
+  parent: deadlift
+  pattern: hinge
+  muscles: [hamstrings, glutes, spinal_erectors]
+  joints: [hip, lumbar]
+
+- id: press-militar
+  name: PRESS MILITAR
+  aliases: [ohp, militar]
+  category: accessory
+  pattern: press
+  muscles: [front_delts, side_delts, triceps]
+  joints: [shoulder, elbow]
+
+- id: press-inclinado
+  name: PRESS INCLINADO MANCUERNAS
+  aliases: [inclinado, incline db]
+  category: accessory
+  pattern: press
+  muscles: [pecs, front_delts, triceps]
+  joints: [shoulder, elbow]
+
+- id: press-hombros-db
+  name: PRESS HOMBROS SENTADO MANCUERNAS
+  aliases: [press hombros, shoulder press db]
+  category: accessory
+  pattern: press
+  muscles: [front_delts, side_delts, triceps]
+  joints: [shoulder, elbow]
+
+- id: flexiones-cerradas
+  name: FLEXIONES DE BRAZOS CERRADAS
+  aliases: [flexiones, close pushups]
+  category: accessory
+  pattern: press
+  muscles: [triceps, pecs]
+  joints: [shoulder, elbow, wrist]
+
+- id: traccion-vertical
+  name: TRACCION VERTICAL A ELECCION
+  aliases: [jalon, dominadas, lat pulldown, pullups, traccion]
+  category: accessory
+  pattern: pull
+  muscles: [lats, biceps, rear_delts]
+  joints: [shoulder, elbow]
+
+- id: remo
+  name: REMO A ELECCION
+  aliases: [remo, row]
+  category: accessory
+  pattern: pull
+  muscles: [lats, mid_back, biceps, rear_delts]
+  joints: [shoulder, elbow]
+
+- id: hombro-posterior-lateral
+  name: HOMBRO POSTERIOR + LATERAL A ELECCION
+  aliases: [posteriores, laterales, face pull]
+  category: accessory
+  pattern: pull
+  muscles: [rear_delts, side_delts]
+  joints: [shoulder]
+
+- id: biceps
+  name: BICEPS A ELECCION
+  aliases: [curl, biceps]
+  category: accessory
+  pattern: pull
+  muscles: [biceps]
+  joints: [elbow]
+
+- id: triceps
+  name: TRICEPS A ELECCION
+  aliases: [triceps, extension triceps]
+  category: accessory
+  pattern: press
+  muscles: [triceps]
+  joints: [elbow]
+
+- id: leg-curl
+  name: LEG CURL
+  aliases: [femoral, curl femoral]
+  category: accessory
+  pattern: hinge
+  muscles: [hamstrings]
+  joints: [knee]
+
+- id: extensiones
+  name: EXTENSIONES
+  aliases: [extensiones unilaterales, leg extension, cuadriceps]
+  category: accessory
+  pattern: squat
+  muscles: [quads]
+  joints: [knee]
+
+- id: leg-press-unilateral
+  name: LEG PRESS UNILATERAL
+  aliases: [leg press, prensa]
+  category: accessory
+  pattern: squat
+  muscles: [quads, glutes]
+  joints: [knee, hip]
+  unilateral: true
+
+- id: sentadilla-bulgara
+  name: SENTADILLA BULGARA
+  aliases: [bulgara, split squat]
+  category: accessory
+  pattern: squat
+  muscles: [quads, glutes]
+  joints: [knee, hip]
+  unilateral: true
+
+- id: pallof
+  name: PRESS PALLOF
+  aliases: [pallof, press pallof iso 20seg]
+  category: accessory
+  pattern: core
+  muscles: [obliques, abs]
+  joints: []
+
+- id: plancha-copenhagen
+  name: PLANCHA LATERAL PIERNA ELEVADA + COPENHAGEN
+  aliases: [plancha lateral, copenhagen]
+  category: accessory
+  pattern: core
+  muscles: [obliques, adductors]
+  joints: [hip]
+
+- id: rueda-abdominal
+  name: RUEDA ABDOMINAL
+  aliases: [rueda, ab wheel]
+  category: accessory
+  pattern: core
+  muscles: [abs]
+  joints: [shoulder, lumbar]
+
+- id: cuadrado-lumbar
+  name: CUADRADO LUMBAR STRAPS ISO
+  aliases: [cuadrado lumbar, ql iso]
+  category: accessory
+  pattern: core
+  muscles: [spinal_erectors, obliques]
+  joints: [lumbar]
