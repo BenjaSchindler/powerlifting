@@ -42,28 +42,37 @@ evidence contradicts the playbook, update the playbook and say so.
 
 ## Google Drive sync (the only I/O outside the repo)
 
-- **Print a block sheet**: `uv run pl sheet build --block <id>` →
-  `out/<id>.csv`; upload with Drive `create_file` using `textContent` =
-  the CSV text and `contentMimeType: text/csv` (leave conversion ON) →
-  Drive turns it into a native Google Sheet. Store the returned id/url in
-  `block.yaml` `sheet:` and give him the link.
-- **Ingest results**: Drive `download_file_content` with that file id and
-  `exportMimeType: text/csv` → base64-decode to `out/filled.csv` → 
-  `uv run pl sheet parse out/filled.csv --block <id> --write`.
-- The connector REJECTS binary uploads (xlsx base64 fails with "invalid
-  argument") — CSV is the working path; `--format xlsx` exists only for
-  local previews. Verified end-to-end 2026-07-19.
+- **Print a block sheet (preferred — pretty, one tab per week)**:
+  `uv run pl sheet build --block <id> --format xlsx` → send the file to
+  him in chat; HE uploads it to Drive (drag into drive.google.com; if it
+  opens as .xlsx: Archivo → Guardar como hoja de cálculo de Google). The
+  connector REJECTS programmatic binary uploads ("invalid argument"), so
+  the athlete is the upload step. When he passes the link, store id/url
+  in `block.yaml` `sheet:`.
+- **Print fallback (zero manual steps)**: `uv run pl sheet build --block
+  <id>` → `out/<id>.csv`; Drive `create_file` with `textContent` = CSV
+  text, `contentMimeType: text/csv`, conversion ON → single-tab Sheet.
+- **Ingest results**: Drive `download_file_content` with the sheet's file
+  id and `exportMimeType:
+  application/vnd.openxmlformats-officedocument.spreadsheetml.sheet` →
+  base64-decode to `out/filled.xlsx` → `uv run pl sheet parse
+  out/filled.xlsx --block <id> --write`. Reads every `SEMANA n` tab.
+  (CSV-born single-tab sheets can also export `text/csv`.) Both paths
+  verified 2026-07-19.
 - Never regenerate/re-upload a sheet that already has logged results —
   weekly adjustments travel through chat, the sheet stays as printed.
 
 ## Sheet dialect (matches his historical coach template)
 
-One tab per block, weeks stacked as `SEMANA n` sections (exactly like the
-old HEAVY WEIGHT sheets). Columns: `Día | Fecha | Ejercicio |
-Indicaciones | Series | RPE obj | Kg obj | S1 Reps/Kg/RPE … | Dolor |
-Notas`. `Indicaciones` = prescription cues (printed); `Notas` = his gym
-notes (parsed). Blank `Sn Kg` = done at Kg obj. Comma decimals are
-normal. Anything in `Dolor` becomes a pain-log entry.
+Pretty workbook: `Portada` + one tab per week named `SEMANA n`, amber day
+band rows (day + date), then one row per prescribed slot. CSV fallback:
+one tab, weeks stacked as `SEMANA n` sections. Columns everywhere: `Día |
+Fecha | Ejercicio | Indicaciones | Series | RPE obj | Kg obj | S1
+Reps/Kg/RPE … | Dolor | Notas`. `Ejercicio` shows catalog display names
+(SENTADILLA LB); parsing resolves names/aliases back to ids.
+`Indicaciones` = prescription cues (printed); `Notas` = his gym notes
+(parsed). Blank `Sn Kg` = done at Kg obj. Comma decimals are normal.
+Anything in `Dolor` becomes a pain-log entry.
 
 ## Safety rules (non-negotiable)
 

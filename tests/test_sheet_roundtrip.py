@@ -39,12 +39,12 @@ def test_roundtrip_build_fill_parse(tmp_path, block, history, athlete, catalog):
     path = build_workbook(block, targets, tmp_path / "block.xlsx", catalog)
 
     wb = load_workbook(path)
-    assert set(wb.sheetnames) == {"S1", "S2", "S3", "Info"}
+    assert set(wb.sheetnames) == {"Portada", "SEMANA 1", "SEMANA 2", "SEMANA 3"}
 
     # fill week 2 like a gym session: squat done at target, bench at own
     # weight, deadlift date-only (no sets), pain noted on squat.
     # The sheet shows catalog display names; parsing resolves them to ids.
-    ws = wb["S2"]
+    ws = wb["SEMANA 2"]
     rows = {r[0].row: [c.value for c in r] for r in ws.iter_rows(min_row=2)}
     squat_row = next(r for r, v in rows.items() if v[2] == "Back Squat")
     bench_row = next(r for r, v in rows.items() if v[2] == "Bench Press")
@@ -94,7 +94,7 @@ def test_duplicate_exercise_rows_same_day(tmp_path, block, history, athlete, cat
     )
     targets = suggest_block(block, history, athlete, catalog, [], today=TODAY)
     path = build_workbook(block, targets, tmp_path / "dup.xlsx")
-    ws = load_workbook(path)["S1"]
+    ws = load_workbook(path)["SEMANA 1"]
     squat_rows = [r for r in ws.iter_rows(min_row=2) if r[2].value == "squat"]
     assert len(squat_rows) == 2
     assert squat_rows[0][4].value == "1x3"  # top single row first
@@ -164,7 +164,7 @@ def test_prescription_notes_do_not_create_phantom_sessions(
     block.days[0].slots[0].notes = "PAUSA COMP"
     targets = suggest_block(block, history, athlete, catalog, [], today=TODAY)
     path = build_workbook(block, targets, tmp_path / "cues.xlsx")
-    ws = load_workbook(path)["S1"]
+    ws = load_workbook(path)["SEMANA 1"]
     squat_row = next(r for r in ws.iter_rows(min_row=2) if r[2].value == "squat")
     assert squat_row[3].value == "PAUSA COMP"  # Indicaciones col
     assert parse_workbook(path, block) == {}

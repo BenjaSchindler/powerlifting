@@ -36,11 +36,17 @@ from .insights import target_rpe
 from .models import Block, EntryLog, Exercise, LoggedSet, PainNote, SessionLog, Target
 from .storage import resolve_exercise
 
+TITLE_FILL = PatternFill("solid", fgColor="111827")
+TITLE_FONT = Font(color="FFFFFF", bold=True, size=13)
 HEADER_FILL = PatternFill("solid", fgColor="1F2937")
 HEADER_FONT = Font(color="FFFFFF", bold=True)
-DAY_FILL = PatternFill("solid", fgColor="D1D5DB")
-TARGET_FILL = PatternFill("solid", fgColor="F3F4F6")
+DAY_FILL = PatternFill("solid", fgColor="F59E0B")  # amber band, HEAVY WEIGHT vibes
+DAY_FONT = Font(color="111827", bold=True)
+TARGET_FILL = PatternFill("solid", fgColor="FEF3C7")
 THIN_TOP = Border(top=Side(style="thin", color="6B7280"))
+THIN_BOTTOM = Border(bottom=Side(style="thin", color="E5E7EB"))
+WEEK_TAB_COLOR = "F59E0B"
+BRIDGE_TAB_COLOR = "9CA3AF"
 
 FIXED_COLS = ["Día", "Fecha", "Ejercicio", "Indicaciones", "Series", "RPE obj", "Kg obj"]
 TAIL_COLS = ["Dolor", "Notas"]
@@ -149,52 +155,109 @@ def build_csv(
     return buf.getvalue()
 
 
+def _maybe_num(s: str):
+    try:
+        f = float(s)
+        return int(f) if f.is_integer() else f
+    except (TypeError, ValueError):
+        return s
+
+
 def build_workbook(
     block: Block,
     targets_by_week: dict[int, list[Target]],
     out_path: Path,
     catalog: dict[str, Exercise] | None = None,
 ) -> Path:
-    """xlsx preview: one tab per week + Info tab."""
+    """The pretty gym workbook: Portada + one styled tab per SEMANA.
+
+    Modeled on the athlete's historical coach template: amber day bands,
+    dark headers, targets shaded. Round-trips through Google Sheets: he
+    uploads it to Drive by hand (the connector rejects binary uploads) and
+    `pl` ingests the Drive xlsx export of every SEMANA tab.
+    """
     n_sets = _n_set_cols(block)
     headers = headers_for(block)
+    n_cols = len(headers)
     wb = Workbook()
     wb.remove(wb.active)
 
+    portada = wb.create_sheet("Portada")
+    portada.sheet_properties.tabColor = "111827"
+    portada.append([block.name])
+    portada["A1"].font = Font(bold=True, size=18)
+    portada.append(
+        [f"{block.id} · inicio {block.start_date.isoformat()} · "
+         f"{block.weeks} semanas · {block.focus}"]
+    )
+    portada.append([])
+    portada.append(["Cómo registrar"])
+    portada[f"A{portada.max_row}"].font = Font(bold=True)
+    for line in INSTRUCTIONS:
+        portada.append([line])
+    portada.append([])
+    portada.append(["Semanas"])
+    portada[f"A{portada.max_row}"].font = Font(bold=True)
     for week in range(1, block.weeks + 1):
-        ws = wb.create_sheet(f"S{week}")
+        start = _week_start(block, week)
+        end = start + timedelta(days=6)
+        portada.append([f"SEMANA {week}: del {start.isoformat()} al {end.isoformat()}"])
+    if block.notes:
+        portada.append([])
+        portada.append(["Notas del bloque"])
+        portada[f"A{portada.max_row}"].font = Font(bold=True)
+        for line in block.notes.strip().splitlines():
+            portada.append([line])
+    portada.column_dimensions["A"].width = 100
+
+    for week in range(1, block.weeks + 1):
+        ws = wb.create_sheet(f"SEMANA {week}")
+        ws.sheet_properties.tabColor = (
+            BRIDGE_TAB_COLOR if week == block.weeks else WEEK_TAB_COLOR
+        )
+        ws.append([f"{block.name} — SEMANA {week} · semana del "
+                   f"{_week_start(block, week).isoformat()}"])
+        ws.merge_cells(start_row=1, start_column=1, end_row=1, end_column=n_cols)
+        ws["A1"].fill, ws["A1"].font = TITLE_FILL, TITLE_FONT
+        ws["A1"].alignment = Alignment(vertical="center")
+        ws.row_dimensions[1].height = 26
+
         ws.append(headers)
-        for c in range(1, len(headers) + 1):
-            cell = ws.cell(row=1, column=c)
+        for c in range(1, n_cols + 1):
+            cell = ws.cell(row=2, column=c)
             cell.fill, cell.font = HEADER_FILL, HEADER_FONT
             cell.alignment = Alignment(horizontal="center")
-        row = 2
+
+        row = 3
         for first_of_day, values in _week_rows(block, week, targets_by_week, catalog):
-            ws.append(values)
-            ws.cell(row=row, column=COL_KG_OBJ).fill = TARGET_FILL
             if first_of_day:
-                for c in range(1, len(headers) + 1):
-                    ws.cell(row=row, column=c).border = THIN_TOP
-                ws.cell(row=row, column=1).fill = DAY_FILL
-                ws.cell(row=row, column=1).font = Font(bold=True)
+                # separate amber band row: day label + suggested date
+                ws.append([values[0], values[1]] + [""] * (n_cols - 2))
+                for c in range(1, n_cols + 1):
+                    cell = ws.cell(row=row, column=c)
+                    cell.fill, cell.border = DAY_FILL, THIN_TOP
+                ws.cell(row=row, column=1).font = DAY_FONT
+                ws.cell(row=row, column=2).font = DAY_FONT
+                ws.row_dimensions[row].height = 20
+                row += 1
+            data = ["", ""] + values[2:]
+            data[COL_KG_OBJ - 1] = _maybe_num(values[COL_KG_OBJ - 1])
+            ws.append(data)
+            for c in range(1, n_cols + 1):
+                ws.cell(row=row, column=c).border = THIN_BOTTOM
+            ws.cell(row=row, column=COL_KG_OBJ - 1).fill = TARGET_FILL
+            ws.cell(row=row, column=COL_KG_OBJ).fill = TARGET_FILL
             row += 1
-        widths = {1: 22, 2: 11, 3: 30, 4: 18, 5: 9, 6: 8, 7: 8}
+
+        widths = {1: 24, 2: 11, 3: 34, 4: 30, 5: 9, 6: 8, 7: 8}
         for i in range(n_sets * 3):
             widths[N_FIXED + 1 + i] = 7
-        widths[N_FIXED + 1 + 3 * n_sets] = 14
-        widths[N_FIXED + 2 + 3 * n_sets] = 28
+        widths[N_FIXED + 1 + 3 * n_sets] = 16
+        widths[N_FIXED + 2 + 3 * n_sets] = 30
         for c, wdt in widths.items():
             ws.column_dimensions[get_column_letter(c)].width = wdt
-        ws.freeze_panes = "D2"
+        ws.freeze_panes = "D3"
 
-    info = wb.create_sheet("Info")
-    info.append(["Bloque", block.name])
-    info.append(["Id", block.id])
-    info.append(["Inicio", block.start_date.isoformat()])
-    info.append(["Semanas", block.weeks])
-    for line in INSTRUCTIONS:
-        info.append([line])
-    info.column_dimensions["A"].width = 80
     out_path.parent.mkdir(parents=True, exist_ok=True)
     wb.save(out_path)
     return out_path
@@ -349,19 +412,29 @@ def parse_workbook(
     weeks: list[int] | None = None,
     catalog: dict[str, Exercise] | None = None,
 ) -> dict[int, list[SessionLog]]:
-    """Parse a filled .xlsx (tabs S1..Sn) back into sessions, keyed by week."""
+    """Parse a filled .xlsx back into sessions, keyed by week.
+
+    Week tabs match 'SEMANA n' (the pretty template) or 'S n'; other tabs
+    (Portada, dashboards) are ignored. Title rows containing 'SEMANA n'
+    inside a tab are skipped, mirroring the CSV parser.
+    """
+    tab_re = re.compile(r"^(?:SEMANA\s*|S)(\d+)$", re.IGNORECASE)
     wb = load_workbook(path, data_only=True)
     out: dict[int, list[SessionLog]] = {}
-    for week in range(1, block.weeks + 1):
-        if weeks and week not in weeks:
+    for name in wb.sheetnames:
+        m = tab_re.match(name.strip())
+        if not m:
             continue
-        name = f"S{week}"
-        if name not in wb.sheetnames:
+        week = int(m.group(1))
+        if week > block.weeks or (weeks and week not in weeks):
             continue
         parser = _WeekParser(block, week, catalog)
-        for row in wb[name].iter_rows(min_row=2, values_only=True):
-            if row is not None:
-                parser.feed(row)
+        for row in wb[name].iter_rows(min_row=1, values_only=True):
+            if row is None:
+                continue
+            if row and WEEK_ROW_RE.search(_cell_str(row[0])):
+                continue  # merged title row
+            parser.feed(row)
         if parser.result():
             out[week] = parser.result()
     return out

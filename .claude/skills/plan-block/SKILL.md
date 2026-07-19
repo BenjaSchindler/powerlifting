@@ -39,15 +39,21 @@ explain it.
   the math is wrong for this athlete, and tell the athlete what you chose
   and why in one short paragraph.
 
-## 4. Print the sheet and upload to Drive
+## 4. Print the sheet and get it into Drive
 
-- `uv run pl sheet build --block <id>` → `out/<id>.csv`
-- Upload with the Google Drive tool `create_file`: `title` = block name,
-  `contentMimeType: text/csv`, `textContent` = the CSV text, conversion
-  left ON. Drive turns it into a native Google Sheet. (Binary xlsx uploads
-  are rejected by the connector — always use the CSV.)
-- Write the returned file id/url into `block.yaml` under `sheet:` and give
-  the athlete the link.
+Preferred (pretty workbook, one tab per week):
+
+- `uv run pl sheet build --block <id> --format xlsx` → `out/<id>.xlsx`
+- Send the file to the athlete in chat and ask him to upload it to Drive
+  (drag into drive.google.com; if it opens as .xlsx: Archivo → Guardar
+  como hoja de cálculo de Google). The connector rejects binary uploads,
+  so he is the upload step.
+- When he passes the link/confirms, write the file id/url into
+  `block.yaml` under `sheet:` (get the id from the URL or `search_files`).
+
+Fallback (zero manual steps, single tab): `uv run pl sheet build --block
+<id>` → CSV; Drive `create_file` with `textContent` = CSV text,
+`contentMimeType: text/csv`, conversion ON; store returned id/url.
 
 ## 5. Persist
 

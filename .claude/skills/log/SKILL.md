@@ -8,8 +8,11 @@ description: Ingest training results — from the gym Google Sheet or told in ch
 ## 1. Get the data
 
 Preferred — the sheet: find `sheet.drive_file_id` in the active
-`block.yaml`, then Drive `download_file_content` with
-`exportMimeType: text/csv`; base64-decode to `out/filled.csv`.
+`block.yaml`, then Drive `download_file_content` with `exportMimeType:
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet`;
+base64-decode to `out/filled.xlsx` (reads every SEMANA tab). For
+single-tab CSV-born sheets, `exportMimeType: text/csv` →
+`out/filled.csv` also works.
 
 Alternatively the athlete dictates results in chat — then write the
 session YAML directly (schema: `SessionLog` in `src/pl/models.py`).
