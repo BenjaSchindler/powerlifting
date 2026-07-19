@@ -121,10 +121,17 @@ def suggest_week(
                 ex = catalog[slot.exercise]
                 for p in pain_flags:
                     if pain_touches(p, ex):
-                        t.warnings.append(
+                        warn = (
                             f"open pain: {p.location} ({p.severity}/10 on {p.date.isoformat()})"
                             f" — loads {ex.joints}; hold or reduce load, review with coach"
                         )
+                        if ex.playbook and ex.playbook.swaps:
+                            names = [
+                                catalog[s].name for s in ex.playbook.swaps if s in catalog
+                            ]
+                            if names:
+                                warn += f"; playbook swaps: {', '.join(names)}"
+                        t.warnings.append(warn)
             targets.append(t)
     return targets
 

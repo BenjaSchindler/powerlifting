@@ -16,9 +16,10 @@ vocabulary is Spanish (SENTADILLA, PRESS BANCA, PESO MUERTO).
 | Path | Content | Written by |
 | --- | --- | --- |
 | `data/athlete.yaml` | profile, units, goals, (re)tested maxes | you, after confirming with him |
-| `data/exercises.yaml` | catalog + muscles/joints/aliases | you, when a new exercise appears |
+| `data/exercises.yaml` | catalog + muscles/joints/aliases + `playbook:` (when to use each exercise, swaps) | you; playbook corrected when his evidence contradicts it |
 | `data/blocks/<id>/block.yaml` | block structure, schemes, sheet file id | /plan-block |
 | `data/blocks/<id>/sessions/*.yaml` | performed sets (source of truth) | /log |
+| `data/blocks/<id>/review.yaml` | structured block outcome — the response model | /review-block (`pl review scaffold` + judgment) |
 | `knowledge/pain-log.yaml` | structured pain events → guardrails | /log, /checkin |
 | `knowledge/lessons.md` | durable, dated conclusions with evidence | /checkin, /review-block |
 | `knowledge/technique-cues.md` | per-lift cues | whenever technique comes up |
@@ -29,11 +30,15 @@ see `.claude/skills/`. Engine: `uv run pl ...` (README has the cheatsheet).
 ## Division of labor
 
 `pl` computes (e1RM via Epley+RPE, percent/RPE waves, double progression,
-plate rounding, pain-guardrail warnings). **You judge**: interpret vague
-feedback, decide deloads/swaps, weigh life stress, and explain every
-override in plain words. Numbers you invent must never contradict `pl
-suggest` silently — if you deviate, say why in chat and record durable
-reasons in `knowledge/`.
+plate rounding, pain-guardrail warnings) and detects patterns (`pl
+insights`: RPE drift vs plan, red-flag sets, pain-vs-load context, e1RM
+movement per block). **You judge**: interpret vague feedback, decide
+deloads/swaps, weigh life stress, and explain every override in plain
+words. Numbers you invent must never contradict `pl suggest` silently —
+if you deviate, say why in chat and record durable reasons in
+`knowledge/`. Exercise selection starts from each exercise's `playbook:`
+in `data/exercises.yaml` (use_when / avoid_when / swaps); when his logged
+evidence contradicts the playbook, update the playbook and say so.
 
 ## Google Drive sync (the only I/O outside the repo)
 

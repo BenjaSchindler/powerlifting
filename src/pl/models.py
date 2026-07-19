@@ -17,6 +17,20 @@ from pydantic import BaseModel, Field
 # --------------------------------------------------------------------------- catalog
 
 
+class Playbook(BaseModel):
+    """Selection rules for one exercise: when to program it, when not to.
+
+    Seeded from coaching knowledge + published sources, then corrected over
+    time by this athlete's own logged evidence (block reviews, pain log).
+    """
+
+    purpose: str = ""  # what this exercise is for, in one or two sentences
+    use_when: list[str] = Field(default_factory=list)
+    avoid_when: list[str] = Field(default_factory=list)
+    swaps: list[str] = Field(default_factory=list)  # catalog ids, same pattern first
+    refs: list[str] = Field(default_factory=list)  # sources behind the entry
+
+
 class Exercise(BaseModel):
     id: str
     name: str
@@ -28,6 +42,7 @@ class Exercise(BaseModel):
     joints: list[str] = Field(default_factory=list)
     unilateral: bool = False
     notes: Optional[str] = None
+    playbook: Optional[Playbook] = None
 
 
 class MaxEntry(BaseModel):
@@ -162,6 +177,38 @@ class PainEvent(BaseModel):
     block: Optional[str] = None
     resolved: Optional[Date] = None  # date it stopped being an issue
     followups: list[str] = Field(default_factory=list)
+
+
+# --------------------------------------------------------------------------- reviews
+
+
+class LiftReview(BaseModel):
+    exercise: str
+    e1rm_start: Optional[float] = None
+    e1rm_end: Optional[float] = None
+    verdict: Literal["responded", "flat", "regressed", "unknown"] = "unknown"
+    notes: Optional[str] = None
+
+
+class BlockReview(BaseModel):
+    """Structured outcome of a finished block.
+
+    One per block under data/blocks/<id>/review.yaml. Numbers are scaffolded
+    by `pl review scaffold`; verdicts and the worked/failed/changes lists are
+    coach + athlete judgment. Across blocks these files become the athlete's
+    personal response model (what volume/intensity actually moves his lifts).
+    """
+
+    block: str
+    completed: Optional[Date] = None
+    lifts: list[LiftReview] = Field(default_factory=list)
+    avg_rpe_drift: Optional[float] = None  # mean(actual - planned RPE) over the block
+    weekly_tonnage_avg: dict[str, float] = Field(default_factory=dict)  # muscle -> kg/week
+    pain_event_count: int = 0
+    worked: list[str] = Field(default_factory=list)
+    failed: list[str] = Field(default_factory=list)
+    changes_for_next: list[str] = Field(default_factory=list)
+    notes: Optional[str] = None
 
 
 # --------------------------------------------------------------------------- suggestions

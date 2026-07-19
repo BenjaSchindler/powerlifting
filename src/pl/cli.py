@@ -12,7 +12,7 @@ from pathlib import Path
 
 import click
 
-from . import analytics, progression, storage
+from . import analytics, insights, progression, storage
 from .models import Block
 from .sheet import build_csv, build_workbook, parse_any
 
@@ -57,9 +57,14 @@ def validate() -> None:
                     slot.intensity and slot.intensity.type == "fixed"
                 ):
                     click.echo(f"warn: block {b.id} slot {slot.exercise} has no scheme")
+    for line in insights.playbook_warnings(catalog):
+        click.echo(f"warn: {line}")
+    reviews = storage.load_reviews(root)
+    with_playbook = sum(1 for e in catalog.values() if e.playbook)
     click.echo(
-        f"ok: athlete, {len(catalog)} exercises, {len(blocks)} blocks, "
-        f"{len(sessions)} sessions, {len(pain)} pain events"
+        f"ok: athlete, {len(catalog)} exercises ({with_playbook} with playbook), "
+        f"{len(blocks)} blocks, {len(sessions)} sessions, "
+        f"{len(reviews)} reviews, {len(pain)} pain events"
     )
 
 
@@ -144,6 +149,90 @@ def suggest(block_id: str | None, week: int, as_json: bool) -> None:
         click.echo(f"{t.exercise:<18} {t.sets}x{t.reps:<5} @ {w:<7} {t.rationale}")
         for warn in t.warnings:
             click.echo(f"  !! {warn}")
+
+
+@main.command("insights")
+@click.option("--block", "block_id", default=None, help="block id (default: active block)")
+@click.option("--json", "as_json", is_flag=True)
+def insights_cmd(block_id: str | None, as_json: bool) -> None:
+    """Pattern report: RPE drift, red-flag sets, load trend, pain context."""
+    root, athlete, catalog, sessions, pain = _load_all()
+    block = storage.load_block(block_id, root) if block_id else _active_block(root)
+    report: dict = {}
+    if block:
+        report["block"] = block.id
+        report["rpe_drift"] = insights.rpe_drift(block, sessions)
+        report["red_flags"] = insights.red_flags(block, sessions)
+        report["response"] = insights.block_response(block, sessions)
+    report["weekly_load"] = insights.weekly_load(sessions, catalog)[-6:]
+    report["pain_context"] = insights.pain_context(pain, sessions, catalog)
+    if as_json:
+        click.echo(json.dumps(report, indent=2, default=str))
+        return
+
+    if block is None:
+        click.echo("no block — load trend and pain context only")
+    else:
+        click.echo(f"-- fatigue: RPE drift vs plan ({block.id})")
+        drifts = report["rpe_drift"]
+        if not drifts:
+            click.echo("   no logged RPE-prescribed work yet")
+        for d in drifts:
+            mark = "  !! running hot" if d["hot"] else ""
+            click.echo(
+                f"   week {d['week']}: planned {d['planned']:g}, actual {d['actual']:g} "
+                f"({d['drift']:+g} over {d['n']} entries){mark}"
+            )
+        if report["red_flags"]:
+            click.echo("-- red flags (RPE >= 9.5 or missed reps)")
+            for f in report["red_flags"]:
+                click.echo(f"   {f['date']} {f['exercise']}: {f['detail']} [{f['kind']}]")
+        resp = [r for r in report["response"] if r["points"] >= 2]
+        if resp:
+            click.echo("-- e1RM movement inside this block")
+            for r in resp:
+                click.echo(
+                    f"   {r['exercise']:<18} {r['e1rm_start']:6.1f} -> {r['e1rm_end']:6.1f} "
+                    f"({r['delta']:+g}, {r['delta_pct']:+.1%})"
+                )
+    if report["weekly_load"]:
+        click.echo("-- weekly load (last 6 weeks)")
+        for w in report["weekly_load"]:
+            top = ", ".join(f"{m} {v / 1000:.1f}t" for m, v in w["top"][:3])
+            click.echo(f"   {w['week']}: {w['total'] / 1000:.1f}t total | {top}")
+    if report["pain_context"]:
+        click.echo("-- pain vs load that week")
+        for p in report["pain_context"]:
+            state = "open" if p["open"] else "resolved"
+            click.echo(
+                f"   {p['date']} {p['location']} {p['severity']}/10 [{state}] — "
+                f"{p['week_load_on_joint'] / 1000:.1f}t on that joint that week"
+            )
+
+
+@main.group()
+def review() -> None:
+    """Structured end-of-block reviews (the athlete response model)."""
+
+
+@review.command("scaffold")
+@click.option("--block", "block_id", required=True)
+@click.option("--force", is_flag=True, help="overwrite an existing review.yaml")
+def review_scaffold(block_id: str, force: bool) -> None:
+    """Compute the numeric skeleton of review.yaml; judgment fields stay empty."""
+    root, athlete, catalog, sessions, pain = _load_all()
+    block = storage.load_block(block_id, root)
+    path = storage.review_path(block.id, root)
+    if path.exists() and not force:
+        raise click.ClickException(f"{path} exists — edit it, or rerun with --force")
+    rev = insights.build_review_scaffold(block, sessions, catalog, pain)
+    storage.save_review(rev, root)
+    click.echo(str(path))
+    for lift in rev.lifts:
+        click.echo(
+            f"  {lift.exercise:<18} {lift.e1rm_start or 0:6.1f} -> {lift.e1rm_end or 0:6.1f}  {lift.verdict}"
+        )
+    click.echo("fill in: verdict corrections, worked/failed/changes_for_next")
 
 
 @main.group()

@@ -10,6 +10,10 @@ This is conversation first — listen, then persist what matters.
 ## 1. Ground yourself
 
 - `uv run pl status`; read open entries in `knowledge/pain-log.yaml`.
+- If he reports fatigue or grinding sets: `uv run pl insights` — the RPE
+  drift section tells you whether it's one bad day or a hot trend.
+- If pain rules an exercise out: the exercise's `playbook.swaps` in
+  `data/exercises.yaml` is the pre-vetted swap list.
 
 ## 2. Listen and decide with them
 

@@ -10,9 +10,11 @@ explain it.
 
 ## 1. Gather context (always, before proposing anything)
 
-- `uv run pl status` and `uv run pl validate`
+- `uv run pl status`, `uv run pl validate`, `uv run pl insights`
+  (RPE drift and pain-vs-load patterns steer volume for the new block).
 - Read `knowledge/lessons.md`, `knowledge/pain-log.yaml` (open events!),
-  and the previous block's `block.yaml` + session logs.
+  previous blocks' `review.yaml` files (what he responded to), and the
+  previous block's `block.yaml` + session logs.
 - Ask the athlete only what the data can't tell you: goals for the block,
   days per week available, meet date if peaking, anything hurting today.
 
@@ -20,8 +22,13 @@ explain it.
 
 - Create `data/blocks/<YYYY-MM-focus-N>/block.yaml` (schema: `Block` in
   `src/pl/models.py`; follow the previous block's file as template).
-- Respect lessons.md and open pain events (avoid/replace exercises that
-  load flagged joints; say so explicitly).
+- Pick variations with the playbook (`playbook:` in `data/exercises.yaml`):
+  match each slot's purpose to `use_when`, respect `avoid_when`, and take
+  swaps from `swaps` when pain or equipment rules something out. Deviating
+  from the playbook is fine — say why in chat and, if durable, fix the
+  playbook entry.
+- Respect lessons.md, review.yaml verdicts, and open pain events
+  (avoid/replace exercises that load flagged joints; say so explicitly).
 - Set `status: active` and set the previous block to `done`.
 - `uv run pl validate` must pass without warnings for this block.
 

@@ -44,6 +44,8 @@ pl validate                        # parse all data files, warn on drift
 pl e1rm squat                      # e1RM history for a lift
 pl prs [exercise]                  # rep PRs
 pl suggest --week 2 [--json]       # targets + warnings for a week
+pl insights [--block <id>]         # RPE drift, red flags, load trend, pain context
+pl review scaffold --block <id>    # numeric skeleton of the block review
 pl sheet build --block <id>        # out/<id>.csv -> upload as Google Sheet
 pl sheet parse f.csv --block <id> --write    # ingest a filled sheet
 ```
@@ -53,9 +55,10 @@ pl sheet parse f.csv --block <id> --write    # ingest a filled sheet
 | Path | What |
 | --- | --- |
 | `data/athlete.yaml` | profile, units, plate increment, known maxes |
-| `data/exercises.yaml` | exercise catalog + muscles/joints/aliases |
+| `data/exercises.yaml` | exercise catalog + muscles/joints/aliases + playbook (when to use what) |
 | `data/blocks/<id>/block.yaml` | one training block: days, slots, schemes |
 | `data/blocks/<id>/sessions/*.yaml` | what actually happened, set by set |
+| `data/blocks/<id>/review.yaml` | structured block outcome (athlete response model) |
 | `knowledge/pain-log.yaml` | structured pain events (drive the guardrails) |
 | `knowledge/lessons.md` | dated conclusions with evidence |
 | `knowledge/technique-cues.md` | per-lift cues |

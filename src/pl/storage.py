@@ -19,7 +19,7 @@ from typing import Iterable
 import yaml
 from pydantic import BaseModel
 
-from .models import Athlete, Block, Exercise, PainEvent, SessionLog
+from .models import Athlete, Block, BlockReview, Exercise, PainEvent, SessionLog
 
 
 def repo_root() -> Path:
@@ -129,6 +129,33 @@ def save_session(session: SessionLog, root: Path | None = None) -> Path:
     day = f"-day{session.day}" if session.day else ""
     path = blocks_dir(root) / session.block / "sessions" / f"{session.date.isoformat()}{day}.yaml"
     _dump_yaml(_model_to_plain(session), path)
+    return path
+
+
+def review_path(block_id: str, root: Path | None = None) -> Path:
+    return blocks_dir(root) / block_id / "review.yaml"
+
+
+def load_review(block_id: str, root: Path | None = None) -> BlockReview | None:
+    raw = _load_yaml(review_path(block_id, root))
+    return BlockReview(**raw) if raw else None
+
+
+def load_reviews(root: Path | None = None) -> list[BlockReview]:
+    out: list[BlockReview] = []
+    bdir = blocks_dir(root)
+    if not bdir.is_dir():
+        return out
+    for d in sorted(bdir.iterdir()):
+        rev = load_review(d.name, root)
+        if rev:
+            out.append(rev)
+    return out
+
+
+def save_review(review: BlockReview, root: Path | None = None) -> Path:
+    path = review_path(review.block, root)
+    _dump_yaml(_model_to_plain(review), path)
     return path
 
 
