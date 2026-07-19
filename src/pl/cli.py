@@ -253,9 +253,9 @@ def sheet_build(block_id: str, out: Path | None, fmt: str) -> None:
     out = out or root / "out" / f"{block.id}.{fmt}"
     if fmt == "csv":
         out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(build_csv(block, targets), encoding="utf-8")
+        out.write_text(build_csv(block, targets, catalog), encoding="utf-8")
     else:
-        build_workbook(block, targets, out)
+        build_workbook(block, targets, out, catalog)
     click.echo(str(out))
 
 
@@ -269,7 +269,7 @@ def sheet_parse(file: Path, block_id: str, weeks: tuple[int, ...], write: bool, 
     """Turn a filled sheet export back into session logs."""
     root, athlete, catalog, sessions, _ = _load_all()
     block = storage.load_block(block_id, root)
-    parsed = parse_any(file, block, list(weeks) or None)
+    parsed = parse_any(file, block, list(weeks) or None, catalog)
     all_new = [s for wk in sorted(parsed) for s in parsed[wk]]
     if as_json:
         click.echo(json.dumps([s.model_dump(mode="json") for s in all_new], indent=2))

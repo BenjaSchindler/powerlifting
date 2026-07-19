@@ -32,7 +32,9 @@ from openpyxl import Workbook, load_workbook
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 
-from .models import Block, EntryLog, LoggedSet, PainNote, SessionLog, Target
+from .insights import target_rpe
+from .models import Block, EntryLog, Exercise, LoggedSet, PainNote, SessionLog, Target
+from .storage import resolve_exercise
 
 HEADER_FILL = PatternFill("solid", fgColor="1F2937")
 HEADER_FONT = Font(color="FFFFFF", bold=True)
@@ -73,7 +75,12 @@ def headers_for(block: Block) -> list[str]:
     return FIXED_COLS + set_headers + TAIL_COLS
 
 
-def _week_rows(block: Block, week: int, targets_by_week: dict[int, list[Target]]):
+def _week_rows(
+    block: Block,
+    week: int,
+    targets_by_week: dict[int, list[Target]],
+    catalog: dict[str, Exercise] | None = None,
+):
     """Yield (first_of_day, row_values) for one week, matching headers_for."""
     n_sets = _n_set_cols(block)
     targets: dict[tuple[int, str], list[Target]] = {}
@@ -97,14 +104,20 @@ def _week_rows(block: Block, week: int, targets_by_week: dict[int, list[Target]]
                 else ""
             )
             rpe_obj = ""
-            if slot.intensity and slot.intensity.type == "rpe":
-                rpe_obj = f"@{slot.intensity.value:g}"
+            tr = target_rpe(block, slot, week)
+            if tr is not None:
+                rpe_obj = f"@{tr:g}"
             elif t and t.percent is not None:
                 rpe_obj = f"{t.percent:.0%}"
             kg_obj = f"{t.weight:g}" if t and t.weight is not None else ""
+            shown = (
+                catalog[slot.exercise].name
+                if catalog and slot.exercise in catalog
+                else slot.exercise
+            )
 
             yield first_of_day, (
-                [day_label, date_hint, slot.exercise, slot.notes or "",
+                [day_label, date_hint, shown, slot.notes or "",
                  f"{slot.sets}x{slot.reps}", rpe_obj, kg_obj]
                 + [""] * (3 * n_sets)
                 + ["", ""]
@@ -115,7 +128,11 @@ def _week_rows(block: Block, week: int, targets_by_week: dict[int, list[Target]]
 # --------------------------------------------------------------------------- builders
 
 
-def build_csv(block: Block, targets_by_week: dict[int, list[Target]]) -> str:
+def build_csv(
+    block: Block,
+    targets_by_week: dict[int, list[Target]],
+    catalog: dict[str, Exercise] | None = None,
+) -> str:
     """One CSV for the whole block: SEMANA sections stacked in one tab."""
     buf = io.StringIO()
     w = csv.writer(buf)
@@ -127,12 +144,17 @@ def build_csv(block: Block, targets_by_week: dict[int, list[Target]]) -> str:
         w.writerow([])
         w.writerow([f"SEMANA {week}"])
         w.writerow(headers)
-        for _, row in _week_rows(block, week, targets_by_week):
+        for _, row in _week_rows(block, week, targets_by_week, catalog):
             w.writerow(row)
     return buf.getvalue()
 
 
-def build_workbook(block: Block, targets_by_week: dict[int, list[Target]], out_path: Path) -> Path:
+def build_workbook(
+    block: Block,
+    targets_by_week: dict[int, list[Target]],
+    out_path: Path,
+    catalog: dict[str, Exercise] | None = None,
+) -> Path:
     """xlsx preview: one tab per week + Info tab."""
     n_sets = _n_set_cols(block)
     headers = headers_for(block)
@@ -147,7 +169,7 @@ def build_workbook(block: Block, targets_by_week: dict[int, list[Target]], out_p
             cell.fill, cell.font = HEADER_FILL, HEADER_FONT
             cell.alignment = Alignment(horizontal="center")
         row = 2
-        for first_of_day, values in _week_rows(block, week, targets_by_week):
+        for first_of_day, values in _week_rows(block, week, targets_by_week, catalog):
             ws.append(values)
             ws.cell(row=row, column=COL_KG_OBJ).fill = TARGET_FILL
             if first_of_day:
@@ -232,9 +254,10 @@ def _parse_date(v, fallback: Date) -> Date:
 class _WeekParser:
     """Accumulates sessions for one week from row streams."""
 
-    def __init__(self, block: Block, week: int):
+    def __init__(self, block: Block, week: int, catalog: dict[str, Exercise] | None = None):
         self.block = block
         self.week = week
+        self.catalog = catalog
         self.n_sets = _n_set_cols(block)
         self.sessions: dict[int, SessionLog] = {}
         self.day_date: dict[int, Date] = {}
@@ -253,6 +276,8 @@ class _WeekParser:
         exercise = _cell_str(row[COL_EXERCISE - 1])
         if not exercise or exercise == "Ejercicio":
             return
+        if self.catalog:
+            exercise = resolve_exercise(exercise, self.catalog) or exercise
         target_w = _parse_float(row[COL_KG_OBJ - 1])
         sets = []
         for i in range(self.n_sets):
@@ -289,7 +314,10 @@ class _WeekParser:
 
 
 def parse_csv_text(
-    text: str, block: Block, weeks: list[int] | None = None
+    text: str,
+    block: Block,
+    weeks: list[int] | None = None,
+    catalog: dict[str, Exercise] | None = None,
 ) -> dict[int, list[SessionLog]]:
     """Parse the block CSV (or the Sheet's CSV export) back into sessions."""
     parsers: dict[int, _WeekParser] = {}
@@ -301,7 +329,7 @@ def parse_csv_text(
         if m:
             week = int(m.group(1))
             if week <= block.weeks:
-                current = parsers.setdefault(week, _WeekParser(block, week))
+                current = parsers.setdefault(week, _WeekParser(block, week, catalog))
             else:
                 current = None
             continue
@@ -316,7 +344,10 @@ def parse_csv_text(
 
 
 def parse_workbook(
-    path: Path, block: Block, weeks: list[int] | None = None
+    path: Path,
+    block: Block,
+    weeks: list[int] | None = None,
+    catalog: dict[str, Exercise] | None = None,
 ) -> dict[int, list[SessionLog]]:
     """Parse a filled .xlsx (tabs S1..Sn) back into sessions, keyed by week."""
     wb = load_workbook(path, data_only=True)
@@ -327,7 +358,7 @@ def parse_workbook(
         name = f"S{week}"
         if name not in wb.sheetnames:
             continue
-        parser = _WeekParser(block, week)
+        parser = _WeekParser(block, week, catalog)
         for row in wb[name].iter_rows(min_row=2, values_only=True):
             if row is not None:
                 parser.feed(row)
@@ -336,7 +367,12 @@ def parse_workbook(
     return out
 
 
-def parse_any(path: Path, block: Block, weeks: list[int] | None = None):
+def parse_any(
+    path: Path,
+    block: Block,
+    weeks: list[int] | None = None,
+    catalog: dict[str, Exercise] | None = None,
+):
     if path.suffix.lower() == ".csv":
-        return parse_csv_text(path.read_text(encoding="utf-8-sig"), block, weeks)
-    return parse_workbook(path, block, weeks)
+        return parse_csv_text(path.read_text(encoding="utf-8-sig"), block, weeks, catalog)
+    return parse_workbook(path, block, weeks, catalog)
