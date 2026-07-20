@@ -1,11 +1,15 @@
-# Bloque 1 en el sistema: fuerza SBD, 4 dias, 6 semanas (5 de carga + puente).
-# Estructura por su patron actual: tope x3 por RPE + backoffs por %.
-# Regla clave (su reporte 2026-07-19): DOMS de aductores tras sentadilla de
-# 4+ reps -> el DL principal va ANTES del dia de volumen de sentadilla, y el
-# volumen cae el ultimo dia (el finde absorbe el DOMS). El dia pesado de SQ
-# son triples, que no le disparan el patron.
-# Revisado 2026-07-20 con el playbook ampliado (53 ejercicios): +ADUCTORES y
-# +EXTENSIONES por sus temas de aductor y rodilla; ver notes al final.
+# Bloque 1 en el sistema: fuerza SBD estilo full-body, 4 dias, 6 semanas
+# (5 de carga + puente). Revisado 2026-07-20 tras su feedback.
+#
+# Dos principios que el mismo remarco:
+#  1) BANCA es su punto debil de siempre -> la frecuencia extra va a la banca:
+#     3x/sem (pesada con pausa / media con pausa / volumen sin pausa). Sentadilla
+#     2x y sumo 1x (ya fuertes; sumar frecuencia abajo cuesta lumbar por poco).
+#  2) El DOMS de aductores (sentadilla de 4+ reps) NO debe caer sobre un DL o SQ
+#     pesado. Secuencia: SQ pesada (D1, triples = no dispara) y DL pesado (D3)
+#     separados por el dia de empuje (D2, la espalda descansa); el VOLUMEN de
+#     sentadilla va ULTIMO (D4) y el finde absorbe el DOMS. Unico par axial
+#     seguido = DL pesado (D3) -> volumen SQ (D4, submaximo).
 
 id: 2026-07-strength-1
 name: FUERZA SBD 1
@@ -15,8 +19,8 @@ focus: strength
 status: active
 
 sheet:
-  # Revisado 2026-07-20: regenerar xlsx y re-subir; este id queda obsoleto
-  # cuando Benjamin suba la nueva planilla y pase el link.
+  # Revisado 2026-07-20 (estructura SBD): regenerar xlsx y re-subir; este id
+  # queda obsoleto cuando Benjamin suba la nueva planilla y pase el link.
   drive_file_id: 1wX4k9KACdVblKhE3CfFlPzEnIMi7GYj2oS0pIxY-PUY
   title: 202607strength1
   url: https://docs.google.com/spreadsheets/d/1wX4k9KACdVblKhE3CfFlPzEnIMi7GYj2oS0pIxY-PUY/edit
@@ -28,7 +32,10 @@ schemes:
   - id: back3
     kind: percent_wave
     week_percents: [0.78, 0.79, 0.80, 0.81, 0.82, 0.68]
-  - id: vol
+  - id: bp_med          # banca media: 4x4 con pausa, carga moderada
+    kind: rpe_wave
+    week_rpes: [6.5, 7, 7.5, 8, 8, 6]
+  - id: vol             # volumen: SQ 4x5 y banca sin pausa 4x6
     kind: rpe_wave
     week_rpes: [6, 6.5, 7, 7.5, 8, 5.5]
   - id: acc
@@ -40,7 +47,7 @@ default_scheme: acc
 
 days:
   - day: 1
-    name: SQ PESADA
+    name: SQ PESADA + BP MEDIA
     slots:
       - exercise: squat
         sets: 1
@@ -52,53 +59,28 @@ days:
         reps: "3"
         scheme: back3
         notes: "Backoffs. Misma tecnica y profundidad que el tope"
+      - exercise: bench
+        sets: 4
+        reps: "4"
+        scheme: bp_med
+        notes: "Banca MEDIA con pausa de comp. Volumen a carga moderada"
       - exercise: leg-curl
         sets: 3
         reps: "8-12"
-        notes: "Suave, sin fallo. Isquios (flexion de rodilla), cero lumbar"
-      - exercise: extensiones
-        sets: 3
-        reps: "10-15"
-        notes: "Cuadriceps amable con rodilla (90-45 si molesta). Cero carga axial"
+        notes: "Isquios (flexion de rodilla), cero lumbar. Sin fallo"
       - exercise: rueda-abdominal
         sets: 3
         reps: "8-12"
         notes: "De rodillas, sin arquear lumbar (anti-extension)"
 
   - day: 2
-    name: DL PRINCIPAL
-    slots:
-      - exercise: deadlift
-        sets: 1
-        reps: "3"
-        scheme: top3
-        notes: "Tope del dia. Cuña, rodillas afuera, ruptura paciente del piso"
-      - exercise: deadlift
-        sets: 3
-        reps: "3"
-        scheme: back3
-        notes: "Backoffs. Barra pegada, misma posicion de arranque"
-      - exercise: traccion-vertical
-        sets: 3
-        reps: "8-12"
-        notes: "Jalon en re-entry (carga a RPE); espalda alta para banca y sumo"
-      - exercise: remo
-        sets: 3
-        reps: "10-12"
-        notes: "Con apoyo/maquina para ahorrar lumbar"
-      - exercise: pallof
-        sets: 3
-        reps: "10-12"
-        notes: "Por lado. Anti-rotacion, exhala y brace"
-
-  - day: 3
-    name: BP PESADA
+    name: BP PESADA + HOMBROS
     slots:
       - exercise: bench
         sets: 1
         reps: "3"
         scheme: top3
-        notes: "Tope, pausa de competencia honesta. Sin collarines (entrenas solo)"
+        notes: "Tope PESADO, pausa de comp honesta. Sin collarines (entrenas solo)"
       - exercise: bench
         sets: 3
         reps: "3"
@@ -116,20 +98,50 @@ days:
         sets: 3
         reps: "10-15"
         notes: "Lockout de banca. Polea si el codo molesta"
+      - exercise: pallof
+        sets: 3
+        reps: "10-12"
+        notes: "Por lado. Anti-rotacion, exhala y brace"
+
+  - day: 3
+    name: DL PRINCIPAL + BP VOLUMEN
+    slots:
+      - exercise: deadlift
+        sets: 1
+        reps: "3"
+        scheme: top3
+        notes: "Tope del dia. Cuña, rodillas afuera, ruptura paciente del piso"
+      - exercise: deadlift
+        sets: 3
+        reps: "3"
+        scheme: back3
+        notes: "Backoffs. Barra pegada, misma posicion de arranque"
+      - exercise: bench-nopause
+        sets: 4
+        reps: "6"
+        scheme: vol
+        notes: "Banca VOLUMEN sin pausa. Toca, no rebotes; tecnica identica a comp"
+      - exercise: traccion-vertical
+        sets: 3
+        reps: "8-12"
+        notes: "Jalon en re-entry (carga a RPE); espalda alta para banca y sumo"
+      - exercise: remo
+        sets: 3
+        reps: "10-12"
+        notes: "Con apoyo/maquina para ahorrar lumbar"
 
   - day: 4
-    name: VOLUMEN SQ+BP
+    name: VOLUMEN SQ + ADUCTOR
     slots:
       - exercise: squat
         sets: 4
         reps: "5"
         scheme: vol
-        notes: "Volumen — DOMS de aductores esperado; el finde recupera"
-      - exercise: bench-nopause
-        sets: 4
-        reps: "6"
-        scheme: vol
-        notes: "Sin pausa, tecnica identica a comp. Toca, no rebotes"
+        notes: "Volumen — DOMS de aductores esperado; el finde recupera. Ultimo dia a proposito"
+      - exercise: extensiones
+        sets: 3
+        reps: "10-15"
+        notes: "Cuadriceps amable con rodilla (90-45 si molesta). Cero carga axial"
       - exercise: plancha-copenhagen
         sets: 3
         reps: "8-10"
@@ -144,30 +156,34 @@ days:
         notes: "Segundos por lado. Piramides de 10s si la espalda esta irritable"
 
 notes: |
-  Bloque de fuerza SBD, 4 dias, re-entry con baselines frescos (SQ 255e /
-  BP 130 / DL 250, 2026-07-19). Semanas 1-5 suben el tope de x3 de RPE 6.5 a
-  8.5 (SQ ~210->222.5, BP ~107.5->112.5, DL ~205->217.5) y los backoffs de 78%
-  a 82%. Semana 6 = puente liviano.
+  Estructura SBD (varios basicos por dia), 4 dias, re-entry con baselines
+  frescos (SQ 255e / BP 130 / DL 250, 2026-07-19). Topes de x3 suben de RPE 6.5
+  a 8.5 (sem 1-5); backoffs de 78% a 82%. Semana 6 = puente liviano.
 
-  Orden por su patron de DOMS de aductores (lesson 2026-07-19): DL principal
-  (D2) ANTES del volumen de sentadilla (D4, ultimo de la semana; el finde
-  absorbe el DOMS). El dia pesado de SQ son triples, que no disparan el patron.
+  FRECUENCIA — la extra va a la BANCA (su punto debil de siempre, y el lift que
+  mejor tolera frecuencia):
+  - Banca 3x: PESADA con pausa (D2, tope+backoff) / MEDIA con pausa (D1, 4x4) /
+    VOLUMEN sin pausa (D3, 4x6). Tres estimulos distintos (intensidad / volumen
+    pausado / volumen con reflejo de estiramiento).
+  - Sentadilla 2x (pesada D1 + volumen D4), sumo 1x (D3): ya son fuertes; sumar
+    frecuencia abajo gasta presupuesto lumbar por poco retorno. Proximo paso si
+    la banca 3x se tolera bien: 4a exposicion ligera de banca (velocidad/tecnica).
 
-  Seleccion desde el playbook (53 ejercicios):
-  - Basicos de competencia en D1-D3: en fuerza/re-entry el playbook manda
-    re-calibrar con el propio lift antes de meter variantes.
-  - D4 ataca la RAIZ del DOMS de aductores: Copenhagen (excentrico, tolerancia
-    de tejido) + ADUCTORES maquina/polea (concentrico progresable, ROM en
-    rampa). Meta: que suba la tolerancia y el DOMS de volumen-squat se apague
-    con los bloques. Aductores arranca liviano y ROM corto; si no hay maquina
-    ni polea, dejar solo Copenhagen.
-  - D1 suma EXTENSIONES: volumen de cuadriceps amable con la rodilla (90-45),
-    cero carga axial, equilibra el LEG CURL de isquios.
-  - Se saca el curl directo de biceps (lo mantienen remo/traccion); vuelve en
-    un bloque de hipertrofia.
+  SECUENCIA — protege los dias axiales pesados del DOMS de aductores:
+  - D1 SQ pesada (triples, no dispara el DOMS) + BP media.
+  - D2 BP pesada + hombros: dia de empuje, la espalda descansa entre la SQ
+    pesada (D1) y el DL pesado (D3).
+  - D3 DL pesado + BP volumen.
+  - D4 VOLUMEN de sentadilla (el disparador) ULTIMO, con Copenhagen + ADUCTORES
+    (tolerancia de aductor) y EXTENSIONES; el finde absorbe el DOMS.
+  SQ pesada (D1) y sumo pesado (D3) quedan a 3 dias, con el dia de empuje en
+  medio. Ningun DL/SQ pesado cae en la sombra de DOMS del volumen (D4 es el
+  ultimo). Unico par axial seguido: DL pesado (D3) -> volumen SQ (D4, submaximo).
 
-  Camino de mejora para el PROXIMO bloque (con baselines ya fijos): meter
-  variantes de punto debil segun lo que muestren los logs — PESO MUERTO SUMO
-  DEFICIT o CON PAUSA (fuerza fuera del piso), SENTADILLA CON PAUSA o EN PINES
-  (salida del hoyo), PRESS BANCA AGARRE CERRADO o FONDOS (lockout). Hoy no:
-  sin datos de sus puntos debiles todavia. Frecuencia de banca 2x + militar.
+  ADUCTOR: Copenhagen (excentrico) + ADUCTORES maquina/polea (concentrico, ROM
+  en rampa) atacan la RAIZ del DOMS. Arranca liviano/ROM corto; si no hay maquina
+  ni polea, deja solo Copenhagen.
+
+  Camino de mejora para el PROXIMO bloque (baselines ya fijos): variantes de
+  punto debil segun logs — DEFICIT/PAUSA en sumo, PAUSA/PINES en sentadilla,
+  AGARRE CERRADO/FONDOS en banca; y la 4a banca ligera.

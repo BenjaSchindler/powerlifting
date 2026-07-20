@@ -10,6 +10,7 @@ timezone: America/Santiago
 days_per_week: 4
 goals:
   - "Fuerza SBD: subir los tres basicos con bloques de triples + backoff"
+  - "Prioridad: subir el PRESS BANCA — su punto debil de siempre (bajo vs SQ/DL). Mas frecuencia de banca."
   - "Manejar el patron de DOMS de aductores (sentadilla +4 reps) sin perder volumen"
 current_maxes:
   squat:
@@ -30,6 +31,11 @@ notes: |
   incrementing) — reset into 2026-07-strength-1. Prefers 4 dias/semana.
   Known pattern: adductor DOMS after squat sessions of 4+ reps/set, which
   interferes with sumo — schedule main DL before the volume-squat day.
+  2026-07-20: BANCA es su punto debil de toda la vida (130 vs SQ 245 / DL 250)
+  — de ahi su pedido de mas frecuencia de banca. Prefiere estructura tipo SBD
+  (varios basicos por dia). Restriccion que el mismo remarca: el DOMS de
+  aductores del volumen de sentadilla NO debe caer sobre un DL o SQ pesado —
+  secuenciar para proteger los dias axiales pesados.
 
   Historical reference, 2024 season (HEAVY WEIGHT coach sheets):
     - SENTADILLA LB: 220x3 @8, 220x4, 200x5 @6

@@ -25,8 +25,20 @@ Format:
 
 ## Exercise selection
 
-_(nothing yet)_
+- 2026-07-20 — Bench is his lifelong weak point (130 vs SQ 245 / DL 250), and
+  it's the lift that best tolerates frequency. Programming rule: give the extra
+  frequency budget to BENCH before squat/deadlift. This block runs bench 3x
+  (heavy paused tope+backoff / medium paused 4x4 / volume no-pause 4x6);
+  squat stays 2x and sumo 1x (both already strong, and adding lower frequency
+  costs low-back budget for little return). Next step if 3x is well-tolerated:
+  add a 4th light speed/technique bench touch.
 
 ## Scheduling & life
 
-_(nothing yet)_
+- 2026-07-20 — SBD-style frequency is fine for him ONLY if sequenced around the
+  adductor-DOMS rule he flagged: the volume-squat day (4+ reps, the DOMS
+  trigger) must be the LAST session of the week, and NO heavy deadlift or heavy
+  squat may fall in its 48h DOMS shadow. Working layout: heavy squat and heavy
+  sumo separated by an upper/bench day (back recovers between them); volume
+  squat last; the only tolerable back-to-back axial pair is heavy-sumo -> volume
+  squat (volume is submaximal, and the weekend absorbs the DOMS).
