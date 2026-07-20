@@ -129,6 +129,10 @@ days:
         sets: 3
         reps: "10-12"
         notes: "Con apoyo/maquina para ahorrar lumbar"
+      - exercise: biceps
+        sets: 3
+        reps: "10-15"
+        notes: "A eleccion (mancuerna/polea/predicador), sentado y sin balanceo lumbar. Ultimo del dia"
 
   - day: 4
     name: VOLUMEN SQ + ADUCTOR
