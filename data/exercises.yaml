@@ -1370,3 +1370,1920 @@
       without cramping), E3 uses 2-3x30-60 s. Use 10 s pyramids when the back
       is irritable, 30-45 s holds in normal blocks. True QL isolation is a myth
       — treat it as lateral-chain work.'
+
+# --- Variantes y accesorios ampliados (investigacion multiagente, 2026-07-20) ---
+# SENTADILLA: pausa, pines, cajon, frontal, hack, empuje de cadera.
+# PRESS BANCA: agarre cerrado, spoto, fondos, mancuernas plano, aperturas.
+# PESO MUERTO: deficit, pausa, convencional, piernas rigidas, rack pull,
+# buenos dias, hiperextensiones, encogimientos.
+- id: squat-pausa
+  name: SENTADILLA LB CON PAUSA
+  aliases:
+  - sentadilla con pausa
+  - sentadilla lb con pausa
+  - sentadilla pausa
+  - pausa en el hoyo
+  - paused squat
+  category: variation
+  parent: squat
+  pattern: squat
+  muscles:
+  - quads
+  - glutes
+  - adductors
+  - spinal_erectors
+  joints:
+  - knee
+  - hip
+  - lumbar
+  playbook:
+    purpose: 'Sentadilla LB con pausa isometrica de 2-3 s en el hoyo (profundidad
+      de competencia): la pausa disipa el reflejo de estiramiento y el rebote elastico
+      -sin llegar a soltar la carga como el pin/box squat, la barra sigue bajo tension-
+      asi que arranca la subida desde una posicion casi estatica y construye fuerza
+      de arranque en la parte baja del recorrido. Autoaudita un descenso lanzado para
+      quien entrena solo; y como corre ~10-20% mas ligera que su SENTADILLA LB, entrega
+      un buen estimulo de sentadilla (hipertrofia comparable por serie a igual RPE,
+      fuerza sesgada al fondo) a menor costo de recuperacion, lo que encaja en su
+      re-entry RPE <= 7.'
+    use_when:
+    - 'Re-entry actual: la pausa mantiene las cargas honestas (~10-20% bajo su comp
+      squat, ~60-75% 1RM como guia) sin reflejo de estiramiento que infle el peso
+      -estimulo de sentadilla real y comodo bajo el tope RPE <= 7 mientras reconstruye
+      base'
+    - El video muestra que se lanza al hoyo o depende del rebote para salir -la pausa
+      fuerza descenso controlado y arranque desde una posicion casi estatica, y el
+      fallo se hace visible y corregible entrenando solo
+    - Se atasca o falla justo al salir del hoyo en SENTADILLA LB (punto debil en la
+      parte baja del recorrido) -la pausa entrena la fuerza de arranque exactamente
+      ahi, sin ayuda del rebote
+    - 'Presupuesto lumbar apretado (semana de sumo pesado + LB): a ~15% menos carga
+      mantiene una exposicion de sentadilla a menor carga espinal pico que un single
+      top de LB, cuando quiere volumen de sentadilla mas barato'
+    - 'Segundo slot de sentadilla 4+ semanas de un meet/test: acumula fuerza en el
+      fondo y volumen de cuadriceps sin otro impacto maximal/CNS de comp squat'
+    - 'Semanas de descarga o manejo de fatiga: conserva el patron de sentadilla a
+      carga reducida (barra mas ligera, menos estres axial) mientras baja la fatiga
+      sistemica'
+    avoid_when:
+    - 'Bandera de dolor abierta en rodilla (tendon rotuliano/cuadriceps): el hoyo
+      sostenido carga los extensores de rodilla en isometria a longitud larga -no
+      subir carga sin preguntarle primero; ofrecer swap del mismo patron (squat-tempo,
+      leg-press-unilateral, hack-squat)'
+    - 'Bandera de dolor abierta en cadera: el fondo en pausa concentra la carga en
+      flexion profunda de cadera -no subir carga sin preguntarle primero; ofrecer
+      swap del mismo patron que controle la profundidad (box-squat para limitar el
+      fondo, o leg-press-unilateral); NO high-bar, que profundiza la flexion de cadera'
+    - 'Bandera de dolor abierta en lumbar: la isometria suma tiempo bajo tension de
+      tronco/erectores en la posicion mas flexionada -no subir carga sin preguntarle
+      primero; ofrecer swap del mismo patron de menor carga espinal (leg-press-unilateral,
+      o squat-tempo con la carga bajada)'
+    - 'Ultimas 2-3 semanas pre-meet o pre-test: el pico necesita velocidad de competencia
+      y el reflejo de estiramiento -las reps con pausa suman fatiga sin especificidad;
+      devolver el slot a SENTADILLA LB'
+    - Recuperacion en rojo o semana con DOMS de aductores por alto volumen de sentadilla
+      -el hoyo sostenido carga los aductores a longitud larga; no apiles un estimulo
+      nuevo de pausa sobre aductores ya cargados, rampa la exposicion
+    - 'Como unico estimulo de sentadilla por semanas: el tope de carga ~10-20% menor
+      deja que la habilidad de comp squat y el manejo pesado se apaguen si reemplaza
+      del todo a SENTADILLA LB'
+    swaps:
+    - squat-pin
+    - box-squat
+    - squat-tempo
+    - squat
+    refs:
+    - 'Soy Powerlifter -Sentadilla con pausa: beneficios (soypowerlifter.com; ~10-20%
+      menos carga que la sentadilla de competencia, util para romper estancamientos
+      en el arranque desde el fondo)'
+    - 'SoCal Powerlifting -Pause Squat: A Way to Add Challenge and Improve Technique:
+      usar el setup/profundidad de competencia; no perseguir un PR de pausa por encima
+      de la sentadilla de competencia'
+    - 'PowerliftingTechnique.com -How to Pause Squat (Technique, Benefits, Muscles
+      Worked): pausa a profundidad de competencia, reps <=5 (comun 2-3), elimina el
+      reflejo de estiramiento y entrena la salida del hoyo'
+    - 'Juggernaut Training Systems -Squat Variations: How, Why & When To Use Them
+      (jtsstrength.com): pausa/pin/box reducen el reflejo de estiramiento y atacan
+      el punto de estancamiento'
+    notes: 'Imprime la pausa en Indicaciones (''2-3 s en el hoyo, sin relajar'' =
+      mantener tension, no descansar la barra). Manten su estancia y profundidad de
+      competencia para que transfiera; no persigas un PR de pausa por encima de SENTADILLA
+      LB (SoCal). Carga ~10-20% bajo comp squat (~60-75% 1RM como guia), reps <=5,
+      comun 2-3; en re-entry topa por RPE <= 7, no por %. Seguros del rack siempre
+      -entrena solo y el fondo en pausa es justo donde ocurriria un fallo; a diferencia
+      del pin/box squat aqui la barra nunca se apoya, asi que la seguridad son los
+      pines. Matiz para su cuidado lumbar: la pausa baja la carga espinal pico (barra
+      mas ligera) pero anade tiempo bajo tension isometrica de erectores en la posicion
+      mas profunda -es un intercambio, no gratis; vigila el apilamiento con sumo.
+      Aun a reps bajas el hoyo sostenido carga aductores a longitud larga: rampa.'
+- id: squat-pin
+  name: SENTADILLA EN PINES
+  aliases:
+  - sentadilla en pines
+  - sentadilla a pines
+  - sentadilla desde pines
+  - pin squat
+  - sentadilla anderson
+  - sq pines
+  category: variation
+  parent: squat
+  pattern: squat
+  muscles:
+  - quads
+  - glutes
+  - adductors
+  - spinal_erectors
+  joints:
+  - knee
+  - hip
+  - lumbar
+  playbook:
+    purpose: 'Sentadilla LB de arranque en muerto: la barra descansa en los pines
+      del rack a la altura de su punto de estancamiento y cada rep arranca desde quieto,
+      sin reflejo de estiramiento ni rebote — un concentrico que expone exactamente
+      donde muere el empuje, un diagnostico honesto para quien entrena solo con el
+      celular. Los pines son a la vez la herramienta (ancla ajustable) y el tope de
+      seguridad; el arranque estatico limita la carga por diseno y, con pin alto (ROM
+      parcial), ahorra excentrico y buena parte de la fatiga axial de una sentadilla
+      LB completa (un pin bajo, en cambio, exige mas a los erectores al romper en
+      estatico), encajando con su re-entry RPE <= 7 y su cuidado de espalda baja.'
+    use_when:
+    - 'Bloque de re-entry/acumulacion lejos de test: pon los pines justo sobre la
+      paralela y arranca en muerto — sin rebote la carga queda honesta bajo el tope
+      RPE <= 7 y el video le muestra si el empuje se apaga en el estancamiento, todo
+      entrenando solo'
+    - 'Su fallo es al romper desde el hoyo / caderas que suben primero: ancla el pin
+      a esa altura y entrena fuerza de arranque exactamente en el angulo donde falla,
+      no en toda la sentadilla'
+    - 'Semana con peso muerto sumo pesado y erectores acumulados: pin alto (medio
+      recorrido), concentrico puro y carga menor dan una exposicion del patron de
+      sentadilla con menos excentrico y menos carga axial que una LB completa — valvula
+      para el apilamiento de fatiga lumbar de LB + sumo'
+    - 'Rodilla/tendon rotuliano molesto pero tolerable (<=3-4/10, cede al dia siguiente):
+      con el pin mas alto recortas la flexion profunda de rodilla y conservas un estimulo
+      de sentadilla cargado — util para seguir cargando el patron mientras manejas
+      la molestia de tendon rotuliano'
+    - 'Ganar confianza con barra pesada entrenando solo: los pines son el bailout
+      fisico — puede empujar un concentrico duro sin observador porque una rep fallada
+      simplemente vuelve a apoyarse en los pines y nunca baja de esa altura (no hace
+      falta soltar la barra ni quitar collarines)'
+    - 'Segundo slot de sentadilla de la semana: suma drive y volumen de cuadriceps
+      del patron sin otro excentrico pesado a rango completo ni otro golpe axial grande'
+    avoid_when:
+    - 'Bandera de dolor abierta en rodilla, cadera o lumbar: el arranque estatico
+      concentra la demanda en las tres al romper desde los pines — nunca subas su
+      carga sin preguntarle primero; ofrece swap del mismo patron (squat-pausa, box-squat,
+      squat-tempo)'
+    - 'Ultimas 2-3 semanas pre-competencia o test de max: el pico necesita la sentadilla
+      completa con reflejo de estiramiento a velocidad de competencia — el arranque
+      en muerto quita justo el rebote del hoyo por el que lo juzgan; devuelve el slot
+      a SENTADILLA LB'
+    - 'Detras de un dia de sumo pesado o con la espalda baja en rojo: incluso el concentrico
+      puro desde un pin bajo dispara la demanda de erectores al romper en estatico
+      — pon el pin alto o saltalo, no lo apiles sobre el tiron'
+    - 'Como unico estresor de sentadilla por semanas: sin excentrico ni reflejo de
+      estiramiento se destrenan el cambio de direccion en el hoyo y la fuerza a rango
+      completo — emparejalo siempre con SENTADILLA LB real'
+    - 'Fijando una linea base fresca de e1RM de sentadilla: la carga del pin (ROM
+      parcial + sin reflejo de estiramiento) no mapea limpio a un 1RM de sentadilla
+      completa — no metas numeros de pines en la proyeccion del e1RM de comp'
+    swaps:
+    - squat-pausa
+    - box-squat
+    - squat
+    - squat-tempo
+    refs:
+    - SoCal Powerlifting — Why We (Almost) Always Recommend Pin Squats over Box Squats
+      (mantienen el bar path vertical, entrenan puntos debiles ajustables, exigen
+      control; una colision suave saca la barra de posicion)
+    - 'PowerliftingTechnique.com — Anderson Squat vs Pin Squat: Differences, Pros,
+      Cons (Anderson = arranque en muerto, concentrico puro / starting strength; pin
+      squat con toque es mas tipo pausa)'
+    - 'Escuela Culturismo Natural (ES) — Pin squat: correcta ejecucion y beneficios
+      (elimina la energia elastica, obliga a generar fuerza desde estatico, corrige
+      errores tecnicos en angulos especificos)'
+    - 'Testify Strength & Conditioning — The Pin Squat: What, How, and Why; e Inspire
+      US — Pin Squats: Benefits (uso para manejar molestia de rodilla/tendon rotuliano,
+      dosis 3-5 reps, 1-2 para RFD)'
+    notes: 'Distincion que las fuentes mezclan: pin squat con toque-y-vuelta guarda
+      algo de pre-tension (tipo pausa), mientras el Anderson/arranque en muerto quita
+      el reflejo de estiramiento (concentrico puro). Su version es la de arranque
+      en muerto — imprime en Indicaciones ''arranca desde los pines, empuja desde
+      quieto, no rebotes''. Altura del pin es la perilla: pin alto (medio recorrido)
+      = mas ahorro de rodilla y erectores; pin bajo cerca de profundidad = mas especifico
+      pero mas demanda axial — elige por objetivo y por bandera de dolor. Dosis: 3-5
+      reps tipico, 1-2 para arranque/RFD de forma puntual; RPE <= 7 en re-entry, cargas
+      desde sus logs actuales, nunca sobre los bests 2024. Solo necesita rack de poder
+      con pines/seguros — equipo que si tiene; los pines SON su tope de seguridad,
+      asi que ajustalos bien y no persigas grinders. Reps mas bajas dan menos DOMS
+      de aductores que la LB de alto volumen, pero si sube a series de 4+ reps rampa
+      el trabajo de aductor/estancia ancha. La carga no mapea al e1RM de comp — mantenla
+      fuera de esa proyeccion.'
+- id: box-squat
+  name: SENTADILLA AL CAJON
+  aliases:
+  - sentadilla al cajon
+  - sentadilla cajon
+  - sentadilla con cajon
+  - cajon
+  - box squat
+  category: variation
+  parent: squat
+  pattern: squat
+  muscles:
+  - quads
+  - glutes
+  - hamstrings
+  - adductors
+  - spinal_erectors
+  joints:
+  - knee
+  - hip
+  - lumbar
+  playbook:
+    purpose: 'Squat variation that hands a solo, phone-only lifter three things his
+      comp low-bar squat can''t self-audit: a physical box that guarantees IPF-legal
+      depth every rep, a forced sit-back that shifts load onto glutes/hamstrings/hips,
+      and a dead stop that kills the bounce so the drive out of the bottom is honest.
+      The vertical-shin sit-back also cuts anterior knee travel, making it his knee-sparing
+      squat option during re-entry - but it is knee-sparing, NOT back-sparing: the
+      forward-leaning sit-back still demands his erectors and brace, and relaxing
+      onto the box is a real lumbar/SI risk given his low-back history.'
+    use_when:
+    - 'Depth is inconsistent and he trains alone with only a phone: set the box just
+      below parallel so every rep hits IPF-legal depth and rebuilds one repeatable
+      bottom - the judge/spotter he doesn''t have.'
+    - 'Grumpy-but-tolerable knee or patellar/quad-tendon symptoms (<=3-4/10, settled
+      by next morning): the sit-back with vertical shins cuts anterior knee travel
+      and knee-extensor load - a knee-sparing way to keep a squat exposure while the
+      tendon calms.'
+    - 'Re-entry/accumulation 4+ weeks from any test: the dead stop kills the stretch-reflex
+      bounce and the reduced eccentric may ease recovery vs full-ROM low-bar, holding
+      honest RPE <=7 squat volume while erectors and tendons re-adapt.'
+    - 'Hips shoot up and he pitches forward out of the hole: the box drills the sit-back
+      and posterior-chain drive he can''t feel or see training solo - glutes/hamstrings/hips
+      take more of the work.'
+    - 'Sticking point just off the bottom: drop the box to the exact height he stalls
+      at and overload a dead-stop drive there - box-squat starting strength at less
+      systemic cost than a max low-bar single.'
+    avoid_when:
+    - 'Open knee, hip, or lumbar flag: never raise its load without asking him first
+      - offer same-pattern swaps (squat-pausa, squat-pin, squat-tempo) meanwhile.'
+    - 'He relaxes/rocks back on the box or rounds to shift forward and stand: that
+      unload-then-reload under the bar is the box squat''s signature lumbar/SI injury
+      mechanism - with his low-back history, fix ''stay braced, controlled sit, brief
+      non-relaxed pause'' first or pull the movement.'
+    - 'Final ~3-4 weeks of meet prep: raw specificity - the comp low-bar groove with
+      a live stretch reflex must be locked in; the dead stop and altered sit-back
+      mechanics are non-specific this close - give the slot back to SENTADILLA LB.'
+    - 'No stable, correct-height box in the commercial gym: a wobbly plyo box or aerobic-step
+      stack that can shift is a fall risk training alone - don''t improvise it; use
+      squat-pausa or squat-pin for the same dead-stop stimulus.'
+    - 'Running it wide-stance after high-volume or wide squats without ramping: the
+      wide sit-back is adductor-hungry and stacks groin DOMS onto his known adductor
+      sensitivity - ramp width/volume or keep it near comp stance.'
+    - 'As the only squat stressor for weeks: the broken stretch reflex and altered
+      mechanics let raw low-bar top-end strength and the comp groove fade - keep SENTADILLA
+      LB as the anchor.'
+    swaps:
+    - squat-pausa
+    - squat-pin
+    - squat-tempo
+    refs:
+    - 'Westside Barbell / Louie Simmons - box-squat method: competition-standard depth
+      every rep, easier recovery, usable even by raw lifters for max-effort work'
+    - 'Soy Powerlifter (soypowerlifter.com) - sentadilla al cajon: elimina el rebote
+      -> fuerza concentrica pura, desarrollo de cadena posterior (gluteos/isquios),
+      ajustar la altura para estancamientos, pausa breve sin relajarse'
+    - 'Tim Bonvechio (bonvecstrength.com) y Dr. Michael Yessis - criticas al box squat:
+      mecerse/relajarse sobre el cajon y redondear para levantarse disparan la carga
+      lumbar/SI; mantente firme, descenso controlado'
+    - 'Stronger By Science (G. Nuckols) - How to Squat: The Definitive Guide (strongerbyscience.com):
+      la especificidad raw exige entrenar el patron del levantamiento de competencia
+      con un reflejo de estiramiento normal cerca de la fecha'
+    notes: 'Coaches split on raw carryover: Westside programs box squats even for
+      raw lifters (comp depth every rep, easy recovery), while the specificity camp
+      calls the dead stop and exaggerated sit-back non-specific to a raw low-bar squat
+      - resolve it as a technique/depth/knee-sparing tool, not his primary strength
+      driver, and cue the standard ''sit back controlled, then squat as if the box
+      weren''t there'' rather than an exaggerated suit-style rock-back. Box height:
+      just-below-parallel to comp depth for depth work; lower to overload a sticking
+      point. Non-negotiables for his back: controlled descent, stay tight, brief pause
+      WITHOUT relaxing, never bounce/rock (the relax-then-reload is the box squat''s
+      lumbar/SI injury mechanism). Solo safety: rack safeties set PLUS a genuinely
+      stable box at the right height - a wobbly plyo/step stack is a fall risk alone,
+      so if the gym has no stable box use squat-pausa or squat-pin for the same dead-stop
+      stimulus. Adductor recruitment scales with stance width - ramp if he goes wide.
+      Print box height and ''sientate atras, no te relajes'' in Indicaciones.'
+- id: squat-frontal
+  name: SENTADILLA FRONTAL
+  aliases:
+  - FRONT SQUAT
+  - SENTADILLA AL FRENTE
+  - FRONTAL
+  - SENTADILLA DE FRENTE
+  category: variation
+  parent: squat
+  pattern: squat
+  muscles:
+  - quads
+  - glutes
+  - spinal_erectors
+  - traps
+  joints:
+  - knee
+  - hip
+  - lumbar
+  - wrist
+  playbook:
+    purpose: 'Sentadilla dominante de cuadriceps y ahorradora de columna para un levantador
+      que apila fatiga de erectores (SENTADILLA LB + PESO MUERTO SUMO en la misma
+      semana): el torso vertical baja el brazo de palanca lumbar y la cizalla por
+      kg, y el rack frontal obliga a trabajar a la espalda alta. Ademas es herramienta
+      autodidacta: si sus caderas suben primero en la LB (fallo tipo buenos-dias),
+      la frontal lo fuerza a empujar con cuadriceps porque no puede inclinarse hacia
+      delante sin perder la barra.'
+    use_when:
+    - 'Semana con SENTADILLA LB y PESO MUERTO SUMO juntos y los erectores/lumbar ya
+      acumulan fatiga: la frontal da estimulo de cuadriceps y espalda alta con menor
+      brazo de palanca lumbar y menos cizalla por kg — descarga la columna sin quitar
+      trabajo de pierna'
+    - 'El video de su LB muestra las caderas subiendo primero (fallo buenos-dias):
+      la frontal lo fuerza a torso vertical y a empujar con cuadriceps porque no puede
+      inclinarse sin perder la barra — corrige el patron entrenando solo'
+    - 'Fase de acumulacion/hipertrofia 6+ semanas de una competencia, como segundo
+      movimiento de sentadilla en 5-8 reps: construye cuadriceps y espalda alta sin
+      apilar el volumen lumbar pesado de la LB — encaja con su re-entry a RPE <= 7'
+    - 'Cuando el DOMS de aductores de sus SENTADILLA LB de estancia ancha y alto volumen
+      (4+ reps) esta limitando: la frontal usa estancia mas estrecha y vertical, machaca
+      cuadriceps y ahorra aductores'
+    - 'Cuando falla la LB en el fondo o siente debilidad de cuadriceps o que la espalda
+      alta se redondea bajo la barra: la frontal ataca justo esa debilidad y transfiere
+      bien a la SENTADILLA LB (mismo patron); el beneficio para el sumo es indirecto
+      (cuadriceps del arranque y espalda alta que sostiene el brace), no lo trates
+      como carryover directo'
+    avoid_when:
+    - '~3-4 semanas finales pre-competencia (pico): la LB es el levantamiento de competencia
+      y mueve ~15-20% mas kg; la frontal no es especifica — gasta el presupuesto de
+      especificidad en LB, no aqui'
+    - 'Bandera de dolor abierta en lumbar, cadera o rodilla: el patron de sentadilla
+      carga las tres; nunca subas carga sin preguntarle primero y ofrece swap del
+      mismo patron (hack-squat o high-bar)'
+    - 'Bandera de dolor abierta en muneca: el rack frontal con agarre de clean extiende
+      la muneca bajo carga (queja clasica de la frontal); no subas carga sin preguntarle
+      — ofrece agarre de brazos cruzados, straps o swap'
+    - 'Entrenando solo con el celular y su rack frontal aun sin dominar: si los codos
+      caen la barra rueda hacia delante y se va de los hombros — no la grinds por
+      encima de RPE 7 en su re-entry; fija pines, deja espacio libre al frente para
+      soltarla y baja la carga o cambia de ejercicio'
+    - 'Cuando necesita reconstruir o anclar su e1RM de SENTADILLA LB en una fase de
+      fuerza especifica: la frontal transfiere pero no es el lift de competencia —
+      no dejes que reemplace del todo el trabajo de LB'
+    swaps:
+    - squat-hb
+    - hack-squat
+    - extensiones
+    refs:
+    - 'jtsstrength.com — Chad Wesley Smith, ''How I Built My Best Squat Ever - Front
+      Squats'': frontales en 5-8 reps construyen cuadriceps y espalda alta/erectores
+      y transfieren a la sentadilla trasera'
+    - 'Stronger By Science (Greg Nuckols) — ''High Bar and Low Bar Squatting 2.0'':
+      la posicion de barra y la especificidad mandan — la SENTADILLA LB mueve mas
+      kg y es el patron de competencia, asi que la frontal es constructor de cuadriceps/espalda
+      alta fuera del pico, no reemplazo del lift especifico'
+    - 'Gullett et al. 2009, J Strength Cond Res — ''A Biomechanical Comparison of
+      Back and Front Squats in Healthy Trained Individuals'': la frontal produce menor
+      fuerza compresiva en rodilla y menor carga espinal que la trasera con activacion
+      muscular similar de cuadriceps, isquios y erectores'
+    - 'powerliftingtechnique.com — ''A professional coach''s guide to front squats'':
+      programala si las caderas suben demasiado rapido, si fallas en el fondo o si
+      hay debilidad de cuadriceps'
+    - 'Soy Powerlifter — ''Domina la sentadilla frontal'': variante correctiva de
+      la trasera para una posicion de hombros muy adelantada'
+    notes: 'Correccion al esqueleto propuesto: agregue ''traps'' a muscles (el rack
+      frontal es un gran isometrico de espalda alta/trapecios) y ''wrist'' a joints
+      (el agarre de clean extiende la muneca cargada — la molestia mas comun de este
+      movimiento y una que alimenta sus guardarrailes de dolor). Deje ''adductors''
+      fuera a proposito: la frontal se programa aqui como ahorradora de aductores
+      (estancia mas estrecha y vertical), coherente con su tema de DOMS de aductores.
+      Carga: su e1RM de frontal suele caer ~15-20% por debajo de su SENTADILLA LB
+      — no compares kg de barra directo, juzga por RPE; en re-entry tope RPE <= 7
+      e imprime ''codos arriba, torso vertical'' en Indicaciones. Matiz entre fuentes:
+      Gullett 2009 mide MENOR compresion de rodilla en la frontal que en la trasera,
+      pero sigue siendo dominante de cuadriceps con rodilla adelantada — el tendon
+      rotuliano/cuadricipital carga fuerte, asi que su bandera de rodilla la sigue
+      gobernando pese al menor pico de compresion articular. Carryover: bien soportado
+      hacia la SENTADILLA LB (mismo patron); hacia el sumo es indirecto (cuadriceps
+      del arranque, espalda alta que sostiene el brace), no lo vendas como transferencia
+      directa. Seguridad entrenando solo: a diferencia de la LB, una frontal fallida
+      rueda hacia delante y se suelta de los hombros (bail relativamente seguro),
+      pero igual fija pines y deja espacio libre al frente; si la movilidad toracica/muneca
+      falla y no puede sostener el rack, usa brazos cruzados o straps antes de sacrificar
+      el estimulo de espalda alta del agarre de clean.'
+- id: hack-squat
+  name: HACK SQUAT MAQUINA
+  aliases:
+  - hack squat
+  - hack
+  - sentadilla hack
+  - sentadilla hack maquina
+  - maquina hack
+  - hack squat maquina
+  category: accessory
+  pattern: squat
+  muscles:
+  - quads
+  - glutes
+  joints:
+  - knee
+  - hip
+  playbook:
+    purpose: Maquina de sentadilla con espalda apoyada que deja a Benjamin machacar
+      cuadriceps con flexion profunda bajo carga a costo axial/lumbar casi nulo —
+      justo el alivio de columna que necesita cuando SENTADILLA LB + PESO MUERTO SUMO
+      ya cargan sus erectores. El respaldo fija torso y cadera (sin demanda de equilibrio
+      ni de brace), sesga fuertemente la carga al cuadriceps que un programa de barra
+      baja + sumo infratrabaja, y el gancho/tope de la maquina permite fallar entrenando
+      solo sin observador. Es accesorio de hipertrofia de off-season, no un sustituto
+      de la sentadilla de competencia.
+    use_when:
+    - 'Fase de hipertrofia/volumen 4+ semanas de una competencia: accesorio principal
+      de cuadriceps despues de SENTADILLA LB — el estiramiento profundo bajo carga
+      hace crecer el cuadriceps que la barra baja + sumo apenas tocan'
+    - Presupuesto lumbar gastado (semana pesada de barra baja + sumo, o bandera de
+      dolor lumbar abierta) pero aun debe volumen de cuadriceps — la espalda queda
+      apoyada en el respaldo, carga espinal casi nula; este es su caso estrella para
+      el tema de cuidado de espalda baja
+    - 'Sesion en solitario donde quiere empujar cuadriceps cerca del fallo: el gancho/tope
+      de la maquina lo deja bailar sin observador, a diferencia de una sentadilla
+      con barra cargada'
+    - La sentadilla se atasca o se dobla al salir del hoyo por debilidad de cuadriceps
+      — fuerza de extension de rodilla bajo carga sin sumar fatiga de erectores
+    - 'Re-entry (ahora): trabajo de cuadriceps guiado por maquina, de baja habilidad,
+      con tope RPE <= 7; la trayectoria fija mantiene el tope honesto sin exigir equilibrio'
+    avoid_when:
+    - 'Bandera de dolor abierta en rodilla (tendon rotuliano/cuadricipital): el fondo
+      con pies bajos y flexion profunda dispara la fuerza pico del tendon rotuliano
+      (sube con el angulo de flexion) y mete avance anterior de rodilla — nunca subir
+      carga sin preguntarle primero; ofrecer swap del mismo patron (extensiones en
+      rango medio 90-45, leg-press-unilateral con pies altos)'
+    - 'Bandera de dolor abierta en cadera: el fondo apila flexion de cadera profunda
+      bajo carga (pinzamiento anterior) — nunca subir carga sin preguntarle primero;
+      ofrecer swap del mismo patron (leg-press-unilateral, recortar profundidad)'
+    - 'Fase de tendon rotuliano sensible autorizado solo a cargar en rango corto:
+      NO buscar profundidad en la hack — un fondo profundo es el peor punto para el
+      rotuliano; recorta ROM o usa extensiones en rango medio 90-45 en su lugar'
+    - '~2 semanas finales de pico pre-competencia: fatiga de cuadriceps con cero especificidad
+      a la SENTADILLA LB mientras pica — cortala'
+    - 'Cuando empieza a desplazar la exposicion a SENTADILLA LB: la fuerza en maquina
+      no transfiere 1:1 a la sentadilla de competencia (especificidad) — mantenla
+      como accesorio, no como reemplazo de la sentadilla'
+    - 'Series duras con estancia ancha / puntas afuera antes de un dia pesado de sentadilla
+      o peso muerto: la posicion ancha recluta aductores y a el le dan DOMS de aductores
+      con volumen alto — rampa la estancia ancha y colocala despues del basico el
+      mismo dia, nunca 24-48 h antes'
+    swaps:
+    - leg-press-unilateral
+    - extensiones
+    - sentadilla-bulgara
+    - squat-hb
+    refs:
+    - 'PowerliftingTechnique.com — Hack Squat: Demo, Muscles Worked, and Programming
+      (accesorio de cuadriceps de off-season para levantadores de fuerza; refuerza
+      piernas y salud de rodilla sin sobrecargar la espalda baja; programar despues
+      de los basicos)'
+    - Barbell Medicine (Derek Miles) — The Barbell Medicine Guide to Tendinopathy
+      (la demanda sobre el tendon rotuliano crece con el angulo de flexion de rodilla
+      bajo carga; la flexion profunda es el punto de mayor exigencia para un tendon
+      sensible; progresa carga/tempo antes que perseguir profundidad)
+    - Bells of Steel — Will Hack Squat Improve Barbell Squat? (la transferencia a
+      la sentadilla con barra es modesta; no es una bala magica — herramienta de hipertrofia,
+      no constructor directo de sentadilla)
+    - 'That Fit Friend — How To Hack Squat Properly and Bias the Quads, Adductors,
+      and Glutes (colocacion de pies: pies bajos = mas cuadriceps y mayor avance de
+      rodilla; ancho + puntas afuera = mas aductores; pies altos/anchos = mas gluteo)'
+    notes: 'Colocacion de pies en Indicaciones: pies bajos y al ancho de cadera =
+      maximo cuadriceps y mayor avance/flexion de rodilla (tambien lo mas exigente
+      para el rotuliano); pies altos/anchos = mas gluteo; ancho + puntas afuera =
+      mas aductores (rampalo por su historial de DOMS de aductores). Dosis: 3-4x6-10,
+      o 3x8-12 con excentrica lenta para hipertrofia; en re-entry cap RPE <= 7. La
+      reputacion de ''segura para rodilla'' es de doble filo: ahorra espalda baja
+      (respaldo, bajo costo axial) pero el fondo profundo es el punto MAS intensivo
+      para el tendon rotuliano — al reves que en extensiones, donde la zona sensible
+      es la extension terminal. Equipo: necesita maquina hack squat (probable en su
+      gimnasio comercial pero no garantizado); si no la hay, leg-press-unilateral
+      es el swap con respaldo mas cercano. Verifica que tenga gancho/tope rotatorio
+      funcional para poder bailar entrenando solo.'
+- id: hip-thrust
+  name: EMPUJE DE CADERA
+  aliases:
+  - empuje de cadera
+  - empuje de caderas
+  - hip thrust
+  - hip-thrust
+  - elevacion de cadera con barra
+  category: accessory
+  pattern: hinge
+  muscles:
+  - glutes
+  - hamstrings
+  joints:
+  - hip
+  - lumbar
+  playbook:
+    purpose: 'Extension de cadera cargada (bisagra horizontal) que trabaja gluteo
+      e isquios con MUCHO MENOS carga axial y fatiga de erectores que la SENTADILLA
+      LB o el PESO MUERTO SUMO — la barra apoya sobre la cadera contra el banco, no
+      sobre la columna. Ojo: NO es carga espinal cero (los erectores estabilizan un
+      fuerte momento de extension de cadera y el lockout tiende a hiperextension lumbar),
+      pero es su via mas amable con la espalda baja para sumar volumen de cadena posterior
+      y fuerza de extension de cadera que APOYA el lockout de su sumo (250x1). Como
+      es un accesorio nuevo para el y sin 1RM propio, se carga por RPE/repeticiones,
+      no por %.'
+    use_when:
+    - 'Semana con apilamiento de fatiga de erectores (SENTADILLA LB pesada + PESO
+      MUERTO SUMO): agrega volumen de gluteo/cadena posterior con mucha menos carga
+      axial y demanda de erectores que otra bisagra pesada — ahorra la lumbar delicada
+      (no la elimina, pero le baja el costo espinal)'
+    - 'El SUMO se traba o se pone lento en el LOCKOUT (la cadera no cierra cerca del
+      bloqueo, no el despegue del piso): construye masa y fuerza de gluteo/extension
+      de cadera que APOYA ese tramo final de su tiron — carryover modesto y por hipertrofia,
+      no un arreglo directo del lift (ver notes)'
+    - 'Fase de acumulacion/hipertrofia 4+ semanas de una fecha: quiere masa de gluteo
+      sin sumar otro estresor lumbar pesado; se progresa por double-progression ~RPE
+      8 (como sus otros accesorios), series de 8-12'
+    - 'Primeras exposiciones a un patron nuevo para el: rampa suave RPE 6-7 las 1-2
+      primeras semanas para afinar tecnica (costillas abajo, sin arquear) y tolerancia
+      de tejido antes de cargar en serio — igual que se ramposea el trabajo de aductor/Copenhagen'
+    - 'Cuida rodillas: el empuje casi no mueve la rodilla (queda ~90 grados fija),
+      asi que suma volumen de pierna/cadena posterior cuando el tendon rotuliano/cuadriceps
+      esta sensible y la sentadilla profunda molesta'
+    - 'Entrenando SOLO: la barra apoya en la cadera contra el banco y, si falla, la
+      baja al piso — sin riesgo de rack/pines ni de quedar atrapado, asi que puede
+      apretar el gluteo mas duro que en una sentadilla o tiron pesado sin observador'
+    avoid_when:
+    - 'Bandera de dolor abierta en CADERA: no subir carga sin preguntarle primero;
+      regresar carga/rango antes y ofrecer swap del mismo patron (hiperextensiones,
+      rdl, leg-curl)'
+    - 'Bandera de dolor abierta en LUMBAR, o si en el video arquea la lumbar (hiperextension)
+      para cerrar la rep: aunque ahorra columna, NO es carga espinal cero y el lockout
+      tiende a hiperextension — no subir carga sin preguntarle; cue costillas abajo
+      / retroversion pelvica, topar RPE y no perseguir carga; con lumbar irritada
+      tratarlo como cualquier bandera lumbar'
+    - '~3 semanas finales pre-competencia: es la herramienta de extension de cadera
+      MENOS especifica — el SUMO y la SENTADILLA de competencia deben llevar el trabajo
+      de lockout; aqui solo sumaria fatiga de gluteo sin especificidad'
+    - 'Su debilidad es el DESPEGUE del sumo (sale lento del piso), no el lockout:
+      el empuje entrena el tramo alto; para el piso usar deadlift-deficit o deadlift-pausa,
+      no esto'
+    - 'No hay pad/colchoneta disponible en el gimnasio comercial ese dia: sin acolchado
+      la barra magulla el pliegue de la cadera y el acorta el rango — resolver el
+      pad primero o cambiar a hiperextensiones'
+    - 'Semana apretada de 4 dias donde una bisagra que ahorra columna ya esta cubierta
+      (RDL o hiperextensiones): no duplicar accesorios de extension de cadera en la
+      misma semana'
+    swaps:
+    - hiperextensiones
+    - rack-pull
+    - rdl
+    - leg-curl
+    refs:
+    - 'Bret Contreras (bretcontreras.com) — material sobre fuerza de lockout del peso
+      muerto: el empuje entrena la extension terminal de cadera con alta activacion
+      de gluteo cerca del bloqueo, util cuando la debilidad es el lockout, no el despegue'
+    - 'Plotkin, Contreras et al. 2023 — ''Hip thrust and back squat training elicit
+      similar gluteus muscle hypertrophy and transfer similarly to the deadlift'':
+      el empuje transfiere al peso muerto de forma PARECIDA a la sentadilla; la especificidad
+      manda (se gana mas en el lift que se entrena)'
+    - 'PowerliftingTechnique.com — Do Hip Thrusts Help Deadlifts?: accesorio de eleccion
+      cuando la debilidad es el tramo alto del tiron, no el despegue del piso'
+    - 'Stronger By Science (Greg Nuckols) — principio de especificidad: la mayor transferencia
+      es al movimiento entrenado; el empuje SUPLEMENTA, no sustituye, el tiron de
+      competencia'
+    - 'Soy Powerlifter (ES) — Hip Thrust, guia: refuerza la extension de cadera posterior
+      necesaria para el peso muerto sin cargar la espalda baja como una bisagra pesada'
+    notes: 'Imprime en Indicaciones: ''pad en cadera, pausa 1s arriba con apriete
+      de gluteo, costillas abajo (nada de arquear la lumbar)''. Dosis: 8-12 reps,
+      double-progression ~RPE 8 como sus otros accesorios; rampa las 1-2 primeras
+      exposiciones a RPE 6-7 por ser patron nuevo, y topa mas bajo solo en la semana
+      puente/descarga. Verificacion de datos: en el repo NO hay layoff (athlete.yaml:
+      ''no layoff since 2024'') y ya hay lineas base frescas (rebaselinado 2026-07-19);
+      el bloque activo FUERZA SBD 1 lleva topes a RPE 8.5 y accesorios ~RPE 8 — asi
+      que esto se programa como accesorio normal, no como movimiento de re-entry con
+      tope RPE<=7. Por que lumbar esta en joints pese a ser ''ahorra-columna'': el
+      empuje NO es carga espinal cero (los erectores estabilizan el momento de extension
+      y el lockout invita a hiperextension) y su tema #1 de durabilidad es la espalda
+      baja — que el guardarrail dispare y pregunte antes de subir carga es una FUNCION,
+      no un bug, sobre todo porque el empuje se usa justo cuando su lumbar esta cargada.
+      Desacuerdo entre fuentes: el campo pro-hip-thrust (Contreras) vende carryover
+      al lockout, mientras que el campo de especificidad (SBS/Nuckols; y Plotkin/Contreras
+      2023, que muestra transferencia al tiron PARECIDA a la de la sentadilla) dice
+      que la transferencia real es modesta — tratalo como herramienta de hipertrofia
+      de gluteo + volumen que ahorra columna, NO como reemplazo del SUMO. El aductor
+      mayor tambien extiende la cadera aqui, pero NO es el gesto de estancia ancha
+      que le da DOMS de aductor en sentadilla, asi que es una via segura para mantener
+      cadena posterior cuando sus aductores estan cargados. Es amable con la rodilla
+      (posicion fija ~90), util en semanas de rodilla sensible. Equipo: solo banco
+      + barra + pad (estandar en gimnasio comercial); sin pines, seguro solo — si
+      falla, baja al piso; sin pad, sub hiperextensiones. Swaps: hiperextensiones
+      es el mejor swap gluteo/ahorra-columna, leg-curl conserva el enfoque sin lumbar
+      (pero es isquio de rodilla, no gluteo), rack-pull da especificidad de lockout
+      pero REINTRODUCE carga axial en lumbar — usalo solo con espalda fresca.'
+- id: bench-cg
+  name: PRESS BANCA AGARRE CERRADO
+  aliases:
+  - press banca agarre cerrado
+  - agarre cerrado
+  - press cerrado
+  - press banca cerrado
+  - cgb
+  - close grip
+  category: variation
+  parent: bench
+  pattern: press
+  muscles:
+  - triceps
+  - pecs
+  - front_delts
+  joints:
+  - shoulder
+  - elbow
+  - wrist
+  playbook:
+    purpose: 'Variante de banca sesgada al triceps para construir el bloqueo (lockout)
+      de su PRESS BANCA COMP y acumular volumen de empuje con menos estres de hombro
+      que la banca de competicion. En su caso es slot secundario: la banca de competencia
+      con pausa se queda como lift principal por especificidad — en el re-entry necesita
+      re-grabar el comando de pausa, no cambiarlo. (Algunas escuelas corren el agarre
+      cerrado como banca principal en off-season; para el no reemplaza la comp.) El
+      agarre cerrado pesa menos que el de competencia y entrena la fase de extension
+      de codo, util cuando el press se frena o falla en el bloqueo.'
+    use_when:
+    - Semanas de acumulacion/off-season sin competencia agendada — como segundo slot
+      de empuje de la semana (trabajo de reps, p.ej. 4x6-10) detras de un dia de PRESS
+      BANCA COMP con pausa
+    - El video muestra que la banca se frena o falla en el tercio alto (codos extendiendo,
+      bloqueo) — el agarre cerrado carga directo el triceps que termina el press de
+      competicion
+    - 'Molestia de hombro anterior/AC que se agrava con el toque a ROM completo de
+      la banca comp (su tema de durabilidad de banca): el agarre mas cerrado con codos
+      metidos reduce la abduccion de hombro y ahorra el hombro manteniendo estimulo
+      de empuje — pregunta primero si hay bandera de hombro abierta'
+    - 'Re-entry actual RPE <= 7: suma volumen de triceps/empuje a carga submaxima
+      — el agarre cerrado pesa naturalmente menos que la banca comp, asi que mantiene
+      las cargas honestas bajo el tope sin ancla de %'
+    - La banca comp se puso rancia o pesada de mas — rotar el agarre cerrado una ola
+      baja la demanda de habilidad de pausa y mantiene la velocidad de barra mientras
+      sigue construyendo triceps
+    avoid_when:
+    - '~3-4 semanas finales pre-competencia: el pico necesita especificidad de pausa
+      de competicion — el agarre cerrado (mas debil, groove distinto) entrena el patron
+      equivocado; devuelve el slot a PRESS BANCA COMP'
+    - 'Bandera de dolor abierta en codo: el sesgo de triceps del agarre estrecho concentra
+      carga en el tendon triciptal (dolor de codo posterior) y es lo que mas irrita
+      en rampas de volumen — nunca subir carga sin preguntarle primero; ofrecer swap
+      del mismo patron (volver al agarre comp descarga el triceps)'
+    - 'Bandera de dolor abierta en muneca: un agarre demasiado estrecho angula el
+      antebrazo y carga la muneca en extension/desviacion, hacia una posicion forzada
+      — no subir carga sin preguntarle primero; abrir el agarre hacia el de competencia
+      u ofrecer swap del mismo patron'
+    - 'Bandera de dolor abierta en hombro: aunque el agarre cerrado suele ahorrar
+      hombro, ir demasiado estrecho rota internamente el hombro y lo compromete —
+      no subir carga sin preguntarle primero; ofrecer swap del mismo patron'
+    - Como calentamiento antes de su dia pesado de banca comp — la fatiga de triceps
+      que deja arruina su serie tope de competicion; programalo despues o en dia separado,
+      nunca antes
+    - 'Series al fallo / AMRAP > RPE 8 entrenando solo: banca sin observador — mantener
+      topeada la serie tope, con los pines/seguros del rack puestos y la barra SIN
+      collarines para poder soltar o deslizar los discos si falla una rep'
+    swaps:
+    - bench
+    - fondos
+    - press-inclinado
+    - flexiones-cerradas
+    refs:
+    - 'Juggernaut Training Systems — Bench Variations: How, Why & When To Use Them
+      (jtsstrength.com): agarre cerrado para fuerza de triceps/bloqueo y para rodear
+      molestias de hombro/pec; mover agarre 2-3" hacia dentro del de competencia,
+      meter codos y tocar mas abajo; mejor en hipertrofia pero usable en cualquier
+      fase'
+    - 'Powerlifting-Now — How To Program The Close Grip Bench Press: constructor de
+      bloqueo/triceps, ~80-90% 1RM x3-5 (o serie tope 1-5 + backdowns por RIR) como
+      accesorio de lockout, primario en off-season o secundario en prep; nunca como
+      calentamiento previo a la banca principal'
+    - 'PowerliftingTechnique.com — Close Grip Bench Press: Benefits, How-To & Muscles
+      Worked: accesorio, generalmente mas debil que el agarre de competencia; agarre
+      a ~ancho de hombros (no manos juntas)'
+    - 'Barbell Rehab — Triceps Tendinopathy: How to Fix Elbow Pain During the Bench
+      Press: el agarre estrecho sobrecarga el tendon triciptal (dolor posterior de
+      codo) en rampas de volumen; abrir el agarre descarga temporalmente el triceps'
+    - 'soypowerlifter.com / mundoentrenamiento.com (ES) — Press banca agarre cerrado:
+      accesorio de powerlifting para reforzar la extension final/bloqueo; un agarre
+      demasiado estrecho aumenta el estres de muneca sin apenas beneficio'
+    notes: 'Ancho de agarre: ~2-3" mas cerrado que su agarre de competencia (JTS),
+      NO manos juntas — cerca del ancho de hombros; ir mas estrecho dispara estres
+      de muneca/hombro sin extra de triceps (consenso de fuentes). El agarre cerrado
+      alarga el ROM y baja el punto de toque; el ahorro de hombro viene de menos abduccion,
+      no de menos recorrido. Cue en Indicaciones: ''codos metidos, toca mas abajo
+      en el pecho, barra sobre muneca sobre codo''. El e1RM del agarre cerrado SUBESTIMA
+      la banca comp (pesa menos) — no lo mezcles en las proyecciones de PRESS BANCA
+      COMP. Dosis: reps de hipertrofia (4x6-10) o 80-90% 3-5 como constructor de bloqueo
+      (Powerlifting-Now), pero durante el re-entry topea todo a RPE <= 7. Desacuerdo
+      de fuentes: es ''ahorra-hombro'' vs agarre comp solo dentro de un rango moderado
+      — demasiado cerrado invierte el beneficio. Entrena solo (barra): pines/seguros
+      del rack puestos, sin collarines para poder soltar los discos.'
+- id: spoto-press
+  name: PRESS BANCA SPOTO
+  aliases:
+  - spoto press
+  - press spoto
+  - banca spoto
+  - press banca con pausa suspendida
+  - press banca suspendido
+  category: variation
+  parent: bench
+  pattern: press
+  muscles:
+  - pecs
+  - front_delts
+  - triceps
+  joints:
+  - shoulder
+  - elbow
+  - wrist
+  playbook:
+    purpose: 'Press banca con pausa suspendida 2-3 cm sobre el pecho, sin tocar ni
+      rebotar: elimina el rebote y el reflejo de estiramiento que normalmente lo ayudan
+      a arrancar la barra del pecho, obligando a fuerza honesta de pecho y triceps
+      para atravesar la region de estancamiento (los primeros ~5-10 cm de recorrido,
+      donde el pectoral cede el relevo al triceps) desde una posicion casi muerta.
+      OJO: no quita ni debe quitar el arco ni el empuje de piernas — son tecnica LEGAL
+      de competencia; lo unico que quita es la trampa del rebote/heave off the chest.
+      Como la carga se autolimita sin ese rebote, encaja con su re-entry RPE <= 7
+      antes de que exista una base fresca de banca comp; y entrenando SOLO nunca depende
+      de un rebote que lo pueda dejar clavado.'
+    use_when:
+    - 'Bloque de re-entry actual: la pausa suspendida limita la carga por diseno (sin
+      rebote que empuje la barra) y mantiene su banca en RPE <= 7 honesto — no hay
+      ancla de % hasta que las series tope reconstruyan una base sobre los 130x1'
+    - El video (entrena solo con el celular) muestra que su PRESS BANCA COMP se atasca
+      5-10 cm arriba del pecho, no pegado abajo — el Spoto pausa justo debajo de ese
+      punto muerto y lo obliga a atravesarlo sin impulso, haciendo el fallo visible
+      y corregible sin observador
+    - 'Entrena SOLO sin observador y le preocupa clavarse: el Spoto nunca depende
+      de un rebote, mantiene la barra controlada sobre el pecho y con los pines del
+      rack puestos justo bajo el punto de suspension (o sin collarines para botar
+      discos) puede soltar seguro — press primario mas seguro que un touch-and-go
+      casi maximo'
+    - 'Fase de hipertrofia/volumen 6+ semanas de una competencia: como press secundario
+      suma tiempo bajo tension y trabajo de pecho/triceps sin la carga pesada del
+      arranque desde el pecho'
+    - 'Se nota que DEPENDE DEL REBOTE de la barra en el pecho (heave) para pasar el
+      punto muerto — el Spoto quita ese rebote y expone la fuerza real del sticking
+      point. (El arco y el empuje de piernas NO son la trampa: son tecnica legal de
+      banca; el problema a corregir es botar la barra del pecho.)'
+    avoid_when:
+    - 'Pico ~3 semanas pre-competencia: PRESS BANCA COMP necesita el toque y la pausa
+      SOBRE el pecho para especificidad y para ensayar la orden de press — la pausa
+      a media altura del Spoto entrena una posicion distinta; usa bench (banca con
+      pausa comp)'
+    - 'Bandera de dolor abierta en hombro, codo o muneca: no subir carga sin preguntarle
+      primero; ofrecer swap del mismo patron (bench, bench-tempo, bench-cg)'
+    - 'La semana ya tiene PRESS BANCA COMP pesado como press primario: no apiles dos
+      presses de control con pausa en su re-entry solo — elige uno para no acumular
+      fatiga de press sin especificidad'
+    - 'Su fallo de banca es abajo del todo, pegado al pecho (debilidad en el arranque
+      desde el pecho): ahi la banca con pausa comp es mas especifica que el punto
+      suspendido del Spoto'
+    - 'El objetivo de la sesion es ensayar el protocolo de competencia (bajar, asentar
+      en el pecho, esperar la orden, empujar): la barra suspendida sin tocar no reproduce
+      ese cue — usa bench'
+    swaps:
+    - bench
+    - bench-tempo
+    - bench-cg
+    refs:
+    - 'Soy Powerlifter (ES) — ''Spoto Press para mejorar en press de banca'': reduce
+      trampas (rebote off-chest), aumenta el tiempo bajo tension y ataca el punto
+      de estancamiento'
+    - 'Barbell Logic — ''Gym Shorts: The Spoto Bench Press'': pausa 2-5 cm sobre el
+      pecho, construye control y tension a traves del sticking point; en agarre cerrado
+      carga mas el triceps'
+    - 'JoshStrength / Josh Bryant — ''Spoto Press'': nombrado por Eric Spoto (record
+      RAW de banca 327 kg), entrena fuerza del sticking point; programacion tipica
+      ~80-85% 3-5 reps para intermedios/avanzados'
+    - 'Fitness Volt — ''Try Spoto Press To Catapult Your Bench Press Strength'': variante
+      mas amable con el hombro al no tocar el pecho; ataca los primeros centimetros
+      del empuje'
+    notes: 'Imprime la pausa en Indicaciones (''2-3s suspendido, sin tocar el pecho,
+      sin rebote''). Las fuentes lo programan como primario ~80-85% 3-5 reps, pero
+      en su re-entry cargalo por RPE <= 7 hasta que la semana 1 fije una base; luego
+      ~60-70% de esa e1RM. Altura del punto de suspension ~2-3 cm: mas alto se vuelve
+      tipo board press, mas bajo toca el pecho. La pausa cae JUSTO DEBAJO del sticking
+      point (no encima): el valor es entrar a la region de estancamiento sin impulso,
+      no pausar exactamente en ella. Solo y sin observador: pon los pines del rack
+      justo debajo del punto de suspension y/o banca sin collarines para poder botar
+      los discos en un fallo. Recordatorio de coaching: no le pidas quitar el arco
+      ni el empuje de piernas — son legales y utiles; el Spoto solo mata el rebote.
+      Desacuerdo entre fuentes: casi todas lo venden como constructor de banca, pero
+      para especificidad de competencia el consenso (banca con pausa comp) sigue siendo
+      mas especifico — por eso es herramienta de bloque medio, no de pico.'
+- id: fondos
+  name: FONDOS EN PARALELAS
+  aliases:
+  - fondos
+  - paralelas
+  - dips
+  - fondos en paralelas
+  - fondos de pecho
+  - fondos de triceps
+  category: accessory
+  pattern: press
+  muscles:
+  - triceps
+  - pecs
+  - front_delts
+  joints:
+  - shoulder
+  - elbow
+  - wrist
+  playbook:
+    purpose: 'Press compuesto de peso corporal/lastrado, sesgado al pectoral inferior
+      y triceps a traves de un ROM mas largo que la banca de competencia: apoya el
+      bloqueo del PRESS BANCA COMP y construye masa de empuje. Para un levantador
+      solitario tiene la ventaja de que, en una estacion de la que puede bajarse o
+      en maquina de fondos asistidos, falla con relativa seguridad (planta los pies
+      o se baja de las barras, sin observador ni barra que soltar) — pero esa salvedad
+      se estrecha cuando va muy lastrado y profundo, asi que no es su empuje mas a
+      prueba de fallos (esos siguen siendo PRESS MILITAR, flexiones y mancuernas).'
+    use_when:
+    - 'Fase de volumen/hipertrofia 4+ semanas de una competencia: 2do o 3er slot de
+      empuje despues del PRESS BANCA COMP para masa de pectoral inferior y triceps
+      con un ROM mas profundo que la banca; se recupera facil y tolera 2x/semana'
+    - 'La banca se atasca o falla en el bloqueo: fondos con torso erguido y codos
+      pegados sesgan el triceps que el lockout necesita — lastrados (cinturon o mancuerna
+      entre los pies), una vez pasado el tope RPE <= 7 del re-entry'
+    - 'Quiere empujar un press cerca del fallo entrenando SOLO: a peso corporal, en
+      una estacion de la que puede bajarse, los fondos fallan seguro (planta los pies
+      / baja de las barras) a diferencia de la banca con barra sin observador — llevalos
+      a RPE 8-9 solo una vez levantado el cap del re-entry, pero si van muy lastrados
+      baja menos profundo o pasa el trabajo cerca del fallo a PRESS MILITAR/mancuernas
+      (mas faciles de soltar)'
+    - 'Re-entry actual (2026-07): mantenlo en RPE <= 7 — los fondos a peso corporal
+      muchas veces YA superan ese tope, asi que usa la maquina de fondos asistidos
+      o una banda para quedar bajo el cap; no simplemente sumes reps al peso corporal'
+    - 'Semanas de SENTADILLA LB + sumo pesado con el presupuesto lumbar gastado: los
+      fondos suman volumen de empuje a cero carga axial/espinal (a diferencia del
+      trabajo de barra por encima de la cabeza), lo que encaja con su cuidado de espalda
+      baja'
+    - 'Gimnasio lleno o banca ocupada: la estacion de fondos mantiene viva la frecuencia
+      de empuje en su semana de 4 dias sin esperar el rack'
+    avoid_when:
+    - 'Bandera de dolor abierta en hombro: el fondo profundo lleva el hombro a extension/hiperextension
+      cargada (el brazo pasa por detras del torso, con deslizamiento anterior de la
+      cabeza humeral) — el agravante clasico del hombro anterior/AC; no subir carga
+      sin preguntarle primero; ofrecer swap del mismo patron (bench-cg o triceps),
+      recortar profundidad o quitarlo'
+    - 'Irritacion de hombro anterior/AC arrastrada del PRESS BANCA COMP: el estiramiento
+      profundo en extension del fondo se apila sobre la misma articulacion sensible
+      — corta el ROM a brazo-paralelo o archivalo hasta que ceda'
+    - 'Bandera de dolor abierta en codo (tendon del triceps/codo medial): el bloqueo
+      desde posicion estirada carga fuerte los extensores del codo — no anadir carga
+      sin preguntarle primero; usar triceps (jalones en rango medio, con tope de RPE)
+      mientras tanto'
+    - 'Bandera de dolor abierta en muneca: todo el peso corporal se soporta a traves
+      de las manos que agarran las barras en extension de muneca — no cargarlo sobre
+      una muneca con bandera abierta sin preguntarle; el press con mancuerna en agarre
+      neutro ahorra la muneca'
+    - 'Ultimas 1-2 semanas de pico/meet: sin especificidad al press con pausa de competencia
+      y el DOMS del estiramiento de hombro persiste — cortalo con el resto de accesorios'
+    - 'Buscar profundidad excesiva por ''mas pecho'' sin la movilidad/control de hombro:
+      pasado el brazo-paralelo el estres del hombro anterior sube mas rapido que el
+      estimulo del pectoral — manten la profundidad a ~paralelo en vez de hundirte
+      al fondo maximo'
+    swaps:
+    - bench-cg
+    - flexiones-cerradas
+    - press-inclinado
+    - triceps
+    refs:
+    - 'PowerliftingTechnique.com — How to Do Chest Dips: Coach Demo and Exercise Guide
+      (programacion, profundidad, carryover al bloqueo de banca)'
+    - Andy Baker (andybaker.com) — Programming Advice on Dips (accesorio de bajo costo
+      de recuperacion, apto 2x/semana para benchers)
+    - Swolverine — Are Dips Bad for Shoulders? Biomechanics Breakdown and Safer Alternatives
+      (el estres del hombro anterior crece mas rapido que el estimulo del pectoral
+      pasado el paralelo)
+    - Streetlifting Academy — Beneficios de los fondos en paralelas para ganar masa
+      muscular (triceps/pecho inferior, transferencia a empujes)
+    notes: 'La inclinacion del torso dirige el enfasis: torso erguido + codos pegados
+      = triceps/bloqueo (imprime la intencion en Indicaciones); torso adelante = pectoral
+      inferior. Profundidad: brazo a ~paralelo es el punto justo — mas abajo el hombro
+      cae en extension/hiperextension y suma estres de hombro anterior mas rapido
+      que estimulo de pectoral (Swolverine/biomecanica), y manten la escapula deprimida
+      (hombros lejos de las orejas). Carga: en re-entry el peso corporal suele pasar
+      RPE 7 -> asistido/con banda para quedar bajo el cap (mismo criterio que las
+      dominadas de traccion-vertical); anade lastre (cinturon/mancuerna) solo cuando
+      se levante el cap. Seguridad solo: falla razonablemente seguro a peso corporal
+      en estacion de la que puede bajarse o en maquina asistida, pero muy lastrado
+      y profundo la salida es menos trivial que descargar mancuernas o bajar una PRESS
+      MILITAR — reservalo para trabajo submaximo cuando esta pesado. Desacuerdo entre
+      fuentes: algunos lo venden como gran motor del press raw (TrainHeroic); la lectura
+      honesta es hipertrofia + apoyo al bloqueo — el carryover es real pero individual
+      (depende de si su limitante es triceps/lockout), no garantizado; mantenlo como
+      accesorio. Equipo: necesita estacion de fondos/paralelas o maquina de fondos
+      asistidos, estandar en gimnasio comercial; si solo hay anillas o barras inestables,
+      saltalo (no es su montaje habitual).'
+- id: press-banca-db
+  name: PRESS BANCA MANCUERNAS
+  aliases:
+  - press banca mancuernas
+  - press mancuernas
+  - press pecho mancuernas
+  - press plano mancuernas
+  - banca mancuernas
+  - press banca db
+  - flat db bench
+  - dumbbell bench press
+  category: accessory
+  pattern: press
+  muscles:
+  - pecs
+  - front_delts
+  - triceps
+  joints:
+  - shoulder
+  - elbow
+  playbook:
+    purpose: 'Su press de hipertrofia mas cercano a PRESS BANCA COMP sin ser la barra:
+      ROM mas largo y estiramiento pectoral mas profundo que la comp, carga por mano
+      que delata su brazo mas debil, y mancuernas que puede soltar si una rep muere
+      — masa de pecho/deltoide anterior/triceps a cero costo axial entrenando solo.
+      El traspaso a la banca de competencia es indirecto (musculo y capacidad de trabajo,
+      no la habilidad de pausa), asi que es slot de apoyo, nunca su banca principal.'
+    use_when:
+    - Fases de volumen/hipertrofia 4+ semanas de una competencia — 2do o 3er slot
+      de empuje detras de la PRESS BANCA COMP con pausa, 3-4x6-12 en doble progresion,
+      para el pecho/triceps que el ROM corto de la barra deja corto
+    - La barra se inclina o un brazo se atrasa en PRESS BANCA COMP — la carga independiente
+      obliga al lado debil a trabajar solo; iguala las reps al brazo mas flojo para
+      cerrar la asimetria a lo largo del bloque
+    - 'Re-entry actual: el kick-up torpe de mancuernas pesadas entrenando solo, sumado
+      al tope RPE <= 7, mantiene la carga honesta por diseno — no puede grindear un
+      maximo de press mancuernas sin observador'
+    - Hombro anterior molesto bajo la trayectoria fija de la barra — la ruta libre
+      de las mancuernas le deja rotar munecas y elegir un surco sin dolor; mantenlo
+      solo si sus reps son de verdad indoloras
+    - Necesita volumen de pecho/triceps en dia de banca sin observador ni pines que
+      resetear — las mancuernas se sueltan al piso, mas simple que back-offs de barra
+      con seguros del rack
+    avoid_when:
+    - Bandera de dolor abierta en hombro o codo — el estiramiento profundo del fondo
+      carga sobre todo el hombro anterior y el tendon pectoral; nunca subas la carga
+      sin preguntarle primero; ofrece press-inclinado o flexiones-cerradas del mismo
+      patron de empuje
+    - 'Ultimas 1-2 semanas pre-competencia — cortalo: DOMS y fatiga inespecifica sin
+      traspaso a la banca con pausa tan cerca de la tarima'
+    - Cuando desplazaria volumen de PRESS BANCA COMP con pausa — el traspaso de fuerza
+      de la mancuerna a la comp es indirecto; gana la especificidad, mantenlo como
+      slot suplementario
+    - Mancuernas objetivo demasiado pesadas para subirlas solo desde las rodillas
+      — el setup falla antes que los pectorales; baja la carga y suma reps, o pasa
+      a back-offs de bench-nopause dentro del rack; no andes buscando quien te de
+      un spot en el gimnasio comercial
+    - La pausa es el punto debil actual de la banca — el press plano con mancuernas
+      no entrena el freno a la orden; dale el slot a bench-tempo o a pausas de competencia
+    swaps:
+    - press-inclinado
+    - bench-nopause
+    - flexiones-cerradas
+    refs:
+    - PowerliftingTechnique.com — Does Dumbbell Bench Press Help Your Barbell Bench
+      Press? (la barra siempre tiene prioridad; el traspaso llega por musculo y equilibrio
+      de brazos, no por especificidad de la pausa; maximizalo imitando arco, empuje
+      de piernas y trayectoria uniforme de manos)
+    - StrengthLog — Dumbbell vs Barbell Bench Press (mayor ROM y activacion pectoral,
+      ~70-85% de la carga de la barra, setup dificil con mancuernas pesadas pero bailout
+      mas seguro, expone/corrige asimetrias)
+    - 'ZonaWOD — Press de banca con mancuernas: que aporta esta variante (estiramiento
+      pectoral mas profundo, trayectoria mas natural de muneca/codo, cada brazo corrige
+      asimetrias)'
+    - Noteboom et al. 2024, Front Physiol, PMC11224528 — Effects of bench press technique
+      variations on musculoskeletal shoulder loads and potential injury risk (no hay
+      evidencia biomecanica de que ninguna variante de tecnica reduzca el riesgo de
+      lesion; el fondo con ROM completo y la fijacion escapular contra el banco son
+      la zona de estres del hombro)
+    notes: 'Techo de carga ~70-85% de su banca de barra (StrengthLog/PowerliftingTechnique):
+      con banca de comp ~130 son un par de ~45-52 kg, y subirlas solo es el freno
+      real, asi que el ejercicio auto-regula el RPE. Debate de traspaso: los coaches
+      lo venden como constructor de banca, pero la evidencia dice que transfiere por
+      musculo anadido y equilibrio de brazos, no por especificidad de la pausa (PowerliftingTechnique)
+      — cue: presiona como si una barra uniera las mancuernas, igualando arco/empuje
+      de piernas/trayectoria de manos para exprimir el poco traspaso que hay. El estiramiento
+      profundo con ROM completo hace crecer el pecho pero es la zona de estres del
+      hombro (Noteboom 2024: sin evidencia biomecanica de que ninguna variante reduzca
+      el riesgo; el fondo estirado y la fijacion escapular contra el banco concentran
+      el estres): imprime ''no rebotar abajo'' en Indicaciones y controla la excentrica.
+      El agarre neutro/rotable de la mancuerna ademas ahorra la muneca frente a la
+      barra — por eso es una opcion util si la muneca molesta y por eso no cuenta
+      como articulacion cargada aqui. Sube desde las rodillas una a una y suelta a
+      los lados si falla — seguro entrenando solo, a diferencia de la barra.'
+- id: aperturas
+  name: APERTURAS DE PECHO
+  aliases:
+  - aperturas
+  - aperturas mancuernas
+  - aperturas polea
+  - aperturas cable
+  - contractora
+  - pec deck
+  - mariposa
+  - chest fly
+  category: accessory
+  pattern: press
+  muscles:
+  - pecs
+  joints:
+  - shoulder
+  playbook:
+    purpose: 'Aislamiento de pectoral a longitud larga: el unico movimiento del catalogo
+      que carga el pec en pleno estiramiento sin gravar codos ni triceps, asi que
+      suma hipertrofia de pecho DESPUES del press sin gastar mas fatiga de extension
+      de codo ni de press de hombro, y con CERO carga axial/lumbar — util en semanas
+      de mucha SENTADILLA LB / PESO MUERTO SUMO cuando los erectores ya estan cargados.
+      En cable o contractora es seguro entrenando solo; es un finisher y herramienta
+      de conexion mente-musculo, nunca un driver de fuerza de PRESS BANCA COMP.'
+    use_when:
+    - 'Fases de volumen/hipertrofia 4+ semanas de una competencia: cierre de sesion
+      tras PRESS BANCA COMP e PRESS INCLINADO MANCUERNAS, 3-4x10-15, para sumar volumen
+      de pec en estiramiento que el press no termino'
+    - 'El press se traba justo saliendo del pecho y el limitante parece tamano de
+      pectoral (no lockout de triceps): construir tejido de pecho a lo largo del bloque
+      — el carryover llega por musculo agregado, no por la apertura en si'
+    - 'Re-entry actual: aperturas en polea/contractora topan limpio en RPE <= 7 y
+      suman volumen de pec mientras se re-groova la tecnica del press comp — costo
+      sistemico y de codo bajos'
+    - 'Semana con mucho press donde codos/triceps son el cuello de botella de recuperacion:
+      la apertura suma estimulo de pec con CERO carga de extension de codo, a diferencia
+      de otro press o de las extensiones'
+    - 'Semanas de alta fatiga axial (mucha SENTADILLA LB + PESO MUERTO SUMO) donde
+      toca ahorrar columna: la apertura mantiene volumen de pecho sin cargar erectores
+      ni sumar fatiga lumbar'
+    - 'Pre-activacion antes del press: 2 series LIGERAS (sin fatigar el pec) para
+      sentir el pecho cuando reporta ''no siento el pecho'' / press todo-hombro (cue
+      de Soy Powerlifter)'
+    - 'Gimnasio lleno y la banca ocupada: cable o contractora mantienen vivo el volumen
+      de pecho del dia de press sin reprogramar nada'
+    avoid_when:
+    - 'Bandera de dolor abierta en hombro (capsula anterior/AC — el mismo tejido que
+      ya estresa su press comp): el fondo en estiramiento profundo es el agravante
+      clasico; nunca subir su carga sin preguntarle primero — ofrecer swap del mismo
+      patron con ROM mas corto y apoyado (press-banca-db, flexiones-cerradas)'
+    - 'Entrenando solo con mancuernas pesadas en el estiramiento profundo: una rep
+      fallada en el fondo de una apertura con mancuerna no tiene salida y amenaza
+      hombro anterior/pec — mantener la carga en polea o contractora (soltables con
+      seguridad) y las mancuernas ligeras'
+    - 'Durante el re-entry RPE <= 7: nada de cargas ego en estiramiento profundo ni
+      series maximas de parciales largos — la posicion estirada es la de mayor riesgo
+      de lesion; dejar 2-3 reps en reserva y ROM controlado'
+    - 'Ultimas 1-2 semanas antes de competencia / taper: relleno de pura hipertrofia
+      con cero carryover a un 1RM con pausa; primer accesorio en cortar'
+    - 'Cuando desplazaria volumen de press banca con pausa o de press inclinado: el
+      press construye el pec al menos igual de bien (Henselmans/EMG) y ademas entrena
+      el patron especifico — la apertura es suplementaria, nunca un sustituto'
+    swaps:
+    - press-inclinado
+    - press-banca-db
+    - flexiones-cerradas
+    refs:
+    - 'Menno Henselmans — Bench Press vs. Flys: Which Is Better for the Pecs? (mennohenselmans.com/bench-press-vs-flys):
+      para masa de pec el press iguala o supera a las aperturas — la apertura pierde
+      tension en el rango alto (con mancuerna casi nula arriba); su valor es el estimulo
+      en posicion estirada, donde el brazo de palanca es maximo (revision de Solstad
+      et al. 2020)'
+    - 'Stronger By Science / G. Nuckols — Do Lengthened Partials Really Stimulate
+      Stretch-Mediated Hypertrophy? (strongerbyscience.com/stretch-mediated-hypertrophy):
+      entrenar en la posicion estirada tiende a dar algo mas de crecimiento (~5-7%
+      en la evidencia de ROM largo/parciales estirados), pero SBS matiza que la etiqueta
+      ''hipertrofia mediada por estiramiento'' esta sobrevendida como mecanismo aparte
+      — la conclusion practica es que vale la pena entrenar el pecho a traves del
+      estiramiento, no que la apertura tenga magia'
+    - 'Soy Powerlifter — Como hacer apertura con mancuernas (soypowerlifter.com/apertura-mancuernas):
+      nunca ejercicio principal; finisher tras los press o pre-activacion 2 series
+      ligeras; codos ligeramente flexionados y FIJOS — si el codo se extiende se vuelve
+      un press y el pecho pierde especificidad'
+    - 'Estudio de activacion ACE (Porcari et al., 2012) — pec deck ~98% y cruce en
+      polea inclinado ~93% de la activacion del pec del press con barra: activan bien
+      el pectoral, pero como aislamiento sin los sinergistas'
+    notes: 'Dosis: 10-15 reps, 3-4 series, 2s excentrica, codos ligeramente flexionados
+      y FIJOS (Soy Powerlifter: si se abren/extienden pasa a ser press y pierde especificidad
+      de pecho). Escapula retraida/deprimida, codos a la altura del hombro, ROM a
+      un estiramiento COMODO (~80-90 grados de abduccion), no maximo — el cizallamiento
+      del hombro anterior y el riesgo de desgarro de pec pican en el fondo profundo.
+      Desacuerdo entre fuentes: el fisicoculturismo vende las aperturas como esenciales
+      para el pecho, pero para MASA de pectoral los press igualan o superan (revision
+      de Henselmans — la apertura no da tension en el rango alto); su valor real es
+      el estimulo en posicion estirada y el volumen de pecho que ahorra codo y columna,
+      no superioridad sobre el press. Como accesorio spine-free encaja bien en semanas
+      de mucha SENTADILLA/PESO MUERTO. Para un levantador solitario, dirige el ''a
+      eleccion'' a polea/contractora antes que mancuernas pesadas. Sin equipo raro:
+      cables y contractora son estandar en su gimnasio comercial.'
+- id: deadlift-deficit
+  name: PESO MUERTO SUMO DEFICIT
+  aliases:
+  - peso muerto deficit
+  - sumo deficit
+  - deficit
+  - pm sumo deficit
+  - deadlift deficit
+  - sumo parado en disco
+  category: variation
+  parent: deadlift
+  pattern: hinge
+  muscles:
+  - glutes
+  - hamstrings
+  - quads
+  - spinal_erectors
+  - adductors
+  joints:
+  - hip
+  - knee
+  - lumbar
+  playbook:
+    purpose: 'Herramienta de punto debil para la SALIDA DEL SUELO de su PESO MUERTO
+      SUMO: parado sobre 2-4 cm, el mayor recorrido lo obliga a mas flexion de rodilla,
+      mas tension y empuje de piernas para romper el piso y a paciencia en la cadera
+      — ataca el fallo de ''caderas que suben primero'' y el tiron lento hasta la
+      rodilla. Compra menos carga absoluta por mas carryover a la posicion de competencia
+      que un rack-pull, pero es una variacion AVANZADA y cara para la espalda: no
+      es tarea de su re-entry actual.'
+    use_when:
+    - Fase de fuerza/acumulacion 4+ semanas de una competencia y YA con base fresca
+      de sumo — cuando su fallo documentado en video es la salida del suelo (caderas
+      se disparan primero, tiron lento hasta la rodilla), no el lockout
+    - 'Bloque acotado de 4-6 semanas como pico de una fase de tiron: es tecnicamente
+      exigente y estresa la espalda — pasado eso el ROM extra solo apila fatiga lumbar
+      sin mas carryover, asi que rotalo, nunca fijo todo el ano'
+    - El video muestra piernas 'apagadas' que dejan la salida a la espalda o caderas
+      que suben antes de romper el piso — el deficit fuerza empuje de piernas y cadera
+      paciente, corregible aunque entrene solo con el celular
+    - Quiere sesgo de cuadriceps/empuje inicial dentro del patron de tiron sin cambiar
+      de lift — la mayor flexion de rodilla del deficit recluta cuadriceps mas que
+      el sumo normal
+    - 'Solo tras rampar tolerancia de aductores: el deficit ensancha y profundiza
+      la salida (mas estiramiento de aductores) — introducelo despues de semanas de
+      trabajo de estancia ancha, nunca como primera exposicion dada su historia de
+      DOMS de aductores'
+    avoid_when:
+    - 'AHORA, en su re-entry (RPE <= 7, sin base fresca de sumo): es una variacion
+      avanzada para levantadores con posicion estable — prematura hasta que el sumo
+      de competencia tenga numeros frescos; reconstruye con deadlift y deadlift-tempo
+      primero'
+    - 'Bandera de dolor abierta en lumbar, cadera o rodilla — o cualquier molestia
+      de aductor/ingle: el mayor ROM sube la demanda lumbar y la salida profunda carga
+      rodilla y aductores; nunca subir carga sin preguntarle primero, ofrecer swap
+      del mismo patron (deadlift-pausa, deadlift-tempo)'
+    - 'Semana que ya carga SENTADILLA LB pesada + PESO MUERTO SUMO: el deficit apila
+      fatiga de erectores sobre un presupuesto lumbar ya gastado — separalo de los
+      dias pesados o cortalo'
+    - 'Ultimas ~3 semanas pre-competencia: el pico necesita tirones sumo a velocidad
+      y ROM de plataforma — el deficit suma fatiga y recorrido extra sin especificidad;
+      el volumen de peso muerto se recorta primero de los tres lifts'
+    - Su fallo es el lockout, no la salida — el deficit no ataca eso; para lockout
+      ve a rack-pull o hip-thrust, no a mas ROM desde abajo
+    - 'Deficit grande (>4-5 cm) o parado sobre una torre inestable de discos: pierde
+      carryover y se vuelve ''truco de circo'' con riesgo lumbar, y entrenando solo
+      la base DEBE ser estable — quedate en 2-4 cm sobre una plataforma o bloque firme'
+    swaps:
+    - deadlift-pausa
+    - deadlift-tempo
+    - deadlift
+    - deadlift-conv
+    refs:
+    - 'BarBend — Learn the Deficit Sumo Deadlift for More Pulling Strength and Mobility
+      (barbend.com/deficit-sumo-deadlift): mayor flexion de rodilla -> mas cuadriceps
+      y ROM; dosis fuerza 5x5 @ ~80%, hipertrofia 4x10-12'
+    - 'SoCal Powerlifting — The Benefits of Deficit Deadlifts (socalpowerlifting.net/post/the-benefits-of-deficit-deadlifts):
+      deficit 1-2 pulgadas para sumo, obliga a construir tension off-the-floor y sincroniza
+      el lockout rodilla/cadera; el sumo ya es cuadriceps-dominante'
+    - 'PowerliftingTechnique.com — Deficit Deadlift Benefits: bloque de 4-6 semanas,
+      deficit chico (~2-4 cm); un deficit grande arriesga la espalda; varios coaches
+      prefieren deficit CONVENCIONAL por su carryover a ambos estilos'
+    - 'Zonawod / Soy Powerlifter (ES) — peso muerto con deficit: variante avanzada
+      para mejorar la salida del suelo; ''el deficit sumo se recomienda solo para
+      avanzados con buena movilidad'', no para quien vuelve de paron sin poder bisagrar
+      sin dolor'
+    notes: 'Desacuerdo real de fuentes: SoCal/BarBend respaldan el deficit sumo (sesgo
+      cuadriceps, tension off-the-floor); pero muchos coaches (PRS, PowerliftingTechnique)
+      sostienen que el deficit sumo mete al levantador en una posicion rara -> dispara
+      mas la cadera o replica una sentadilla de estancia ancha, y prefieren deficit
+      CONVENCIONAL (deadlift-conv), que transfiere a ambos estilos. Traduccion para
+      Benjamin: solo va si SU salida de sumo se ve mejor en video con el deficit;
+      si dispara mas la cadera, cambia a deadlift-conv o a deadlift-pausa. Dosis:
+      2-4 cm sobre plataforma/discos ESTABLES (nunca torre tambaleante), ~60-70% de
+      su e1RM de sumo por el ROM extra, cargar por RPE. Espera DOMS de aductores y
+      erectores; se baila solo sin problema (no completar la rep), pero la base tiene
+      que ser firme.'
+- id: deadlift-pausa
+  name: PESO MUERTO SUMO CON PAUSA
+  aliases:
+  - peso muerto sumo pausa
+  - sumo con pausa
+  - peso muerto con parada
+  - sumo pausado
+  - pausa bajo rodilla
+  - sumo con parada
+  category: variation
+  parent: deadlift
+  pattern: hinge
+  muscles:
+  - glutes
+  - hamstrings
+  - quads
+  - adductors
+  - spinal_erectors
+  - traps
+  joints:
+  - hip
+  - knee
+  - lumbar
+  playbook:
+    purpose: 'Herramienta de punto debil especifica para el despegue y el bajo-rodilla
+      del sumo: una pausa de 1-2s justo debajo del punto de estancamiento acumula
+      tension cuasi-isometrica exactamente donde el falla (caderas que suben primero,
+      barra que se aleja de la tibia, dorsales que se sueltan al romper el piso).
+      Es la contraparte mas especifica y de fase posterior de deadlift-tempo — meet-oriented
+      — pero por eso pide una debilidad ya identificada en video y una base de sumo
+      fresca, no el arranque crudo del re-entry.'
+    use_when:
+    - 'Fase de fuerza/pico con un punto debil de sumo YA visto en su video (caderas
+      que suben primero, barra que se despega de la tibia al romper el piso): pausa
+      1-2s ~2-3 cm bajo el punto de estancamiento, como bisagra SECUNDARIA detras
+      del sumo de competencia'
+    - 'Ya reconstruida una base de sumo fresca (no en la semana 1 del re-entry): es
+      una herramienta de fase posterior — entra despues de que deadlift-tempo/rdl
+      restauren tolerancia y el sumo de competencia tenga e1RM actual'
+    - 'Autocorreccion entrenando SOLO con el celular: la pausa delata al instante
+      una barra perdida o el fallo de caderas-primero en el video, util sin observador
+      y compatible con su tope RPE <= 7 de re-entry'
+    - 'Fuerza de arranque/bajo-rodilla a carga ABSOLUTA submaxima: el freno-y-pausa
+      obliga a producir fuerza desde parado con menos kg que un tiron maximo — estimulo
+      de bisagra pesada sin cargar el tope. Ojo: la pausa SI sostiene los erectores
+      de forma isometrica, no es trabajo ''libre de columna'' — va en un dia de bisagra
+      con presupuesto lumbar, no apilado sobre sumo + SENTADILLA LB pesados (ver avoid)'
+    - 'Bloque de fuerza a ~4-8 semanas de competir: tiron secundario que ataca el
+      sticking point especifico antes de que la especificidad de la barra de competencia
+      domine el pico'
+    avoid_when:
+    - 'Bandera de dolor abierta en lumbar: la pausa sostiene la posicion cargada de
+      erectores — no subir carga sin preguntarle primero; ofrecer swap del mismo patron
+      (deadlift-tempo, rdl)'
+    - 'Bandera de dolor abierta en cadera: la estancia ancha sostenida bajo tension
+      carga la cadera — no subir carga sin preguntarle primero; ofrecer swap del mismo
+      patron'
+    - 'Bandera de dolor abierta en rodilla: el leg drive para romper el piso carga
+      rodilla/tendon rotuliano — no subir carga sin preguntarle primero; ofrecer swap
+      del mismo patron'
+    - '~2-3 semanas finales pre-competencia: el pico necesita tirones a velocidad
+      de competencia — la pausa mata la velocidad de barra (frenar-pausar-acelerar)
+      y suma fatiga sin especificidad de plataforma'
+    - 'Semana 1 del re-entry sin base de sumo: demasiado avanzada y cargada — deadlift-tempo
+      o rdl primero; el tiron con pausa es herramienta de punto debil de fase posterior
+      (JTS)'
+    - 'La semana ya apila sumo pesado de competencia + SENTADILLA LB pesada: se acumula
+      fatiga de erectores lumbares y DOMS de aductores de la estancia ancha — es un
+      slot secundario, no lo agregues sobre un presupuesto lumbar ya lleno'
+    swaps:
+    - deadlift-tempo
+    - deadlift-deficit
+    - deadlift
+    - rdl
+    refs:
+    - 'jtsstrength.com — Deadlift Variations: How, Why & When To Use Them (pausa ~1/2-1"
+      bajo el punto debil, sostenida 2-5 counts; acelerar hasta la pausa y al lockout;
+      movimiento secundario en fases de fuerza/pico)'
+    - 'soypowerlifter.com — Domina el peso muerto con parada o pausa (65-80% 1RM,
+      3-4x3-5, calidad tecnica sobre kilos; zonas de pausa segun el punto debil: suelo/inicio,
+      zona media, rodillas)'
+    - 'socalpowerlifting.net — The Benefits of Paused Deadlifts (''technique-reinforcing
+      accessory'': mantiene el patron y la trayectoria de barra sin cambios, sirve
+      igual para sumo y convencional, anade tiempo bajo tension)'
+    notes: 'Imprime la ubicacion de la pausa en Indicaciones (''pausa 2s bajo la rodilla'').
+      Dosis: pausa 1-2s y acelera al lockout (JTS admite hasta 2-5 counts; un hold
+      mas largo obliga a bajar carga); fuentes ES sugieren 65-80% 1RM o 3-4x3-5, pero
+      en el re-entry carga por RPE <= 7 sin ancla de % hasta que exista una base de
+      sumo fresca (luego ~65-75% de ella). Desacuerdo de fuentes: algunos coaches
+      (p. ej. Harvesting Strength, ''Why Pause Deadlifts are Terrible'') argumentan
+      que las pausas matan la velocidad de barra y prefieren deficit/speed pulls —
+      por eso es herramienta PUNTUAL para un punto debil documentado, no un staple;
+      si el fallo es el LOCKOUT usa rack-pull, no esto. La estancia ancha sostenida
+      puede sumar DOMS de aductores: rampa la carga, no la metas en una semana de
+      sentadilla de alto volumen. Solo con el celular: un tiron es inherentemente
+      seguro sin observador — si algo falla, bajas/sueltas la barra al piso (no necesita
+      pines/seguros de rack como la SENTADILLA o la PRESS BANCA).'
+- id: deadlift-conv
+  name: PESO MUERTO CONVENCIONAL
+  aliases:
+  - peso muerto convencional
+  - convencional
+  - peso muerto tradicional
+  - muerto convencional
+  - PM convencional
+  category: variation
+  parent: deadlift
+  pattern: hinge
+  muscles:
+  - glutes
+  - hamstrings
+  - spinal_erectors
+  - traps
+  - lats
+  - quads
+  - forearms
+  joints:
+  - hip
+  - knee
+  - lumbar
+  playbook:
+    purpose: 'Constructor de cadena posterior y GPP para un tirador de sumo: el torso
+      mas horizontal aumenta la demanda de extension de cadera y de tronco, cargando
+      erectores, espalda alta/traps, isquios y agarre que su sumo (mas erguido y cuadricipital)
+      entrena menos, y reconstruye la base de tiron sin la abduccion de cadera del
+      sumo. Contrapartida clave para EL: es su tiron de MAYOR estres lumbar — el brazo
+      de momento mas largo eleva el torque y la cizalla en L4/L5 ~8-10% sobre el sumo
+      (Cholewicki 1991), no porque el EMG de erectores sea dramaticamente mayor (es
+      similar entre estilos, Escamilla) — asi que en su re-entry se usa como acumulador
+      ligero a RPE <= 7, nunca como tiron maximo.'
+    use_when:
+    - 'Re-entry actual (2026-07): reconstruye erectores, espalda alta, isquios y agarre
+      que el sumo entrena menos, a tope RPE <= 7 sin ancla de % — no existe base de
+      convencional hasta que las series tope de la semana 1 fijen una (probablemente
+      por debajo de su sumo de 250, al ser un patron menos entrenado para el)'
+    - 'Fase de GPP/hipertrofia 6+ semanas de una competencia: segundo dia de bisagra
+      para acumular volumen de tiron con menos especificidad, dejando el PESO MUERTO
+      SUMO como levantamiento principal del bloque'
+    - 'Semana en que la cadera se resiente del sumo por la abduccion repetida Y el
+      lumbar esta fresco: rotar a convencional mantiene el estimulo de tiron sin la
+      posicion abducta — pero ojo, cambia carga de cadera por MAS carga lumbar, asi
+      que solo si su espalda baja (su tema de durabilidad principal) tiene presupuesto
+      esa semana'
+    - 'Objetivo espalda alta / lockout debil: el torso mas horizontal exige mas de
+      traps, espalda alta y antebrazos que su sumo — util cuando el video muestra
+      la barra alejandose o la espalda alta cediendo arriba en el sumo'
+    - 'Semana de baja fatiga lumbar (cuando el apilamiento de erectores de sentadilla
+      LB + sumo deja presupuesto): una sola serie tope de 4-8 reps al final del dia
+      de tiron (estilo JTS) anade convencional sin ir a fallo entrenando solo'
+    avoid_when:
+    - 'Bandera de dolor abierta en LUMBAR: el convencional es su tiron de MAYOR estres
+      lumbar (brazo de momento mas largo → ~8-10% mas torque/cizalla en L4/L5 que
+      su sumo, Cholewicki 1991) — nunca subir carga sin preguntarle primero; ofrecer
+      swap del mismo patron (rdl submaximo, rack-pull de ROM corto, o volver al sumo
+      mas erguido) o leg-curl que ahorra columna'
+    - 'Bandera de dolor abierta en CADERA: no subir carga sin preguntarle primero;
+      ofrecer swap del mismo patron (deadlift/rack-pull) o leg-curl'
+    - 'Bandera de dolor abierta en RODILLA: no subir carga sin preguntarle primero;
+      ofrecer swap del mismo patron (rdl, rack-pull) o leg-curl'
+    - 'Semana de alta fatiga lumbar ya cargada por sentadilla LB + sumo: el convencional
+      apila estres sobre los erectores que debe cuidar — reducir volumen o rotar esa
+      semana a una bisagra que ahorre columna (rdl ligero, leg-curl)'
+    - '~3 semanas finales pre-competencia: su especificidad es sumo; el convencional
+      resta especificidad y suma fatiga lumbar sin transferir a la posicion abducta
+      de competencia'
+    - 'Entrena SOLO con el celular: no llevar el convencional a RPE 8+ ni a fallo
+      — dejar la barra en el piso es la unica via de escape (no hay pin de rack que
+      ayude un tiron), y solo apila fatiga lumbar innecesaria; su tope de re-entry
+      RPE <= 7 ya lo cubre'
+    swaps:
+    - deadlift
+    - rdl
+    - rack-pull
+    - leg-curl
+    refs:
+    - 'Stronger by Science — How to Deadlift: The Definitive Guide (G. Nuckols): a
+      mayor inclinacion/largo de torso, mayor demanda de extension espinal; el convencional
+      suele estar limitado por fuerza de espalda'
+    - 'JTS / Juggernaut — Deadlift Variations: How, Why & When To Use Them: el tirador
+      de sumo que no hace algo de convencional deja isquios y erectores subentrenados;
+      util 1 serie de 4-8 reps tras el trabajo de sumo'
+    - 'Biolayne / Layne Norton — Sumo vs. Conventional: What''s Best for You?: usar
+      el estilo no-principal como accesorio a <=80% del 1RM, un par de reps lejos
+      del fallo; rotar sumo/convencional reduce el dolor de cadera del sumo'
+    - 'Cholewicki, McGill & Norman 1991, Med Sci Sports Exerc — Lumbar spine loads
+      during the lifting of extremely heavy weights: el sumo produce ~8-10% menos
+      momento/cizalla en L4/L5 que el convencional'
+    - 'Escamilla et al. 2000/2002, Med Sci Sports Exerc / JSCR — sumo vs convencional:
+      mayor activacion de cuadriceps en sumo, pero EMG de la musculatura de la espalda
+      similar entre estilos (el mayor estres lumbar del convencional viene del brazo
+      de momento, no de ~2x el EMG de erectores)'
+    notes: 'Imprime el estilo en Indicaciones: stance a lo ancho de caderas/hombros,
+      doble prono (o mixto/correas solo si el agarre cede antes que las piernas —
+      el mixto anade riesgo de biceps distal, no es su limitante de competencia),
+      torso mas horizontal que su sumo. Dosis re-entry: RPE <= 7 sin % hasta que la
+      semana 1 fije un e1RM de convencional; ese numero saldra probablemente por debajo
+      de su sumo (250) al ser patron menos entrenado, no es regresion. Como accesorio
+      de un bloque de sumo: <=80% del 1RM de convencional un par de reps lejos del
+      fallo, o 1 serie tope de 4-8 al final del dia. Desacuerdo entre fuentes: Biolayne
+      lo trata como sustituto en bloques dedicados de 4-8 semanas, JTS mas como GPP
+      ligero permanente — para su durabilidad lumbar empieza como GPP ligero y no
+      lo apiles en la misma semana pesada de sentadilla LB + sumo. Correccion vs la
+      version previa: el mayor estres lumbar del convencional viene del brazo de momento
+      (torque/cizalla L4/L5 ~8-10% mayor, Cholewicki 1991), NO de ~2x el EMG de erectores
+      — el EMG es similar entre estilos (Escamilla). Espera DOMS de isquios, erectores
+      y agarre la semana 1. Equipo: solo barra y discos, tiron desde el piso — no
+      requiere rack ni pines.'
+- id: deadlift-stiffleg
+  name: PESO MUERTO PIERNAS RIGIDAS
+  aliases:
+  - peso muerto piernas rigidas
+  - piernas rigidas
+  - sumo piernas fijas
+  - peso muerto sumo piernas fijas
+  - peso muerto rigido
+  - sldl
+  - stiff leg deadlift
+  category: variation
+  parent: deadlift
+  pattern: hinge
+  muscles:
+  - hamstrings
+  - glutes
+  - spinal_erectors
+  joints:
+  - hip
+  - lumbar
+  playbook:
+    purpose: 'Tiron desde el piso con piernas casi rigidas que pone isquios, gluteo
+      y erectores a longitud larga y construye fuerza de cadena posterior fuera del
+      piso, donde su PESO MUERTO SUMO suele atascarse. Ojo con el carryover: NO reproduce
+      la posicion exacta del sumo (que rompe el piso con rodillas mas flexionadas
+      y torso mas vertical); transfiere por fuerza de isquio/erector, no por especificidad
+      de posicion. Construye cadena posterior e integridad de posicion de espalda
+      a cargas muy por debajo de un tiron de competencia, sin observador (se suelta
+      al piso). Aviso honesto: NO es la opcion que ahorra columna — al reponer la
+      espalda cada rep desde el piso carga mas erectores que un RDL.'
+    use_when:
+    - 'Bloque de re-entry en acumulacion, 4+ semanas de cualquier test: construye
+      isquios/erectores a longitud larga y fuerza fuera del piso a cargas que se quedan
+      comodas bajo su tope RPE <= 7 — sin ancla de %, la carga la fija el RPE'
+    - 'Su SUMO sale lento o se atasca al romper el piso (punto de estancamiento tipico
+      del sumo): las piernas rigidas cargan isquios y erectores a longitud larga y
+      fortalecen la cadena posterior que sostiene ese rango — no es la posicion exacta
+      del sumo (rodillas mas dobladas, torso mas vertical), pero construye lo que
+      falla ahi'
+    - 'El video muestra caderas que suben primero o lumbar que se redondea al despegar:
+      el tiron largo y lento desde el piso lo obliga a fijar la columna neutra en
+      cada rep — se autocorrige entrenando solo'
+    - Slot secundario de bisagra para hipertrofia de isquios a longitud larga — cubre
+      lo que el sumo infra-entrena; empareja con leg-curl (flexion de rodilla) para
+      las dos funciones del isquio
+    - Segundo dia de bisagra de la semana cuando otro SUMO pesado desde el piso costaria
+      demasiada recuperacion — mismo patron a menor carga absoluta
+    avoid_when:
+    - 'Bandera de dolor abierta en lumbar: no subir carga sin preguntarle primero;
+      ofrecer swap del mismo patron (rdl con rodilla flexionada, o leg-curl/hiperextensiones
+      que sacan la columna de la ecuacion)'
+    - 'Bandera de dolor abierta en cadera, sobre todo dolor en el isquion o pliegue
+      gluteo (isquio proximal): el tiron a longitud larga concentra carga ahi; no
+      subir carga sin preguntarle primero y ofrecer swap del mismo patron'
+    - 'Semanas de cuidado lumbar o apilamiento de fatiga: recuerda que carga MAS erectores
+      que el RDL (piernas rectas + reponer espalda cada rep desde el piso) — cuando
+      la SENTADILLA LB y el SUMO ya cargan erectores, usa rdl o leg-curl en su lugar,
+      no esto'
+    - 'Programado 24-48h antes del SUMO o la SENTADILLA LB mas pesada: los DOMS de
+      isquios y la fatiga de erectores se filtran al levantamiento de competencia'
+    - 'Ultimas 2-3 semanas pre-competencia: bajo carryover directo al gesto de comp
+      y los DOMS de longitud larga se quedan; devuelve el slot al SUMO a velocidad
+      de competencia'
+    - 'Recuperacion en rojo o no logra mantener columna neutra hasta el piso: una
+      rep con espalda redondeada cambia estimulo por riesgo lumbar — para la serie
+      cuando la espalda se redondea, no la muelas entrenando solo'
+    swaps:
+    - rdl
+    - hiperextensiones
+    - leg-curl
+    - deadlift-deficit
+    refs:
+    - 'Barbell Logic — Romanian vs. Stiff-Leg Deadlift: Details, Cues, and Programming:
+      SLDL desde el piso, ROM mayor, repone espalda cada rep = mas demanda de erectores;
+      5-8 reps para fuerza/hipertrofia'
+    - 'PowerExplosive (D. Marchante) — Rango parcial en peso muerto con piernas rigidas,
+      ¿tiene sentido? (powerexplosive.com): bisagra de cadera pura, caderas altas
+      sin echarse atras (a diferencia del rumano), mayor estiramiento del isquio;
+      ojo con flexionar columna o tirar con la espalda'
+    - 'Stronger By Science / G. Nuckols — How to Deadlift: The Definitive Guide: variaciones
+      de peso muerto y accesorios de cadena posterior para debilidades fuera del piso;
+      el SLDL es suplementario (mas cercano al RDL que al gesto de comp), carryover
+      directo limitado — se cicla fuera cuando la debilidad de isquios ya se corrigio'
+    notes: 'Dosis: 2-4 x 5-8 @ RPE <= 7 en re-entry; imprime en Indicaciones ''piernas
+      casi rigidas, minima flexion de rodilla, columna neutra; para la serie si la
+      espalda se redondea''. Minima flexion de rodilla por seguridad (no rodilla trabada
+      dura). Grip no es el limitante util aqui — straps opcionales, o suelta al piso
+      entre reps. Su ejemplo ''sumo piernas fijas'' = version en stance sumo; ayuda
+      a la posicion fuera del piso del sumo, pero el carryover al gesto de comp es
+      modesto (Stronger By Science) — es herramienta de isquio/erector y de posicion,
+      no un lift maximo. Desacuerdo de fuentes SLDL vs RDL: el SLDL da mas ROM y mas
+      erectores/lumbar; el RDL flexiona rodilla, sesga gluteo y ahorra columna (Barbell
+      Logic, SBS) — por eso el RDL, no esto, es el swap cuando el lumbar es el limitante.
+      Sobre flexion lumbar: redondear no es catastrofe automatica (revision MDPI;
+      Henselmans), pero bajo palanca larga y pesada lo seguro es columna neutra +
+      carga progresiva — cap RPE, no persigas kilos.'
+- id: rack-pull
+  name: RACK PULL
+  aliases:
+  - rack pull
+  - rack pull sumo
+  - peso muerto en rack
+  - peso muerto parcial
+  - peso muerto desde pines
+  - tiron parcial
+  category: variation
+  parent: deadlift
+  pattern: hinge
+  muscles:
+  - spinal_erectors
+  - traps
+  - glutes
+  - hamstrings
+  - lats
+  - forearms
+  joints:
+  - hip
+  - lumbar
+  - knee
+  playbook:
+    purpose: 'Partial-range overload from pins at/just below the knee: loads the top
+      half of the pull with heavy trap/erector/back and grip stimulus over a shorter
+      ROM than a floor pull. Because the bar starts and re-racks on the pins with
+      no spotter, it is his safest way to handle a heavier-than-floor bar training
+      alone. Right now (re-entry, RPE <= 7) it earns its slot as a moderate-load back/trap/grip
+      builder — not the supramaximal ego version. Treat its transfer to his sumo lockout
+      as partial: the classic rack pull rewards a back-dominant conventional finish,
+      while his sumo lockout is hip/glute-driven, so deadlift-pausa in his own stance
+      is the more specific lockout tool.'
+    use_when:
+    - His pull stalls at/above the knee and he wants to overload the top half — pins
+      just below the knee in his sumo stance load that range heavier than a floor
+      pull; treat the carryover as partial (his sumo lockout is hip/glute-driven,
+      not back-extension-driven) and lean on deadlift-pausa for stance-specific lockout
+      work
+    - Weekly lumbar budget is tight from SENTADILLA LB + sumo but he wants heavy back/trap
+      thickness — the reduced ROM lets him load erectors and traps hard over a short
+      range at moderate load
+    - 'Re-entry now: as a solo lifter with no spotter, it''s a safe way to feel a
+      heavier-than-floor bar — starts and re-racks on the pins, capped at RPE <= 7,
+      before a fresh sumo baseline exists'
+    - Grip or upper back folds before the legs on his sumo top-end — heavy holds at/above
+      the knee build forearm and trap strength that carry to the finish
+    - Second or tertiary hinge slot (~once per 7-10 days) behind the comp sumo pull
+      in an accumulation block — adds posterior-chain volume without another full-ROM
+      floor session
+    - He wants to rehearse the top-half wedge and hip finish of the pull without the
+      floor-break fatigue that beats up his low back
+    avoid_when:
+    - 'Open pain flag on lumbar: never raise its load without asking him first — partials
+      stack compression and erector load on exactly his weak link; offer a same-pattern
+      low-compression swap (hiperextensiones, hip-thrust)'
+    - 'Open pain flag on hip: don''t add load without asking first — the hinge finish
+      drives hard through hip extension; swap in-pattern (hip-thrust, hiperextensiones)
+      meanwhile'
+    - 'Open pain flag on knee: with pins below the knee there is real knee extension
+      off the pins — don''t load up without asking; raise pins above the knee or swap'
+    - 'Re-entry now: resist the supramaximal ego version — no fresh sumo baseline
+      exists to anchor a % overload, so keep loads moderate over a short ROM at RPE
+      <= 7, not a lockout stunt'
+    - Erector fatigue already stacking (heavy SENTADILLA LB or a hard sumo day within
+      ~48h) — a heavy rack pull compounds spinal load; move it off those days or drop
+      it that week
+    - Final ~4 weeks of meet prep — floor/comp specificity wins and the unnatural
+      pin start carries over poorly to his sumo pull; prefer deadlift-pausa or full
+      pulls
+    swaps:
+    - deadlift-pausa
+    - rdl
+    - hiperextensiones
+    - hip-thrust
+    refs:
+    - 'Eric Cressey — How to Use Block Pulls to Improve Your Deadlift: blocks keep
+      the slack in the bar for a natural path and better carryover than rack pins;
+      run 3-4 wks pre-meet, not as an ego-booster'
+    - 'PowerliftingTechnique.com — Rack Pull vs Deadlift: pin height is the programming
+      (below knee = off-floor, at/above knee = lockout, mid-thigh = max overload/upper
+      back); use it as a secondary movement ~once per 7-10 days; extreme heights carry
+      over poorly'
+    - 'Brandon Smitley — What''s the Difference Between Rack Pulls and Block Pulls:
+      block pulls transfer better to the full lift (slack stays in the bar); rack
+      pins can force an unnatural start and the shins can catch the pins'
+    - 'mundoentrenamiento.com — Rack Pull: tiron parcial desde ~altura de rodilla;
+      enfatiza espalda baja, trapecios y dorsales; menor estres articular por el ROM
+      reducido; 2-3 series al 50-70% 1RM'
+    - Spinal-tolerance literature (McGill; NIOSH compression action limit ~3400 N,
+      cited shear tolerances ~1000 N) — supramaximal partials spike lumbar compression/shear;
+      keep loads moderate given his low-back care
+    notes: 'Sumo caveat: the classic rack pull transfers best to a conventional, back-dominant
+      lockout; his sumo lockout is more hip/glute-driven, so for HIM it''s mainly
+      a back/trap/grip builder and only secondarily a lockout tool — deadlift-pausa
+      in his own stance is more specific. He has rack pins, probably not blocks: blocks
+      give better carryover (slack stays in the bar), so with pins cue him to pull
+      the slack out and set the pins so his shins clear. Pin height is the dial: keep
+      it at/just below the knee for any sumo carryover; way above mid-thigh is where
+      transfer disappears. Back-stress sources disagree only on load: short ROM =
+      less per-rep flexion (menor estres articular) but ego loads = high spinal compression/shear
+      — reconcile by staying moderate, which suits his re-entry anyway. Dose now:
+      3-5 x 3-5 at RPE <= 7, loads by feel (no baseline), around or modestly above
+      his top-half deadlift feel, never a true overload yet. Print pin height in Indicaciones
+      (''pines bajo rodilla''). Solo-safe: bar racks on the pins, easy to bail. Grip
+      double-overhand or hook / straps — avoid a supinated mixed grip under heavy
+      holds.'
+- id: buenos-dias
+  name: BUENOS DIAS
+  aliases:
+  - buenos dias
+  - good morning
+  - buenos dias con barra
+  - gm
+  category: accessory
+  pattern: hinge
+  muscles:
+  - hamstrings
+  - glutes
+  - spinal_erectors
+  joints:
+  - hip
+  - lumbar
+  playbook:
+    purpose: Targeted fix for a common low-bar squat failure mode — torso pitching
+      forward and chest dropping out of the hole — by training the spinal erectors
+      (mostly isometrically) plus hamstrings/glutes to hold a braced hinge under load;
+      also builds the positional strength to keep the wedge off the floor in sumo.
+      It is one of the most spine-loading accessories he owns (high shear, heavy erector
+      demand), so treat it as a weak-point tool, not a default posterior-chain accessory
+      for a lifter minding his low back.
+    use_when:
+    - SENTADILLA LB fails by the torso pitching forward / hips shooting up and chest
+      dropping mid-ascent — the exact weak point good mornings target; run as the
+      squat-day posterior-chain accessory, light, 3-4x5-8, low-bar placement to mimic
+      his comp setup
+    - Accumulation/GPP phase 4+ weeks from a meet with room to build erector and hamstring
+      positional strength before specificity rises — never in the peak
+    - 'Re-entry / RPE <= 7 block AND the low back is symptom-free with erector-fatigue
+      room that week: the movement is submaximal by nature and fits the cap, but keep
+      it well under failure'
+    - PESO MUERTO SUMO rounds off the floor or he loses the wedge — the isometric
+      erector strength here builds the position; pair with deadlift-tempo rather than
+      piling on more heavy pulling volume
+    - His low-bar squat needs erector/positional work and that week's lumbar budget
+      still has room (no heavy sumo stacked next to it) — a squat-specific alternative
+      to simply adding more squatting
+    avoid_when:
+    - 'Open lumbar pain flag: never raise its load without asking him first; offer
+      a same-pattern swap (hiperextensiones is the spine-sparing choice). Of his accessories
+      this loads the low back the hardest — shear plus erector demand — so it is usually
+      the wrong pick under any low-back symptom'
+    - 'Open hip pain flag: the loaded deep hip hinge stresses the hip — don''t raise
+      load without asking him first; offer the same-pattern swap list'
+    - Weeks where SENTADILLA LB + PESO MUERTO SUMO already max out erector fatigue
+      — the good morning stacks onto those same erectors; drop it or swap to leg-curl
+      / hiperextensiones so the comp lifts recover (his low-back durability theme)
+    - 'Training alone near failure: a failed good morning folds him forward under
+      the bar — never past ~RPE 7-8 solo, and always set rack pins at the bottom hinge
+      so a missed rep dumps onto them; if he can''t set safeties, swap it out'
+    - Final 2-3 weeks of meet prep — spine-loading accessory with lingering DOMS and
+      no comp specificity; first thing cut
+    - The back rounds under load before the target reps are hit — a rounded good morning
+      trains the exact fault it should fix and spikes lumbar shear; stop the set,
+      cap the load, or swap
+    swaps:
+    - hiperextensiones
+    - rdl
+    - deadlift-stiffleg
+    - leg-curl
+    refs:
+    - 'JTS / Blaine Sumner — low-bar good mornings as primary squat assistance (jtsstrength.com):
+      mimic the squat walkout/stance, fixes the mid-ascent forward-pitch sticking
+      point'
+    - 'SoCal Powerlifting — Good Mornings: What, Why, and How: primarily isometric
+      spinal-erector training; low-bar shortens the lever; use much less weight than
+      you squat'
+    - 'Westside Barbell — Good-Morning for a Good Total: good-morning strength is
+      the direct antidote to the torso pitching forward when a heavy squat is failed'
+    - 'Dr. John Rusin — Barbell Good Mornings: Is The Risk Worth It?: high lumbar
+      shear; rounding at the bottom under excess load is the main injury driver —
+      favor submaximal control over heavy loading'
+    notes: 'Load is where coaches split: Westside/Sumner ran good mornings relatively
+      heavy and matched their squat schemes, but the spine-load-conscious view (and
+      his low-back care theme) says keep it clearly lighter than his squat and treat
+      RDL / back-extension as the default posterior-chain accessory — reserve the
+      good morning for a specifically identified forward-pitch or erector-endurance
+      weak point. Print bar position and soft knee bend in Indicaciones (''barra baja,
+      rodillas suaves, cadera atras''); low-bar placement shortens the lever and mirrors
+      his comp squat. He trains alone: rack pins set at the bottom so a failed rep
+      folds onto them, never a grinder — but the real protection is keeping load submaximal,
+      since bailing a failed good morning is awkward even with pins. Expect erector/hamstring
+      DOMS — don''t slot it within ~48h of heavy SENTADILLA LB or PESO MUERTO SUMO.
+      No special bar needed; articles often show an SSB good morning, but a straight
+      bar is fine and it''s all he has.'
+- id: hiperextensiones
+  name: HIPEREXTENSIONES 45
+  aliases:
+  - hiperextensiones
+  - hiperextension 45
+  - hiperextensiones 45
+  - hiperextensiones lumbares
+  - lumbares en banco
+  - banco romano
+  - extension de espalda
+  - back extension
+  category: accessory
+  pattern: hinge
+  muscles:
+  - spinal_erectors
+  - glutes
+  - hamstrings
+  joints:
+  - hip
+  - lumbar
+  playbook:
+    purpose: 'Accesorio de cadena posterior que ahorra columna: erectores, gluteo
+      e isquios entrenados en una bisagra con mucha menos compresion axial que un
+      segundo tiron desde el piso. Para Benjamin es durabilidad barata de espalda
+      baja y volumen de extension de cadera que encaja entre SENTADILLA LB y PESO
+      MUERTO SUMO sin sumar otro tiron aplastante sobre los erectores, y es facilisimo
+      de correr solo (sin barra, sin observador: solo un disco al pecho y lo sueltas).
+      El enfasis es regulable via tilt pelvico: pelvis en tilt posterior para gluteo/isquio,
+      o extension lumbar controlada para fuerza de erectores.'
+    use_when:
+    - 'Bloques de re-entry/volumen (ahora): volumen barato de cadena posterior y de
+      resistencia lumbar sin un segundo tiron del piso — sin peso o con un disco ligero
+      al pecho lo mantiene honesto en RPE <= 7'
+    - 'Su tema de cuidado lumbar: cuando el presupuesto semanal de erectores de SENTADILLA
+      LB + SUMO ya esta alto, esto suma extension de cadera/gluteo a baja compresion
+      espinal en vez de otro RDL o buenos-dias que castigan mas los mismos erectores'
+    - 'Punto debil de sumo — caderas que suben, lumbar que se redondea al despegar
+      o lockout blando: reps estrictas drillando extension de cadera y posicion de
+      espalda a carga trivial entre dias de tiron pesado (drill de patron, no motor
+      de fuerza)'
+    - 'Entrena SOLO: accesorio de bisagra con cero riesgo de fallo — sin rack, sin
+      observador, solo sueltas el disco; relleno ideal de fin de sesion en dia de
+      sentadilla o peso muerto'
+    - 'Se busca sesgo de gluteo: tilt posterior de pelvis + redondeo de la espalda
+      ALTA (toracica, sin forzar flexion lumbar bajo carga) de-enfatiza los erectores
+      y carga gluteo/isquio — opcion de gluteo de baja carga espinal cuando las rodillas
+      estan sensibles; NO durante una lumbar irritada (ahi la lumbar va sin apoyo)'
+    - 'Espalda fatigada o sensacion de ''inestable'' pero SIN dolor: reps controladas
+      y ligeras con final neutro-a-recto (sin balanceo) construyen la RESISTENCIA
+      de erectores que se asocia a menos recaidas de espalda baja (Biering-Sorensen/McGill)
+      — es capacidad de resistencia, no fuerza maxima'
+    avoid_when:
+    - 'Bandera de dolor abierta en lumbar: los erectores son el motor primario y el
+      tope hiperextiende la columna — nunca subir carga sin preguntarle primero; regresar
+      a ROM parcial/sin peso u ofrecer swap del mismo rol (hip-thrust / cuadrado-lumbar)'
+    - 'Bandera de dolor abierta en cadera (pinzamiento o isquio proximal en la bisagra
+      profunda): la flexion de cadera cargada lo agrava — preguntar primero; recortar
+      ROM o swap a leg-curl/hip-thrust'
+    - 'Espalda baja irritable/aguda: no cranear a la hiperextension en el tope ni
+      sumar carga persiguiendo reps — aqui la lumbar va sin apoyo; parar en linea
+      recta del torso, o usar el iso de baja compresion cuadrado-lumbar en su lugar'
+    - Como sustituto de la bisagra pesada de competencia cuando la meta del bloque
+      es fuerza maxima — no iguala al PESO MUERTO SUMO en fuerza de tiron pesado;
+      mantenerlo como accesorio, no como motor
+    - 'Ultimas 1-2 semanas de meet prep: cortarlo con el resto de accesorios — el
+      DOMS de erectores/isquios a longitud larga persiste y no aporta a la especificidad
+      del pico'
+    - Justo antes de series pesadas de SENTADILLA LB o PESO MUERTO SUMO — pre-fatigar
+      los erectores degrada el brace; solo a fin de sesion
+    swaps:
+    - rdl
+    - hip-thrust
+    - buenos-dias
+    - cuadrado-lumbar
+    refs:
+    - 'Bret Contreras — ''All About Back Extensions'': el tilt pelvico decide el enfasis
+      — pelvis en tilt posterior + redondeo toracico saca los erectores y carga gluteo/isquio;
+      tilt anterior + extension lumbar lo hace erector-dominante; almohadilla justo
+      bajo el pliegue de cadera'
+    - 'PowerliftingTechnique.com — ''Back Extension vs Deadlift'': accesorio de menor
+      compresion espinal que el peso muerto, construye resistencia y estabilidad lumbar
+      como apoyo a sentadilla/peso muerto, no reemplaza la bisagra pesada para fuerza
+      maxima'
+    - 'Stuart McGill / test de Biering-Sorensen — la RESISTENCIA (no la fuerza maxima)
+      de los extensores lumbares se asocia a menor riesgo de dolor de espalda baja;
+      McGill favorece entrenar esa resistencia en columna neutra, asi que aqui: reps
+      controladas, final recto-neutro, sin flexo-extension balistica'
+    - 'BarBend — ''Glute Ham Raises vs Hyperextension'' / reverse hyper: la version
+      a 45 grados enfatiza mas los erectores; el reverse hyper es mas gluteo y deja
+      la lumbar mas estatica — critica clave: en la de 45 grados la espalda baja va
+      sin apoyo y puede estresarse si se hace con tiron o sobrecarga'
+    notes: 'Dosis accesoria: 3-4x10-15 @ RPE <= 7 en re-entry (sin peso o disco/mancuerna
+      ligera al pecho), controlado, parar en torso recto — nada de hiperextension
+      balistica en el tope. Desacuerdo de enfasis (Contreras): redondeo toracico +
+      tilt posterior lo vuelve movimiento de gluteo/isquio y de-enfatiza los erectores;
+      tilt anterior + extension lumbar lo vuelve erector-dominante — elige segun meta
+      e imprimelo en Indicaciones (''gluteo: espalda alta redondeada, pelvis metida''
+      vs ''erectores: espalda recta''). Las fuentes se dividen en seguridad: unos
+      lo llaman spine-sparing (baja compresion axial), la escuela del reverse-hyper
+      avisa que la lumbar va sin apoyo y se puede estresar con tiron o sobrecarga
+      — para su historial de espalda: final neutro-a-recto, reps moderadas, sin cargas
+      altas, y el redondeo para sesgo gluteo es toracico, nunca flexion lumbar forzada
+      bajo carga. Equipo estandar en su gym comercial (banco de 45 grados / silla
+      romana); no necesita nada raro.'
+- id: encogimientos
+  name: ENCOGIMIENTOS
+  aliases:
+  - encogimientos
+  - encogimiento de hombros
+  - shrugs
+  - encogimiento de trapecio
+  - trapecio
+  category: accessory
+  pattern: pull
+  muscles:
+  - traps
+  - forearms
+  joints:
+  - shoulder
+  playbook:
+    purpose: 'Isolation directa del trapecio superior y trabajo de agarre para un
+      tirador de peso muerto sumo: la via mas corta para masa de trapecio, control
+      de barra y algo de estabilidad escapular en el lockout, con costo sistemico
+      casi nulo y sin tocar sus zonas de fatiga (cuadriceps, aductores, erectores).
+      Accesorio facil de topar en RPE y de fallar seguro entrenando solo (mancuernas
+      se sueltan). Ojo: la evidencia dice que su sumo + remos ya entrenan bastante
+      trapecio, asi que es un extra OPCIONAL para debilidad de agarre, inestabilidad
+      de barra o estetica, no un imprescindible.'
+    use_when:
+    - 'Bloque de re-entry actual: relleno de ultimo slot que topa limpio en RPE <=
+      7 y falla seguro solo (mancuernas se sueltan) — reconstruye masa de trapecio
+      y agarre sin sumar fatiga sistemica mientras las cargas de competicion siguen
+      conservadoras'
+    - 'Su sumo pesado se le va de las manos por agarre (la barra resbala en las ultimas
+      reps) o siente inestabilidad escapular / bamboleo de barra en el lockout: shrugs
+      pesados o con hold 6-8 reps entrenan agarre + trapecio; considera holds en los
+      pines del rack para doblar como trabajo de agarre especifico del sumo'
+    - Fase de hipertrofia/volumen 4+ semanas del meet buscando masa de trapecio superior
+      o si el cuello/upper back se ve subdesarrollado — 10-15 reps, 3-8 sets/semana,
+      lejos del pico
+    - 'Dia de PRESS BANCA COMP / upper: relleno barato al cierre que no compite con
+      la recuperacion de piernas ni de espalda baja — no carga cuadriceps, aductores
+      ni erectores, justo sus temas de fatiga'
+    - 'Semana en que quiere cuidar la espalda baja pero sumar algo de volumen de tiron:
+      shrug SENTADO con mancuernas da estimulo de trapecio/upper back con casi cero
+      carga axial, a diferencia del remo con barra o el rack-pull'
+    avoid_when:
+    - 'Bandera de dolor abierta en HOMBRO: no subir carga sin preguntarle primero;
+      ofrecer swap del mismo patron (remo, hombro-posterior-lateral o traccion-vertical).
+      El modo tipico de irritacion es rolar los hombros — corregir a subida/bajada
+      estrictamente vertical antes que cargar'
+    - 'Muneca/antebrazo o agarre irritados: el shrug pesado es limitado por agarre
+      y la carga cuelga del agarre — baja carga, usa mancuernas sentado o pon correas
+      (mancuerna tolera mejor); no lo trates como principal si la muneca esta sensible.
+      OJO: la muneca no entra como articulacion cargada (no es un cargador de muneca
+      como el press), asi que el guardarrail NO salta — vigilalo tu'
+    - '~1-2 semanas finales pre-meet: la isolation de trapecio no aporta al pico —
+      sacarla para llegar fresco a los singles pesados de sentadilla/banca/peso muerto'
+    - 'Semana de peso muerto sumo pesado ya con alto volumen de tiron: su sumo + remos
+      entrenan trapecio de sobra (la evidencia dice que suele bastar) — es el primer
+      accesorio redundante a recortar'
+    - 'Cuello tenso/molesto o si tiende a rolar los hombros: el giro circular con
+      peso pone el hombro en una posicion vulnerable y carga cuello/manguito sin sumar
+      contraccion del trapecio — no hay token de dolor cervical en la taxonomia, asi
+      que vigilalo tu; nunca perseguir RPE alto en el solo'
+    - 'Barbell shrug DE PIE pesado con la espalda baja irritada: el peso colgado suma
+      compresion axial a la columna (mucho menor que squat LB o sumo, pero no cero)
+      — la lumbar tampoco esta en sus joints, asi que el guardarrail no salta; preferir
+      mancuerna sentado o bajar carga esa semana'
+    swaps:
+    - remo
+    - hombro-posterior-lateral
+    - traccion-vertical
+    refs:
+    - 'PowerliftingTechnique.com — Do Shrugs Help Deadlifts? (No, Here''s Why): la
+      escapula queda deprimida durante el DL, asi que los shrugs no ayudan a la salida
+      del piso ni al paso por la rodilla; el trapecio ya se entrena de sobra con tirones
+      y remos'
+    - 'BarBend — Build Big Traps and Strengthen Your Lifts With Shrugs: trapecio superior
+      fuerte ayuda al control de barra y la estabilidad escapular; programar 1-2x/sem,
+      6-8 reps pesadas para fuerza o 10-15 para hipertrofia'
+    - 'A Workout Routine — Stop Rolling Your Shoulders During Shrugs: el giro circular
+      no anade contraccion del trapecio superior y expone el hombro cargado; subida-bajada
+      estrictamente vertical, cuello relajado'
+    - 'Bill Starr — The Strongest Shall Survive: Strength Training for Football: un
+      trapecio fuerte estabiliza los tirones pesados, pero el peso muerto ya es por
+      si mismo un gran estimulo de trapecio'
+    notes: 'Fuentes en desacuerdo sobre el carryover al DL: PowerliftingTechnique
+      dice ~cero para salida/rodilla (escapula deprimida en el tiron); BarBend/Starr
+      defienden estabilidad escapular y control de barra en el lockout — trata el
+      carryover como marginal y justifica el ejercicio por agarre/estetica/inestabilidad
+      de barra, no por defecto. Dosis: 6-8 reps pesadas si el objetivo es fuerza/agarre,
+      10-15 si es hipertrofia; ~3-8 sets/sem. Para el solo prefiere MANCUERNAS SENTADO
+      sobre barra de pie: se sueltan sin riesgo, dan mas ROM y mejor squeeze arriba,
+      y ahorran columna (casi cero carga axial); correas si el agarre falla antes
+      que el trapecio, pero si buscas agarre para el sumo hazlo strapless u holds
+      en los pines del rack (doblan como trabajo de agarre especifico y son seguros
+      entrenando solo). Tecnica: elevacion vertical hacia las orejas, sin rolar los
+      hombros. No hay token cervical en la taxonomia y la muneca NO entra como articulacion
+      cargada (el agarre se captura via el musculo forearms, no via guardarrail de
+      muneca — igual que el catalogo no pone muneca en peso muerto/remo/jalon) — vigila
+      cuello y agarre tu mismo. Swaps al cluster de tiron ligero (remo/hombro-posterior-lateral/jalon);
+      rack-pull NO es swap (hinge pesado, carga axial que contradice ahorrar columna)
+      aunque las holds en pines si sirven como trabajo de agarre extra.'
