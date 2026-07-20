@@ -23,6 +23,16 @@ Format:
   Copenhagen work placed same-day as volume squat to build adductor
   tolerance — review whether the pattern fades after a few blocks.
 
+## Intensity & calibration
+
+- 2026-07-20 — Do NOT sandbag him. He trains through at high RPE: 220x4 @9 squat
+  (e1RM ~257), 220x2 @7 easy sumo (e1RM ~257). The first plan capped at RPE 8.5
+  triples and set DL e1RM at 250 — its peak week was easier than sets he already
+  does, and he called it out. Fix: re-base e1RMs from his hard sets, run the top
+  wave to RPE 9 (his solo cap — no @10 / true 1RM), and trust the log loop to
+  push further. He is numbers-literate and wants the math to hold up — show him
+  the e1RM arithmetic when a number looks off.
+
 ## Exercise selection
 
 - 2026-07-20 — Bench is his lifelong weak point (130 vs SQ 245 / DL 250), and

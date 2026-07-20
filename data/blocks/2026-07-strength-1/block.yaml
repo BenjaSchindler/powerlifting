@@ -28,16 +28,16 @@ sheet:
 schemes:
   - id: top3
     kind: rpe_wave
-    week_rpes: [6.5, 7, 7.5, 8, 8.5, 6]
+    week_rpes: [7, 7.5, 8, 8.5, 9, 6]
   - id: back3
     kind: percent_wave
     week_percents: [0.78, 0.79, 0.80, 0.81, 0.82, 0.68]
   - id: bp_med          # banca media: 4x4 con pausa, carga moderada
     kind: rpe_wave
     week_rpes: [6.5, 7, 7.5, 8, 8, 6]
-  - id: vol             # volumen: SQ 4x5 y banca sin pausa 4x6
+  - id: vol             # volumen: SQ 4x5 y banca sin pausa 4x6 (tope RPE 8, no mas)
     kind: rpe_wave
-    week_rpes: [6, 6.5, 7, 7.5, 8, 5.5]
+    week_rpes: [6.5, 7, 7.5, 8, 8, 5.5]
   - id: acc
     kind: double_progression
     rep_quality_rpe: 8.0
@@ -156,9 +156,13 @@ days:
         notes: "Segundos por lado. Piramides de 10s si la espalda esta irritable"
 
 notes: |
-  Estructura SBD (varios basicos por dia), 4 dias, re-entry con baselines
-  frescos (SQ 255e / BP 130 / DL 250, 2026-07-19). Topes de x3 suben de RPE 6.5
-  a 8.5 (sem 1-5); backoffs de 78% a 82%. Semana 6 = puente liviano.
+  Estructura SBD (varios basicos por dia), 4 dias. Maximos de entrenamiento
+  re-basados 2026-07-20 de sus series duras reales (SQ 258e de 220x4@9 / BP 130
+  tested / DL 258e de 220x2@7 facil; los 255/250 iniciales quedaron cortos).
+  Topes de x3 suben de RPE 7 a 9 (sem 1-5); backoffs 78-82%; volumen tope RPE 8.
+  Semana 6 = puente liviano. Techo RPE 9 entrenando solo (sin @10 ni 1RM real).
+  Si la semana 1 se siente mas facil que el RPE objetivo, registra el RPE real:
+  el motor sube el e1RM y con el todo el bloque.
 
   FRECUENCIA — la extra va a la BANCA (su punto debil de siempre, y el lift que
   mejor tolera frecuencia):

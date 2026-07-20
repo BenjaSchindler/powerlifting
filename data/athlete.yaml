@@ -14,17 +14,17 @@ goals:
   - "Manejar el patron de DOMS de aductores (sentadilla +4 reps) sin perder volumen"
 current_maxes:
   squat:
-    weight: 255.0
-    date: 2026-07-19
-    source: estimated   # from 220x4 @9 (Epley+RPE ~257) and 245x1 — reported, not yet logged
+    weight: 258.0
+    date: 2026-07-20
+    source: estimated   # 220x4 @9 -> e1RM ~257; 245x1. Re-based 2026-07-20 (era 255)
   bench:
     weight: 130.0
-    date: 2026-07-19
-    source: tested      # 130x1, his reported best
+    date: 2026-07-20
+    source: tested      # 130x1, confirmado por el 2026-07-20 (sigue siendo su tope)
   deadlift:
-    weight: 250.0
-    date: 2026-07-19
-    source: tested      # 250x1 sumo, reported
+    weight: 258.0
+    date: 2026-07-20
+    source: estimated   # 220x2 @7 (facil) -> e1RM ~257; 250x1 sumo tested. Re-based 2026-07-20 (era 250, corto)
 notes: |
   2026-07-19 onboarding: training consistently (no layoff since 2024 after
   all). Was in week 1 of a self-run strength block (triples + backoff,
@@ -36,6 +36,10 @@ notes: |
   (varios basicos por dia). Restriccion que el mismo remarca: el DOMS de
   aductores del volumen de sentadilla NO debe caer sobre un DL o SQ pesado —
   secuenciar para proteger los dias axiales pesados.
+  2026-07-20 (recalibracion): NO sandbaggearlo. Entrena pasado — 220x4 @9 en
+  sentadilla, 220x2 @7 (facil) en sumo. Programar a su tolerancia real: techo
+  RPE 9 entrenando solo (sin @10 ni 1RM verdadero). Los 255/250 iniciales y el
+  tope de RPE 8.5 quedaron cortos; e1RM re-basados a 258/258 y la onda a RPE 9.
 
   Historical reference, 2024 season (HEAVY WEIGHT coach sheets):
     - SENTADILLA LB: 220x3 @8, 220x4, 200x5 @6
