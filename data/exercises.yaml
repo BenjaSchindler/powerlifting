@@ -3287,3 +3287,903 @@
       cuello y agarre tu mismo. Swaps al cluster de tiron ligero (remo/hombro-posterior-lateral/jalon);
       rack-pull NO es swap (hinge pesado, carga axial que contradice ahorrar columna)
       aunque las holds en pines si sirven como trabajo de agarre extra.'
+
+# --- Accesorios de hipertrofia + Larsen (investigacion multiagente, 2026-07-20) ---
+# Aductores, abductores/gluteo medio, gemelos, antebrazo/agarre, press Larsen,
+# pullover, curl nordico, elevacion de piernas colgado.
+- id: aductores
+  name: ADUCTORES EN MAQUINA
+  aliases:
+  - aductores
+  - aductores en maquina
+  - maquina de aductores
+  - aduccion de cadera
+  - aduccion en polea
+  - hip adduction
+  category: accessory
+  pattern: squat
+  muscles:
+  - adductors
+  joints:
+  - hip
+  playbook:
+    purpose: 'Cargador de aductores progresable y de ROM completo (concentrico + excentrico
+      controlado), a cero carga axial y seguro entrenando solo en maquina: sube tamano
+      y fuerza de aductor a base de sobrecarga, algo que la PLANCHA COPENHAGEN (excentrica/isometrica
+      a peso corporal) no dosifica igual de fino. Es especifico para PL y no solo
+      estetica porque el aductor magnus es un extensor de cadera mayor (modelado SBS:
+      aporta una porcion grande del torque de extension de cadera de la sentadilla).
+      OJO con el carryover: la maquina entrena la funcion de ADUCCION (plano frontal,
+      sesga aductor longus + fibras anteriores del magnus), NO la funcion de extension
+      del magnus — esa la cargan las bisagras y las sentadillas. Por eso su valor
+      directo es tamano de aductor y tolerancia de tejido para la estancia ancha del
+      PESO MUERTO SUMO y para amortiguar sus DOMS de aductor, mas que ''salir del
+      hoyo'' de la SENTADILLA LB.'
+    use_when:
+    - 'Slot de aductor por defecto en fases de acumulacion/hipertrofia 4+ semanas
+      fuera de meet: emparejalo con la Copenhagen — la maquina pone volumen de aduccion
+      progresable y de ROM completo (mejor para tamano), la Copenhagen aporta carga
+      excentrica/isometrica a longitud larga (mejor evidencia de tolerancia de tejido/ingle);
+      entre las dos cubren el musculo completo'
+    - Rampeando volumen/anchura del sumo o tras sentadillas de alto volumen (4+ reps)
+      que le dejan DOMS de aductor — la maquina dosifica volumen de aductor sobre
+      una carga incremental y controlable; arranca con ROM angosto y alarga por sesiones
+    - 'Presupuesto lumbar gastado (semana pesada de LB + sumo): compra volumen de
+      aductor con cero carga espinal, a diferencia de sentadilla ancha o mas sumo
+      — encaja con su tema de cuidar la espalda baja'
+    - 'Re-entry actual: aislamiento de bajo skill y sin observador; como no es un
+      basico, este SI se puede empujar mas cerca del fallo (0-2 RIR) con seguridad
+      aunque los basicos sigan topados a RPE<=7'
+    - 'Debilidad/atraso especifico de aductor de cara al sumo: el arranque se siente
+      flojo o le cuesta sostener y controlar la estancia ancha con las caderas dentro
+      — ahi la fuerza de aduccion (estabilizar/sostener el ancho) si aporta. OJO:
+      NO lo uses para corregir rodillas que se meten hacia adentro (valgo) en la LB
+      — eso es debilidad de ABDUCTORES/gluteo medio, y la maquina de aductores entrena
+      justo el musculo que produce ese valgo, no el que lo frena'
+    - Quiere estiramiento cargado a longitud larga del aductor que el brazo de palanca
+      de la Copenhagen no le da facil — util para hipertrofia, siempre rampeando el
+      recorrido
+    avoid_when:
+    - 'Bandera de dolor abierta en cadera: no subir carga sin preguntarle primero;
+      ofrecer swap (Copenhagen a palanca corta o regresar el ROM antes que empujar)'
+    - Tiron/molestia activa de ingle o dolor en cara interna del muslo reproducido
+      al apretar — regresa a ROM angosto o saltalo; el DOMS de aductor de inicio de
+      ciclo es normal en el, no lo confundas con lesion pero tampoco cargues encima
+    - Arrancar o saltar el ROM demasiado abierto — la posicion de mayor estiramiento
+      bajo carga es la causa clasica de lesion de ingle; ramp del recorrido a lo largo
+      de varias sesiones, sobre todo antes de subir el sumo pesado
+    - Justo antes de las top sets de sumo o de SENTADILLA LB — prefatigar los aductores
+      degrada el arranque del sumo y el control de la estancia/profundidad; ponlo
+      despues, no antes
+    - 'Semana de meet/test: cortalo con el resto de accesorios no esenciales — cero
+      especificidad para expresar un 1RM, y nada de primera exposicion o ROM nuevo
+      dentro de ~10 dias de un sumo maximo (DOMS de aductor)'
+    - Si solo hay un montaje de cable/banda endeble que no carga bien o que no puede
+      soltar solo con seguridad — necesita una maquina/polea de la que pueda salir
+      sin observador; si el gym no la tiene, usa un swap
+    swaps:
+    - plancha-copenhagen
+    - sentadilla-bulgara
+    refs:
+    - 'Stronger By Science / Greg Nuckols — ''Squats Are Secretly an Adductor Exercise'':
+      por modelado, el aductor magnus aporta una porcion grande del torque de extension
+      de cadera de la sentadilla (musculo especifico para PL, no solo estetica) —
+      pero esa es su funcion de EXTENSION, que la maquina de ADUCCION no entrena directo'
+    - 'ACE — ''A Pro''s Guide to Muscle Mechanics: The Hip Adductors'': el magnus
+      dobla como extensor de cadera; alto contenido de fibra lenta => recupera rapido
+      y tolera mas frecuencia; la maquina sesga aductor longus + fibras anteriores
+      del magnus'
+    - Haroy et al. 2019, Br J Sports Med — el Adductor Strengthening Programme (basado
+      en Copenhagen) redujo problemas de ingle ~41% en futbolistas; justifica emparejar
+      la Copenhagen excentrica con la maquina para tolerancia de tejido
+    notes: 'Dosis: 3-5 series de 10-20 reps, tempo con excentrica controlada, 1-2x/sem;
+      los aductores tienen alto componente de fibra lenta y recuperan rapido, asi
+      que toleran mas frecuencia que grupos grandes. Regla de ROM: arranca angosto
+      (~ancho de hombros) y alarga el recorrido por sesiones — partir muy abierto
+      (maximo estiramiento bajo carga) es lo que produce los tirones de ingle, y calza
+      con su tema de DOMS de aductor. En re-entry este SI se empuja cerca del fallo
+      (0-2 RIR) mientras los basicos siguen a RPE<=7. Desacuerdo con la fama de ''maquinita
+      inutil'': para un powerlifter el magnus es un extensor de cadera mayor (especifico)
+      — PERO ojo, la maquina carga la funcion de ADUCCION, no la de extension, y el
+      PESO MUERTO SUMO carga los aductores mucho mas pesado que la maquina; tratala
+      como volumen suplementario e hipertrofia, no como el motor del basico. Sin costo
+      lumbar (respaldo en el asiento), ideal en semanas con la espalda cargada. Ningun
+      swap del catalogo cubre exacto la aduccion cargada de ROM completo: la Copenhagen
+      es la mitad excentrica/isometrica (complemento, no reemplazo) y la sentadilla
+      bulgara solo carga el aductor de la pierna adelantada en estiramiento, unilateral
+      y sin columna — swap debil, usalo solo si no hay maquina. Si el gym no tiene
+      maquina de aductores ni polea de aduccion de la que pueda salir solo, dilo y
+      usa el swap.'
+- id: abductores
+  name: ABDUCTORES GLUTEO MEDIO
+  aliases:
+  - abductores
+  - abductor
+  - abductores en maquina
+  - maquina de abductores
+  - abduccion de cadera
+  - multicadera
+  - gluteo medio
+  category: accessory
+  pattern: squat
+  muscles:
+  - abductors
+  - glutes
+  joints:
+  - hip
+  playbook:
+    purpose: 'Su unica maquina de abduccion de cadera: aisla el gluteo medio/menor
+      (los abductores) a CERO costo axial — asiento fijo, espalda apoyada, la rodilla
+      no se mueve — para sumar volumen de plano frontal y salud de cadera. Es un accesorio
+      de apoyo, no un arreglo del lift: el traspaso de FUERZA a su SUMO (rodillas
+      afuera, antiladeo de pelvis) y a su SENTADILLA LB (frenar shift lateral y valgo
+      al salir del hoyo) es real pero MODESTO, porque es un ejercicio de cadena abierta
+      y la maquina no reproduce la estabilizacion cargada de esos lifts. Entrenando
+      solo es ideal: recorrido fijo, sin observador ni pines, puede empujar cerca
+      del fallo con solo soltar el stack. Como accesorio nuevo sin 1RM propio, se
+      carga por RPE/repeticiones, no por %.'
+    use_when:
+    - 'Quieres sumar volumen de gluteo medio/menor como SOPORTE de la cuña de estancia
+      ancha del SUMO (rodillas afuera + antiladeo de pelvis, pelvis a la barra sin
+      dejar caer la cadera): tratalo como hipertrofia/salud de cadera, NO como arreglo
+      del despegue — el arreglo directo de un sumo que se ladea es trabajo unilateral
+      cargado (sentadilla-bulgara) + coachear la cuña; el carryover de fuerza aqui
+      es modesto'
+    - 'Shift lateral o caida de cadera al salir del hoyo en SENTADILLA LB (la barra
+      se va a un lado, una cadera sube antes) o valgo de rodilla visible en el video:
+      control de plano frontal debil — suma volumen de abduccion como seguro de salud/estabilidad
+      de cadera, EN PARALELO al coaching y al trabajo unilateral, no en su lugar'
+    - 'Semana con apilamiento de fatiga de erectores (SENTADILLA LB pesada + SUMO):
+      quiere volumen de gluteo/cadera SIN sumar carga axial — la maquina sentada no
+      toca la columna, a diferencia de otra bisagra o sentadilla, y cuida su lumbar
+      delicada'
+    - 'Rodilla/tendon rotuliano sensible: la maquina deja la rodilla fija (no hay
+      flexo-extension bajo carga), asi que puede meter volumen de cadera/gluteo cuando
+      la sentadilla profunda y la prensa molestan el tendon'
+    - 'Slot de accesorio de hipertrofia por defecto ~2x/semana para forma de gluteo
+      lateral y salud de cadera: la maquina permite sobrecarga progresiva y, entrenando
+      solo, la puede llevar cerca del fallo con seguridad (sin observador ni pines,
+      solo soltar)'
+    avoid_when:
+    - 'Bandera de dolor abierta en CADERA: no subir carga sin preguntarle primero;
+      regresar carga/rango antes y ofrecer swap del mismo rol (sentadilla-bulgara,
+      leg-press-unilateral, hip-thrust)'
+    - '~2-3 semanas finales pre-competencia: es de lo MENOS especifico a los tres
+      basicos — el aislamiento de gluteo medio no expresa un 1RM; cortalo con los
+      otros accesorios y deja que la SENTADILLA y el SUMO de competencia lleven el
+      trabajo de cadera'
+    - 'Si se recuesta HACIA ATRAS en la maquina o persigue numeros con reps sueltas:
+      eso corre la carga al TFL y flexores de cadera (y puede irritar la banda IT/cadera
+      lateral) — topar carga, espalda al respaldo o leve inclinacion al frente, excentrica
+      controlada; ego-cargar el stack no enseña nada'
+    - 'Primeras 1-2 exposiciones a un patron nuevo de plano frontal: rampa a RPE 6-7
+      — igual que se rampea el trabajo de aductor/Copenhagen; no clavar el stack en
+      frio (aunque este da menos DOMS que los aductores)'
+    - 'Semana apretada de 4 dias donde una estabilidad de cadera en plano frontal
+      ya esta cubierta (p.ej. sentadilla-bulgara esa semana): no duplicar accesorios
+      de cadera frontal — este es el aislamiento de menor prioridad, cortalo primero'
+    swaps:
+    - sentadilla-bulgara
+    - leg-press-unilateral
+    - hip-thrust
+    refs:
+    - 'Selkowitz, Beneck & Powers (2013), JOSPT — ''Which exercises target the gluteal
+      muscles while minimizing activation of the tensor fascia lata?'': la seleccion
+      y la posicion del ejercicio determinan la razon gluteo medio/TFL — apoya el
+      cue de nunca recostarse hacia atras (recostarse recluta TFL)'
+    - 'E3 Rehab — ''How To Train Your Gluteus Medius'': los mejores estimulos son
+      abduccion directa o ejercicios que obligan a estabilizar la pelvis en apoyo
+      unilateral'
+    - 'Bret Contreras — ''Knee Valgus, Glute Medius Strengthening & Band Hip Abduction'':
+      el trabajo de abductores puede ayudar contra el valgo y el shift lateral de
+      cadera, aunque el traspaso al valgo dinamico bajo barra es limitado'
+    - 'Guias practicas de hipertrofia de gluteo medio (contenido ES): espalda al respaldo
+      o leve inclinacion al frente sesga el medio; excentrica controlada + sobrecarga
+      progresiva para hipertrofia localizada; recostarse hacia atras corre la carga
+      al TFL'
+    notes: 'Dosis: 12-20 reps, 2-4 series, 1s de apriete arriba y excentrica controlada
+      (2-3s); es aislamiento pequeño en maquina, se empuja a 0-2 RIR con seguridad
+      — mas cerca del fallo que los basicos. 2x/semana con ~48h entre sesiones. POSICION:
+      espalda pegada al respaldo o leve inclinacion al frente (~10-15 grados) para
+      sesgar gluteo medio; recostarse HACIA ATRAS es el error tipico (corre carga
+      al TFL/flexores). Las fuentes discrepan en si upright vs inclinado al frente
+      sesga medio vs fibras altas del gluteo mayor — practico: nunca hacia atras.
+      Maquina > banda: tension constante en todo el rango (mejor para hipertrofia);
+      tiene la multicadera/abductor sentado del gimnasio comercial, usala. CARRYOVER:
+      es de cadena ABIERTA — el traspaso de fuerza de plano frontal al sumo/sentadilla
+      es real pero modesto y no reproduce la estabilizacion cargada del lift; tratalo
+      como hipertrofia + seguro de salud de cadera, NO como arreglo del lift; el arreglo
+      directo de un sumo que se ladea es trabajo unilateral cargado (bulgara) + coachear
+      la cuña. RELACION CON ADUCTORES: es el ANTAGONISTA de su patron de DOMS de aductor
+      (sentadilla +4 reps) — no suma dolor de aductor, y fortalecer abductores puede
+      reducir el shift de pelvis que sobrecarga los aductores; es el par frontal de
+      aductores, no un swap de este. Por que joints=[hip] solo: carga axial casi nula
+      (asiento con respaldo) y rodilla fija — ese es el punto; solo la cadera carga,
+      asi que solo su guardarrail dispara. VERIFICACION DE DATOS (confirmada contra
+      el repo): athlete.yaml dice ''no layoff since 2024'' y las lineas base fueron
+      rebaselinadas 2026-07-19; el bloque activo FUERZA SBD 1 corre los accesorios
+      con el scheme ''acc'' a rep_quality_rpe 8.0 — asi que esto se programa como
+      accesorio normal cerca del fallo, no como movimiento de re-entry con tope RPE<=7.
+      Si algun bloque futuro sí impusiera ese tope RPE<=7, ata el tope a los basicos
+      y este aislamiento igual puede ir mas cerca del fallo con seguridad. EQUIPO:
+      maquina estandar (multicadera/abductor sentado); la variante en polea de pie
+      es la opcion unilateral si la maquina esta ocupada, pero esta entrada es la
+      maquina sentada bilateral (unilateral=false). SWAPS: bulgara es el mejor sustituto
+      cargado del rol funcional (estabilidad de pelvis en apoyo unilateral, antiladeo
+      — puntua alto para gluteo medio); leg-press-unilateral suma control unilateral
+      de cadera/gluteo; hip-thrust conserva masa de gluteo sin carga axial pero NO
+      es plano frontal (no reemplaza la abduccion, solo cubre volumen de gluteo).
+      No hay otro movimiento de abduccion directa en el roster; estos tres son los
+      proxies mas razonables.'
+- id: gemelos
+  name: GEMELOS
+  aliases:
+  - pantorrillas
+  - elevacion de talones
+  - gemelo de pie
+  - gemelo sentado
+  - soleo
+  - gastrocnemio
+  category: accessory
+  pattern: squat
+  muscles:
+  - calves
+  joints:
+  - ankle
+  playbook:
+    purpose: 'Unico trabajo directo de pantorrilla del catalogo: de pie (rodilla recta)
+      el gastrocnemio trabaja a longitud larga y crece bastante mas; sentado (rodilla
+      flexionada) el gastrocnemio se afloja y el soleo toma mas carga. Para un powerlifter
+      es un accesorio de BAJA prioridad: su carryover a los totales de SENTADILLA
+      LB y PESO MUERTO SUMO es minimo (que el pie no colapse en el hoyo es mas movilidad
+      y control de tobillo que fuerza de pantorrilla). Su valor real es masa de pantorrilla
+      y tolerancia de tobillo/aquiles, a cero carga axial y seguro de empujar entrenando
+      solo (maquina/mancuerna).'
+    use_when:
+    - 'Slot de relleno cuando el presupuesto lumbar/sistemico ya se gasto (semana
+      de sumo pesado + sentadilla LB): la pantorrilla no toca columna ni SNC, suma
+      volumen sin robarle recuperacion a los basicos ni apilar fatiga de erectores'
+    - 'Re-entry: al ser cero carga axial y en maquina, es de los PRIMEROS accesorios
+      que puede empujar cerca del fallo (0-2 RIR) mientras los tres basicos siguen
+      con tope RPE<=7'
+    - 'Objetivo de masa/estetica de pantorrilla: priorizar la variante DE PIE — el
+      gastrocnemio crece bastante mas de pie que sentado (Kinoshita 2023), 2-4 series
+      al final del dia de pierna'
+    - 'Si el soleo es prioridad especifica: aniadir gemelo SENTADO (rodilla flexionada
+      afloja el gastrocnemio y deja al soleo tomar la carga). Ojo: el soleo no cruza
+      la rodilla, asi que la variante DE PIE ya lo entrena algo — la ganancia extra
+      del sentado es chica (Kinoshita 2023)'
+    - 'Durabilidad de tobillo/aquiles: si arrastra molestias de aquiles o tobillo,
+      trabajo controlado de gemelo construye tolerancia del tendon a cero costo de
+      columna o rodilla — pero es soporte de baja prioridad, no un arreglo de la sentadilla
+      ni del peso muerto'
+    avoid_when:
+    - 'Bandera de dolor abierta en tobillo/aquiles: no subir carga sin preguntarle
+      primero. El manejo NO es cambiar de maquina (gemelo en prensa/hack/Smith carga
+      el tobillo/aquiles igual), sino recortar el rango del fondo, bajar la carga
+      y tempo controlado'
+    - 'Dolor de aquiles o tendinopatia reproducido en el estiramiento del fondo: acortar
+      el rango (no bajar el talon a tope), tempo controlado y sin rebote — el estiramiento
+      cargado del fondo es lo que mas provoca el tendon'
+    - 'Semana de meet / deload final: cortalo primero — cero carryover a expresar
+      un 1RM en sentadilla/banca/peso muerto, no vale ni la fatiga minima'
+    - 'Cuando el tiempo y la energia de la sesion ya se fueron en los basicos y accesorios
+      con mas prioridad (isquios, cuadriceps, espalda): la pantorrilla es lo prescindible,
+      el primero que sale del dia'
+    - 'Nunca a costa de un accesorio que si mueve sus totales (leg-curl, remo): es
+      soporte, no un limitante de su powerlifting'
+    - 'Rebote o reps balisticas en el fondo para mover mas kilos: descarga el tendon
+      al tejido pasivo y arriesga el aquiles entrenando solo — si necesita rebotar,
+      el peso esta mal puesto'
+    swaps: []
+    refs:
+    - 'Kinoshita et al. 2023, Frontiers in Physiology 14:1272106 — ''Triceps surae
+      muscle hypertrophy is greater after standing versus seated calf-raise training'':
+      el gastrocnemio crece bastante mas de pie (longitud larga); el soleo crece parecido
+      en ambas posiciones (leve ventaja del sentado)'
+    - 'PowerliftingTechnique.com — Should Powerlifters Train Calves?: baja prioridad
+      para el total, pero apoya estabilidad de tobillo, plantiflexion y salud de tobillo/aquiles
+      a largo plazo'
+    - Stronger By Science / BarBend (guias de sentadilla) — el soleo no cruza la rodilla
+      y es mas activo con la rodilla flexionada; ayuda a fijar el pie y empujar el
+      piso, aunque el carryover directo al total es chico
+    - 'Beyer et al. 2015, Am J Sports Med — heavy slow resistance para tendinopatia
+      de aquiles: carga progresiva, tempo controlado, sin rebote balistico; acortar
+      el rango del fondo si hay sintomas'
+    notes: 'Prioriza DE PIE para masa de gastrocnemio (Kinoshita 2023); aniade SENTADO
+      solo si el soleo es objetivo puntual (ganancia marginal, no ''la unica forma'').
+      Dosis: de pie 8-15 reps con pausa 1-2s arriba; sentado 12-20 reps; 2-4 series
+      al final del dia. Tempo controlado, estiramiento controlado abajo SIN rebote
+      (protege el aquiles entrenando solo). En re-entry puede ir a 0-2 RIR aqui aunque
+      los basicos vayan a RPE<=7. Equipo: maquina de gemelos de pie/sentado si el
+      gym la tiene; muchos comerciales NO tienen maquina de gemelo SENTADO — en ese
+      caso el soleo se carga con gemelo en prensa a rodilla flexionada o sentado con
+      mancuerna/barra sobre las rodillas. swaps queda VACIO a proposito: es la unica
+      pantorrilla del catalogo, no hay sustituto de MUSCULO. Si la maquina esta ocupada,
+      la elevacion de talon se hace en PRENSA (toe/punta press), en Smith (barra segura)
+      o de pie con mancuerna: mismo musculo y mismo tobillo cargado, solo cambia el
+      implemento — es cambio de EQUIPO, no un swap de objetivo, y no descarga el tobillo
+      ante una bandera de dolor.'
+- id: antebrazo
+  name: ANTEBRAZO Y AGARRE
+  aliases:
+  - antebrazo
+  - antebrazos
+  - agarre
+  - antebrazo y agarre
+  - curl de muneca
+  - curl de muñeca
+  - curl inverso
+  - curl de muñeca inverso
+  - curl de antebrazo
+  - farmer hold
+  - farmer walk
+  - paseo del granjero
+  - dead hang
+  - colgado
+  - agarre pinza
+  - grip
+  - forearms
+  category: accessory
+  pattern: pull
+  muscles:
+  - forearms
+  joints:
+  - wrist
+  - elbow
+  playbook:
+    purpose: 'Isolation directa de antebrazo (flexores y extensores de muñeca, flexores
+      de dedos) y su unico trabajo de agarre dedicado: sosten para su sumo pesado
+      (250x1) cuando el doble prono empieza a resbalar, mas masa y equilibrio flexor-extensor
+      de antebrazo a costo sistemico casi nulo — no toca cuadriceps, aductores ni
+      erectores, justo sus zonas de fatiga. OJO: su sumo + remos ya entrenan agarre
+      de sobra, asi que es un EXTRA OPCIONAL para debilidad real de agarre, salud
+      de codo (equilibrio flexor/extensor) o estetica, no un imprescindible; la primera
+      linea ante un agarre que falla en el sumo es cambiar a hook/mixto, no mas trabajo
+      directo.'
+    use_when:
+    - 'Bloque de re-entry actual: relleno de ultimo slot que puede empujarse mas cerca
+      del fallo (0-3 RIR) que los basicos aun con el re-entry — reconstruye masa de
+      antebrazo y agarre sin sumar fatiga sistemica mientras las cargas de competicion
+      siguen conservadoras; farmer holds / dead hang / mancuernas fallan seguro entrenando
+      solo (se sueltan o te bajas)'
+    - 'Su sumo pesado (250x1) se le resbala en las ultimas reps con doble prono, o
+      quiere tirar strapless para retener agarre: para el (manos y estilo) el doble
+      prono suele empezar a fallar hacia ~200kg (estimacion individual, no dato fijo)
+      — farmer holds / dead hangs pesados de 20-40s entrenan el agarre de sosten especifico
+      del sumo. PRIMERA linea antes de este slot: pasar a hook/mixto; el trabajo directo
+      es para subir el techo de agarre, no el primer recurso'
+    - 'Fase de hipertrofia/volumen 4+ semanas del meet buscando masa de antebrazo
+      o equilibrio estetico: 12-20 reps, 6-10 sets/semana repartidos en 2-3 dias —
+      el antebrazo tolera bien alta frecuencia (recupera rapido) y reps altas son
+      mas comodas para la muneca que reps pesadas bajas; la hipertrofia va en todo
+      el rango cerca del fallo (crecimiento visible ~6-8 semanas)'
+    - 'Dia de PRESS BANCA COMP / upper: relleno barato al cierre que no compite con
+      la recuperacion de piernas ni de espalda baja — no carga cuadriceps, aductores
+      ni erectores, sus temas de fatiga, y falla seguro solo'
+    - 'Codo medial/lateral algo sensible (epicondialgia leve, no aguda) y quiere prevenir/rehabilitar:
+      la flexion Y extension de muneca resistidas son ejercicio de primera linea —
+      8-15 reps controladas, equilibrando curl de muneca (flexores) con curl inverso
+      (extensores)'
+    - 'Quiere sumar algo de volumen de tiron cuidando la espalda baja: curl de muneca
+      SENTADO con mancuernas o apoyado en el banco da estimulo de antebrazo con cero
+      carga axial, a diferencia del rack-pull o el remo pesado'
+    avoid_when:
+    - 'Bandera de dolor abierta en MUÑECA: no subir carga sin preguntarle primero;
+      ofrecer swap del mismo patron (encogimientos con mancuerna, biceps con agarre
+      neutro/martillo, o remo strapless). El curl de muneca articula la muneca bajo
+      carga — reps <8 con carga maxima estresan la articulacion sin ventaja de hipertrofia;
+      usar 12-20 reps controladas o agarre neutro/martillo'
+    - 'Bandera de dolor abierta en CODO (epicondilo medial o lateral): no subir carga
+      sin preguntarle primero; ofrecer swap. El trabajo de flexores/extensores tira
+      de los tendones del epicondilo (causa clasica de epicondialgia) y el curl inverso
+      flexiona el codo — si el dolor es agudo, bajar carga y volumen, no perseguir
+      el fallo; la flexion/extension resistida ligera rehabilita, la pesada agrava'
+    - 'Semana de peso muerto sumo pesado ya con alto volumen de tiron + remos: su
+      sumo + remos ya machacan el antebrazo — el trabajo directo apila fatiga de agarre
+      sobre exactamente los musculos que necesita frescos para agarrar la barra el
+      dia pesado; es el primer accesorio redundante a recortar (Nippard: ojo con la
+      fatiga acumulada de antebrazo)'
+    - '~1-2 semanas finales pre-meet: la isolation de antebrazo no aporta al pico
+      — sacarla para llegar con las manos frescas a los singles pesados; y NUNCA llevar
+      el agarre al fallo cerca de un sumo pesado (manos gastadas = pull comprometido)'
+    - 'El agarre no es su limitante en el sumo (tira comodo con hook o mixto y ceden
+      piernas/espalda antes que las manos): el trabajo directo de agarre no sube su
+      total — reasignar el slot a un motor real (leg-curl, extensiones o volumen de
+      espalda). El agarre suele limitar menos en sumo que en convencional (ROM mas
+      corto, la barra viaja menos)'
+    - 'Recuperacion en rojo o muneca/codo cansados de una semana cargada de tiron:
+      los antebrazos necesitan 2-3 dias para re-estimularse seguro — no meterlo el
+      dia despues de rack-pull/remo pesado ni de un sumo pesado strapless'
+    swaps:
+    - encogimientos
+    - biceps
+    - remo
+    refs:
+    - 'Stronger By Science / Greg Nuckols — guia de fuerza de agarre y desarrollo
+      de antebrazo: los tipos de agarre (crush / sosten / pinza / flexion-extension
+      de muneca) se entrenan de forma algo independiente; el trabajo directo es opcional
+      si ya tiras pesado, util para un punto debil o para hipertrofia'
+    - 'Jeff Nippard — How To Get Bigger Forearms: el peso muerto y los remos ya dan
+      mucho trabajo INDIRECTO de agarre; entrenar flexion Y extension (curl de muneca
+      + curl inverso) mas farmer''s walks; cuidado con la fatiga acumulada de antebrazo
+      al sumar todo'
+    - 'E3 Rehab / Cleveland Clinic — Golfer''s Elbow y Tennis Elbow (epicondialgia
+      medial/lateral): la flexion/extension de muneca resistida es ejercicio de primera
+      linea, 2-3 sets de 8-15 reps ~3x/sem — el mismo patron rehabilita en dosis controlada
+      y agrava en exceso'
+    - 'Powerexplosive (David Marchante, ES) — agarre en el peso muerto (doble prono
+      / hook / mixto): el doble prono suele fallar antes que la fuerza de piernas/espalda;
+      objetivo = que las manos no sean el limitante; strapless en los top sets, correas
+      en back-offs y accesorios'
+    - 'Schoenfeld & Grgic — meta-analisis de rango de repeticiones: la hipertrofia
+      es similar en un rango amplio de reps entrenando cerca del fallo, lo que justifica
+      reps altas (12-20) en el antebrazo, mas comodas y con menos estres articular
+      de muneca que <8 reps pesadas'
+    notes: 'Dosis: curl de muneca y curl inverso 12-20 reps (evitar <8 con carga maxima
+      — articula la muneca bajo carga y la estresa sin ventaja de hipertrofia); farmer
+      holds / dead hang pesados 20-40s; pinza de disco 10-15s. 6-10 sets/semana en
+      2-3 dias — el antebrazo tolera alta frecuencia (recupera rapido) y las reps
+      altas son mas comodas para la muneca; la hipertrofia va en todo el rango cerca
+      del fallo, no es exclusiva de reps altas (Schoenfeld; crecimiento visible ~6-8
+      semanas). Equilibrar SIEMPRE flexores y extensores (curl de muneca + curl inverso)
+      por salud de codo/epicondilos. Orden en sesion: holds/dead hang primero (agarre
+      con muneca neutra), luego curl de muneca, por ultimo curl inverso (juicio de
+      coach, no dato duro). Re-entry: estos accesorios se pueden empujar mas cerca
+      del fallo (0-3 RIR) que los basicos incluso ahora porque fallan trivialmente
+      entrenando solo (mancuerna/disco se sueltan, del colgado te bajas), PERO nunca
+      cerca de un sumo pesado (manos gastadas comprometen el pull). Prioridad: el
+      trabajo directo es OPCIONAL para un tirador — justificar el slot por debilidad
+      real de agarre, salud de codo o estetica, no por defecto; ante agarre que falla
+      en el sumo, primera linea es hook/mixto. El agarre limita menos en sumo que
+      en convencional (ROM mas corto). Joints: la MUÑECA entra como articulacion cargada
+      (el curl de muneca la articula bajo carga, a diferencia del hang pasivo o del
+      shrug donde el agarre se captura via forearms — consistente con la entrada encogimientos)
+      → el guardarrail de muneca salta, correcto; el CODO entra por los tendones del
+      epicondilo (flexores/extensores = causa clasica de epicondialgia) y porque el
+      curl inverso flexiona el codo → guardarrail de codo salta. El DEAD HANG pone
+      ademas el hombro en traccion pasiva bajo peso corporal: NO esta en joints (suele
+      ser neutro/descompresivo y anadirlo sobre-bloquearia el curl de muneca sentado,
+      que no toca el hombro), asi que si hay bandera de HOMBRO abierta preferir curl
+      de muneca/antebrazo sentado sobre los colgados — vigilalo tu, sin guardarrail.
+      Equipo: todo estandar en gimnasio comercial (mancuernas, discos, barra de dominadas
+      para el colgado); nada especial ni GHR. Solo: cargas que se sueltan, nunca fallar
+      con peso atrapado. Straps: strapless los top sets del sumo para retener agarre,
+      correas en back-offs/accesorios para ahorrar manos. Swaps al cluster de tiron
+      con solape de antebrazo (encogimientos comparte forearms + agarre de sosten;
+      biceps con agarre neutro/martillo aporta braquiorradial y ahorra muneca; remo
+      strapless entrena agarre de sosten); rack-pull NO es swap (hinge pesado, carga
+      axial que contradice ahorrar columna) aunque las holds en pines sirven como
+      agarre extra.'
+- id: larsen-press
+  name: PRESS BANCA LARSEN
+  aliases:
+  - press larsen
+  - larsen
+  - banca larsen
+  - press banca larsen
+  - larsen press
+  - press banca piernas arriba
+  - banca piernas levantadas
+  - press sin leg drive
+  category: variation
+  parent: bench
+  pattern: press
+  muscles:
+  - pecs
+  - front_delts
+  - triceps
+  joints:
+  - shoulder
+  - elbow
+  - wrist
+  playbook:
+    purpose: 'Press banca con las piernas levantadas y estiradas que elimina el empuje
+      de piernas y el arco: obliga al tren superior a producir TODA la fuerza mientras
+      sostiene con tension isometrica el upper-back y el core, construyendo pecho,
+      triceps y deltoide anterior a ~8% menos carga absoluta que la banca de competencia.
+      Para Benjamin es doblemente util: press de hipertrofia de bloque medio que ademas
+      ahorra la espalda baja (sin arco ni bracing lumbar cargado), y herramienta correctiva
+      si su video muestra que depende de mas de la cuenta del leg drive o pierda la
+      tension de espalda alta al despegar del pecho.'
+    use_when:
+    - 'Fase de volumen/hipertrofia 4+ semanas de una competencia: 2do slot de press
+      detras del PRESS BANCA COMP con pausa, 3-4x8-12, para sumar volumen de pecho/triceps/deltoide
+      anterior a ~8% menos carga sin apilar la fatiga axial/articular de una banca
+      comp pesada'
+    - 'Semana con SENTADILLA LB + PESO MUERTO SUMO pesados y el presupuesto lumbar
+      de erectores gastado (su tema de cuidar la espalda baja): el setup de espalda
+      plana, sin arco y sin empuje de piernas suma volumen de empuje sin cargar la
+      extension lumbar ni el bracing que si exige una banca comp muy arqueada'
+    - 'El video (entrena solo con el celular) muestra que abusa del leg drive -pies
+      que se arrastran, cadera que se despega, riesgo de nulo IPF- o que la espalda
+      alta se afloja al despegar del pecho: el Larsen le quita las piernas y lo obliga
+      a sostener la retraccion escapular y la tension del upper-back, y ese patron
+      transfiere de vuelta al PRESS BANCA COMP'
+    - 'Re-entry actual (2026-07): la caida de carga ~8% que se autoimpone mantiene
+      su banca honesta en RPE <= 7 mientras reconstruye una base, misma logica que
+      spoto/tempo; no necesita ancla de % sobre los 130x1 porque el ejercicio limita
+      la carga por diseno'
+    - 'Quiere rotar el press secundario cuando la banca comp se siente grindy pero
+      busca mantener la frecuencia de empuje dando un respiro a las piernas y a la
+      espalda baja: el Larsen conserva el estimulo de pecho/triceps quitando justo
+      lo que lo fatiga (arco + leg drive)'
+    avoid_when:
+    - 'Bandera de dolor abierta en hombro, codo o muneca: no subir carga sin preguntarle
+      primero; ofrecer swap del mismo patron (spoto-press, bench-tempo o press-banca-db)
+      mientras la bandera siga abierta'
+    - 'Pico / ultimas ~4 semanas pre-competencia: el PRESS BANCA COMP necesita el
+      arco y el empuje de piernas LEGALES por los que se le juzga; matarle el leg
+      drive justo antes de la tarima es contraproducente -devuelve el slot a bench
+      (banca con pausa comp)'
+    - 'Entrena SOLO con barra y sin observador ni base de pies: la posicion de piernas
+      arriba es menos estable que con los pies plantados -una rep que muere o que
+      se ladea puede volcarse/rodar sin base de piernas para salvarla. Mantenlo submaximo
+      (encaja con el tope re-entry), pines del rack puestos justo bajo el pecho, sin
+      collarines; a diferencia de otros accesorios de pecho, NO lo lleves al fallo
+      real con barra pesada estando solo'
+    - 'Su fallo de banca es abajo del todo pegado al pecho y compite con buen empuje
+      de piernas: no gastes slots de press desaprendiendo una habilidad legal y util
+      -usa spoto-press (ataca el sticking point) o pausas de competencia en su lugar'
+    - 'Tilt pelvico anterior o incapacidad de frenar el arqueo lumbar con las piernas
+      estiradas: esto anula el proposito de ahorrar columna y puede irritar la misma
+      espalda baja que cuida -usa la version con pies apoyados en el banco (algo mas
+      estable) o pasa a press-banca-db/maquina'
+    swaps:
+    - spoto-press
+    - bench-tempo
+    - press-banca-db
+    refs:
+    - 'PowerliftingTechnique.com - ''6 Reasons To Do Larsen Press (Plus 3 Reasons
+      Not To)'': quita el empuje de piernas, fuerza la tension del upper-back (cue
+      ''lleva el pecho a la barra''), se autolimita ~8% (empezar en ~92% de la banca
+      comp); guarda Larsen/Spoto para debilidades ya identificadas'
+    - 'BarBend - ''How the Larsen Press Can Be a Secret Weapon For Bench Press Gains'':
+      nombrado por Adrian Larsen (bencher que competia con las piernas arriba); hipertrofia
+      de pecho/triceps de off-season a menor carga absoluta, con los extensores de
+      espalda sosteniendo isometrico la caja toracica elevada'
+    - 'Soy Powerlifter (ES) - ''Press Larsen: tecnica y beneficios'': elimina el impulso
+      de piernas y obliga a mantener tension de espalda alta; variante favorita para
+      quien abusa del leg drive; sin equipo extra ni gran cambio de tecnica'
+    - 'Onnit - ''How To Do The Larsen Press Like A Pro'': piernas estiradas/pies fuera
+      del suelo aplanan la columna y reducen el estres lumbar del arqueo pesado'
+    notes: 'Dosis: 8-12 reps (hasta 15), 3-4 series, slot secundario. En re-entry
+      cargalo por RPE <= 7; incluso levantado el cap, mantenlo mas conservador que
+      el trabajo de pecho con mancuerna/maquina -piernas arriba con barra y sin observador
+      es menos estable, no lo grindees al fallo. La caida de carga es de ~8% de media
+      (PowerliftingTechnique: empezar en ~92% de la banca comp; BarBend coincide en
+      menor carga absoluta) PERO es individual -algunos arrancan mas bajo, ~70-80%,
+      mientras se adaptan a la inestabilidad-, por eso aqui se prescribe por RPE y
+      no por % sobre los 130x1; y por lo mismo NO metas la e1RM del Larsen en las
+      proyecciones de PRESS BANCA COMP (las infla igual que el TnG). Matiz clave:
+      quita el arco (por eso ahorra espalda baja y encaja con su tema lumbar) PERO
+      exige tension isometrica de extensores/oblicuos para sostener la caja toracica
+      -es spine-sparing en carga de extension axial, no ''cero core''; imprime el
+      cue ''lleva el pecho a la barra'' en Indicaciones para mantener la repisa y
+      la tension. Opciones de pies: piernas estiradas es la version estricta; pies
+      apoyados en el banco es una regresion mas estable para entrenar solo o si tiene
+      tilt pelvico anterior (conserva casi toda la intencion). Desacuerdo entre fuentes:
+      algunas lo venden como ''constructor de banca'' (carryover por tecnica/tension),
+      otras solo como hipertrofia -lectura honesta: el carryover real llega SOLO si
+      su limitante es la tension de espalda alta o el abuso de leg drive; si no, es
+      hipertrofia de pecho/triceps + una opcion de empuje que ahorra la espalda baja.
+      No es herramienta de pico. Equipo: barra y banco estandar, nada especial -apto
+      para gimnasio comercial; unica salvedad solo = pines del rack justo bajo el
+      pecho y sin collarines.'
+- id: pull-over
+  name: PULLOVER
+  aliases:
+  - pullover
+  - pull over
+  - pullover con mancuerna
+  - pullover en polea
+  - pullover cable
+  category: accessory
+  pattern: pull
+  muscles:
+  - lats
+  - pecs
+  joints:
+  - shoulder
+  playbook:
+    purpose: 'Accesorio de estiramiento que carga a la vez el dorsal Y el pectoral
+      en el estiramiento profundo de flexion de hombro por encima de la cabeza — el
+      rango largo que sus jalones y remos (dorsal en rango medio-corto) no tocan —
+      sumando volumen de espalda/pecho a costo axial casi nulo (tumbado y apoyado
+      NO comprime ni carga la columna, a diferencia del remo inclinado). No es constructor
+      principal de ninguno de los dos musculos: la EMG reparte la carga casi por igual
+      entre pectoral mayor y dorsal ancho, SIN diferencia significativa (Marchetti
+      & Uchida 2011) — tratalo como complemento de estiramiento en longitud larga,
+      no como driver de masa de dorsal ni de pecho.'
+    use_when:
+    - 'Quieres volumen de dorsal/espalda alta SIN sumar carga espinal: en semanas
+      de PESO MUERTO SUMO pesado + SENTADILLA LB los erectores estan cocidos — el
+      pullover (tumbado, apoyado) mete estiramiento de dorsal a cero costo axial,
+      a diferencia del remo con barra inclinado que le pesa a la lumbar que esta cuidando'
+    - 'Cierre/finisher de estiramiento tras TRACCION VERTICAL o REMO: los jalones
+      y remos entrenan el dorsal en rango medio-corto; el pullover aporta el estimulo
+      en longitud larga que falta — 2-4 series al final del dia de espalda'
+    - 'Re-entry actual: al ser monoarticular en cable/mancuerna se puede empujar mas
+      cerca del fallo que los basicos (que siguen topados a RPE <=7) — pero por ser
+      un estiramiento de hombro cargado, mantenlo en ~2-3 RIR / RPE 7-8 mientras la
+      articulacion re-adapta, NO en grinders de 1 RIR'
+    - 'Tambien quieres estiramiento de pectoral en longitud larga: en un dia sesgado
+      a banca suma algo de hipertrofia de pecho sin otro empuje ni carga de codo —
+      recordando que iguala pec y dorsal y NO supera a una apertura para el pectoral'
+    - 'Gimnasio lleno o sin rack/banca de press libre: pullover en polea con cuerda
+      llena un slot de espalda/pecho con equipo siempre disponible y soltable con
+      seguridad entrenando solo'
+    avoid_when:
+    - 'Bandera de dolor abierta en hombro: no subir carga sin preguntarle primero;
+      el fondo es un estiramiento cargado por encima de la cabeza que irrita hombros
+      sensibles — ofrecer traccion-vertical o remo (rango medio, menos estiramiento
+      gleno-humeral) mientras tanto'
+    - 'Movilidad de hombro pobre ese dia o la lumbar se despega del banco en el estiramiento:
+      el dorsal estirado jala la columna a extension — si no sostiene el brace, recorta
+      ROM, pon los pies arriba (retroversion pelvica) o sacalo; protege la espalda
+      baja que esta cuidando'
+    - 'Brote lumbar activo en que hasta la extension de tronco con brace molesta:
+      aunque el costo axial es casi nulo, el dorsal en estiramiento tira la columna
+      a extension — dejalo fuera hasta que ceda'
+    - 'Semana de meet o deload final: cortalo con el resto de accesorios — cero transferencia
+      al total'
+    - 'Hombros ya machacados por banca pesada + volumen de press esa semana: la flexion
+      profunda del pullover apila estres gleno-humeral — recortalo antes que el trabajo
+      de empuje'
+    - 'Entrenando solo: nada de pullover pesado con mancuerna cruzando la cara — una
+      rep fallada le suelta la mancuerna en la cabeza; usa polea (cuerda) o una mancuerna
+      moderada que domine por completo'
+    swaps:
+    - traccion-vertical
+    - remo
+    - aperturas
+    refs:
+    - 'Marchetti PH & Uchida MC 2011, Journal of Applied Biomechanics 27(4):380 —
+      EMG del pullover con barra: activacion SIMILAR del pectoral mayor y el dorsal
+      ancho, SIN diferencia significativa (no es que el pec domine; el ejercicio reparte
+      la carga casi por igual entre ambos)'
+    - 'Jeff Nippard — Back Exercises Ranked (tier list en YouTube): situa el pullover
+      con mancuerna como buena herramienta de estiramiento de dorsal, por debajo de
+      jalones/remos que progresan mas facil — herramienta de estiramiento, no constructor
+      obligatorio de dorsal'
+    - 'Stronger By Science / G. Nuckols — entrenamiento en longitud muscular larga
+      / parciales estirados: cargar el musculo en estiramiento tiende a dar algo mas
+      de crecimiento (~5-7%), pero SBS matiza que la etiqueta ''hipertrofia mediada
+      por estiramiento'' esta sobrevendida como mecanismo aparte — fundamento del
+      slot, sin magia'
+    notes: 'Dosis: 2-4 series de 10-15 reps (hasta 12-20), carga moderada, excentrica
+      lenta y controlada buscando el estiramiento — la posicion alargada ES el estimulo.
+      Codos fijos y algo cerrados (abrirlos = rotacion interna, pierde tension del
+      dorsal); barre desde el hombro, no jales con los brazos. Baja a un estiramiento
+      profundo COMODO (brazos ~al plano del banco), sin forzar ROM extra ''por rango''
+      — ese fondo forzado es donde se irritan los hombros. Cable (cuerda, polea alta
+      o baja) preferido sobre mancuerna para quien entrena solo (tension constante
+      + sin mancuerna sobre la cara); mancuerna solo si la controla del todo. Marco
+      honesto: la EMG reparte la carga casi por igual entre pec y dorsal (Marchetti:
+      SIN diferencia significativa, no ''pec > lat'') y no es constructor principal
+      de ninguno — complemento de estiramiento a sus remos/jalones, no sustituto de
+      un jalon (progresa mas facil, Nippard) ni de una apertura para el pecho. En
+      re-entry puede ir mas cerca del fallo que SBD, pero por ser estiramiento de
+      hombro cargado mantenlo en ~2-3 RIR mientras la articulacion re-adapta. Equipo
+      estandar de gimnasio comercial: cable/cuerda o mancuerna, sin nada raro.'
+- id: curl-nordico
+  name: CURL NORDICO
+  aliases:
+  - curl nordico
+  - curl nórdico
+  - nordico
+  - nórdicos
+  - nordic curl
+  - curl nordico de isquios
+  - femoral nordico
+  - femoral nórdico
+  category: accessory
+  pattern: hinge
+  muscles:
+  - hamstrings
+  joints:
+  - knee
+  playbook:
+    purpose: 'Su herramienta de FUERZA EXCENTRICA y prevencion de distension de isquio:
+      sobrecarga el isquio alargandose a longitud larga (las fasciculas de la cabeza
+      larga del biceps femoral se estiran activamente en el descenso) y sesga el semitendinoso
+      + cabeza corta del biceps femoral, el flexor puro de rodilla que el sumo y el
+      RDL apenas tocan. Es seguro axialmente (cero carga en columna, clave cuando
+      los erectores estan fritos de LB + sumo). No es su mejor constructor de masa
+      de isquio — es seguro/prevencion mas que hipertrofia bruta; el precio es DOMS
+      brutal y compresion del tendon rotuliano al arrodillarse.'
+    use_when:
+    - 'Quiere fuerza excentrica de isquio / seguro anti-distension: el sumo y el RDL
+      entrenan el isquio en la cadera y concentrico, pero NADA mas en su plan sobrecarga
+      el excentrico a longitud larga como el Nordico — es su poliza de durabilidad
+      de isquio'
+    - Necesita volumen de flexion de rodilla del isquio con CERO carga axial en una
+      semana de columna gastada (LB pesado + sumo apilados) — como el leg-curl pero
+      con sobrecarga excentrica y adaptacion arquitectonica encima
+    - Quiere pegarle al semitendinoso y a la cabeza CORTA del biceps femoral (flexor
+      solo de rodilla) que las bisagras de cadera (sumo/RDL) casi no entrenan — complementa
+      el trabajo de cadera
+    - 'Mas adelante en el re-entry, ya con rodillas sin sintomas y una base de isquio:
+      se introduce PRIMERO asistido con banda / ROM corto y se progresa quitando ayuda
+      sesion a sesion'
+    - Dia de sentadilla o peso muerto como soporte de cadena posterior, 1-2x/semana,
+      cuando el presupuesto de agujetas lo permite y ya paso las primeras exposiciones
+      de DOMS salvaje
+    avoid_when:
+    - 'Bandera de dolor abierta en la RODILLA (su punto vulnerable — tendon rotuliano/cuadricipital):
+      arrodillarse aplasta el tendon rotuliano contra el piso y el excentrico multiplica
+      esa fuerza — NO subir carga ni volumen sin preguntarle primero; ofrecer el swap
+      (leg-curl en maquina, o mover el isquio a la cadera con rdl/hiperextensiones)'
+    - Primeras 1-2 exposiciones metidas en una semana pesada o justo antes de una
+      sesion que necesita isquios frescos (jalon de sumo) — el DOMS pica a ~48h y
+      en el debut es salvaje; no apilarlo en dia de tiron pesado hasta que entre el
+      efecto de sesion repetida
+    - 'Fase de re-entry con todo topado a RPE <= 7: el excentrico del Nordico es casi
+      maximo por naturaleza y no se puede autorregular a RPE 7 sin banda fuerte /
+      ROM corto — si no puede regresarlo, saltarlo y usar leg-curl hasta tener lineas
+      base'
+    - 'Semana de deload o de meet: cortalo con los otros accesorios — costo de agujetas
+      enorme y cero carryover a expresar un 1RM'
+    - 'Entrena SOLO y no tiene como anclar bien los pies (sin GHR, sin companero):
+      un pie que se suelta a mitad del excentrico = caida de cara — necesita pies
+      fijados bajo una barra cargada (pines bajos del rack) o un pie de maquina pesado,
+      y rodillas acolchadas, antes de que sea seguro'
+    - 'La fatiga de erectores / espalda baja NO es el limitante y solo busca hipertrofia
+      bruta de isquio: el leg-curl (sobre todo sentado, a longitud larga) da mas crecimiento
+      de los isquios biarticulares por unidad de agujetas — usa el Nordico por la
+      cualidad excentrica/preventiva, no como motor principal de masa'
+    swaps:
+    - leg-curl
+    - rdl
+    - hiperextensiones
+    refs:
+    - Bourne et al. 2017, Br J Sports Med — el Nordico sesga semitendinoso y cabeza
+      corta del biceps femoral (flexores de rodilla); las extensiones de cadera (back
+      extension / hip-thrust) crecen mas la cabeza larga del biceps femoral y el semimembranoso
+    - Maeo et al. 2021, Med Sci Sports Exerc — el leg-curl a longitud muscular larga
+      (sentado) produce mas hipertrofia de isquio biarticular que a longitud corta;
+      motiva usar el leg-curl, no el Nordico, como motor de masa de isquio
+    - 'Petersen et al. 2011 (Am J Sports Med) y van Dyk et al. 2019 (Br J Sports Med,
+      meta-analisis, ~8459 atletas) — el entrenamiento excentrico tipo Nordico reduce
+      las distensiones de isquio ~50-70% (van Dyk: aprox. a la mitad)'
+    - Timmins et al. 2016, Br J Sports Med — fasciculas cortas del biceps femoral
+      + debilidad excentrica de los flexores de rodilla predicen la distension; el
+      Nordico alarga las fasciculas del biceps femoral (adaptacion arquitectonica
+      que baja el riesgo)
+    - 'Stronger by Science — guia de seleccion de ejercicios de isquio: el Nordico
+      es herramienta excentrica/preventiva, no la mejor opcion para hipertrofia total
+      de isquio'
+    notes: 'Dosis: 2-4 series de 3-8 reps con excentrico controlado (3-5 s), o 6-10
+      reps asistido con banda; 1-2x/semana. Rampa el volumen con cuidado por el DOMS
+      — arranca con 2-3 reps por serie las primeras sesiones y sube al bajar las agujetas
+      (efecto de sesion repetida). Solo y sin GHR: ancla los pies bajo una barra bien
+      cargada en pines bajos del rack o un pie de maquina pesado, y ACOLCHA las rodillas
+      (colchoneta/pad) — es el equipo poco comun que este movimiento exige, sin eso
+      no es seguro para el. Regresiones para bajar dificultad y RPE: banda desde el
+      rack, ROM parcial (objetos apilados delante), o dejar que la cadera se flexione
+      un poco. Desacuerdo con el esqueleto de hipertrofia: NO es su mejor pick para
+      masa de isquio — leg-curl (sentado) y bisagras crecen mas los isquios biarticulares
+      / cabeza larga + semimembranoso (Maeo 2021, Bourne 2017); el filo del Nordico
+      es la sobrecarga EXCENTRICA + prevencion de distension + cabeza corta/semitendinoso.
+      Caveat del tope RPE<=7 del re-entry: el excentrico es casi maximo por diseno;
+      durante el re-entry regresa con banda/ROM o pospón hasta tener base. Caveat
+      de rodilla: la compresion rotuliana al arrodillarse es real y toca su historial
+      de rodilla — acolchar y vigilar dolor anterior; ante la minima molestia, mover
+      el trabajo a leg-curl/rdl.'
+- id: elevacion-piernas
+  name: ELEVACION DE PIERNAS COLGADO
+  aliases:
+  - elevacion de piernas
+  - elevaciones de piernas
+  - elevacion de rodillas
+  - rodillas al pecho
+  - colgado
+  - silla romana
+  - hanging leg raise
+  - leg raise
+  category: accessory
+  pattern: core
+  muscles:
+  - abs
+  - obliques
+  joints:
+  - shoulder
+  - hip
+  - lumbar
+  playbook:
+    purpose: 'Dynamic lower-rectus / anterior-core builder that fills the one gap
+      his core menu leaves: pallof (anti-rotacion), cuadrado-lumbar (lateral iso),
+      plancha-copenhagen (anti-flexion lateral) y rueda (anti-extension) son todos
+      isometricos o anti-movimiento — ninguno entrena el recto abdominal en un curl
+      pelvico dinamico. Colgado de la barra, cierra la pelvis contra la palanca de
+      las piernas; hecho como elevaciones de RODILLA controladas, el recto inferior
+      y los oblicuos hacen el trabajo a baja compresion espinal (la colgada de hecho
+      descomprime la columna). Salvedad honesta: los flexores de cadera (recto femoral)
+      aportan mucho en CUALQUIER elevacion de piernas, por eso se programa como curl
+      pelvico deliberado, no como pierna lanzada — y su transferencia al brace de
+      SENTADILLA LB / no irse hacia atras en el lockout de PESO MUERTO SUMO es un
+      efecto de CAPACIDAD (un recto mas fuerte), no un ensayo de la habilidad isometrica
+      de brace, que rueda/pallof entrenan de forma mas especifica. Sus ganancias limpias
+      aqui: un estimulo de recto inferior cerca del fallo y trabajo directo de ''abdomen
+      bajo'', seguro en solitario (nada que soltar — te bajas de la barra) y con cero
+      coste de rodilla o axial.'
+    use_when:
+    - 'Bloques de re-entry/volumen a 4+ semanas del meet: slot de core al final de
+      la sesion 2-3x/sem, 3-4x8-15 elevaciones de rodilla con curl pelvico deliberado
+      — de los pocos movimientos de abdomen que puede empujar cerca del fallo con
+      seguridad mientras los basicos siguen a RPE <=7 (el core de aislamiento tiene
+      poco riesgo de re-lesion, asi que se presiona mas fuerte que la barra incluso
+      en re-entry)'
+    - Su menu de core es todo isometrico o anti-extension (pallof anti-rotacion, cuadrado-lumbar/Copenhagen
+      lateral, rueda anti-extension) — esto agrega el estimulo dinamico de flexion
+      de tronco / recto inferior + oblicuo que falta
+    - 'Quiere un constructor dinamico de recto inferior junto al trabajo isometrico:
+      el curl pelvico agrega un estimulo de recto cerca del fallo que rueda/pallof
+      no dan — mantenlo como capacidad/hipertrofia y deja a rueda como el driver especifico
+      de anti-extension del brace (la transferencia al brace aqui es indirecta, no
+      un ensayo de la habilidad)'
+    - Quiere trabajo directo de 'abdomen bajo' como objetivo estetico — barato de
+      pegar al final de un dia de banca/upper, cero carga de rodilla y sin coste axial
+      pesado mientras sentadilla/sumo cargan la semana
+    - 'Dia de core dinamico amable con la espalda baja: en semanas donde rueda-abdominal
+      (extension lumbar cargada) se siente muy provocativa pero aun quiere un movimiento
+      dinamico de abdomen, la colgada descompresiva con elevaciones de rodilla de
+      ROM corto mantiene el estimulo dinamico de core anterior'
+    avoid_when:
+    - 'Flag lumbar abierto: reps dominadas por flexor de cadera o con balanceo dejan
+      que el psoas tire de la columna lumbar y la arqueen/carguen (McGill) — nunca
+      subas carga ni ROM sin preguntarle primero; regresa a elevaciones de rodilla
+      de ROM corto o cambia a pallof / cuadrado-lumbar (baja compresion) mientras
+      tanto'
+    - 'Flag de cadera abierto (flexor/psoas o pinzamiento anterior de cadera): la
+      elevacion carga la flexion de cadera directamente bajo palanca larga — no progreses
+      sin preguntarle; acorta a rodillas flexionadas o cambia el ejercicio'
+    - 'Flag de hombro abierto: la colgada muerta carga la glenohumeral y los dorsales
+      — pregunta antes de cargar; muevete a la silla romana (captain''s chair con
+      apoyo de codos) para sacar la colgada del hombro, o cambia a un anti-extension
+      en el suelo'
+    - Reps de pierna estirada con balanceo/kipping o lanzando las piernas alto pasando
+      el control pelvico — el momento le roba trabajo al abdomen y dispara la carga
+      de flexor de cadera + lumbar, entrenando justo el fallo de extension que deberia
+      corregir; termina la serie cuando empieza a balancearse, no al fallo de agarre
+    - 'Justo antes de top sets pesados de SENTADILLA LB o PESO MUERTO SUMO: pre-fatigar
+      el tronco y los flexores de cadera degrada el brace y la posicion de partida
+      del sumo — solo al final de la sesion'
+    - 'Semana de meet/test: sin transferencia a plataforma, cortala con el resto de
+      accesorios — y nunca la introduzcas, ni saltes el ROM a pierna estirada, como
+      estimulo nuevo dentro de las ~2 semanas finales (DOMS de abdomen + flexor de
+      cadera)'
+    swaps:
+    - rueda-abdominal
+    - pallof
+    - cuadrado-lumbar
+    refs:
+    - 'Escamilla et al. 2006, Phys Ther 86(5):656-71 (PMID 16649890) — EMG de ejercicios
+      abdominales tradicionales y no tradicionales: el hanging knee-up figura entre
+      los mas altos de recto abdominal (superior+inferior) y oblicuo externo, con
+      actividad tambien alta de dorsal ancho y de flexor de cadera (recto femoral)
+      — por eso NO es un movimiento de abdomen ''puro'''
+    - 'Stuart McGill — Low Back Disorders / Ultimate Back Fitness and Performance:
+      las elevaciones colgadas de pierna estirada elevan la compresion lumbar y el
+      tiron del psoas puede arquear la lumbar; la posicion colgada (columna elongada/descomprimida)
+      se tolera mejor que las elevaciones tumbado, con ROM limitado'
+    - 'Mundo Entrenamiento (mundoentrenamiento.com) — guias de elevaciones de piernas
+      colgado: tecnica de tirar con la cadera / curl pelvico para sesgar el recto
+      abdominal y bajar la carga de los flexores, evitando arquear la lumbar y el
+      balanceo'
+    notes: 'Dosis 3-4x8-15 elevaciones de rodilla controladas, 2-3s de excentrica,
+      sin balanceo; RPE <=7 durante el re-entry, pero esta clase de aislamiento se
+      puede llevar a 0-2 RIR antes que los basicos una vez que se levante el tope.
+      Termina la serie cuando la pelvis deja de cerrarse o empieza el kipping — no
+      al fallo de agarre. El agarre es el cuello de botella habitual, no el abdomen:
+      usa straps o la silla romana (captain''s chair, apoyo de codos) para que el
+      antebrazo no termine la serie — la misma razon por la que Escamilla lo strapeo,
+      y la silla romana ademas saca la colgada del hombro. Progresion: rodillas flexionadas
+      -> punta a paralelo -> pierna estirada -> lastre en tobillo; nunca sumes ROM/palanca
+      antes de dominar el curl pelvico. Cue ''sube la pelvis / cierra el cierre'',
+      costillas abajo. Equipo: solo necesita barra de dominadas o silla romana (ambos
+      estandar en gimnasio comercial) + straps; nada raro. Desacuerdo clave a sostener:
+      la colgada solo es protectora de columna cuando las reps son elevaciones de
+      rodilla controladas — pierna estirada + balanceo es la version que carga su
+      lumbar (tiron del psoas / recto femoral), por eso lumbar queda en la lista de
+      joints pese a la descompresion.'
