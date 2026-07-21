@@ -19,14 +19,15 @@ focus: strength
 status: active
 
 sheet:
-  # Subido por Benjamin 2026-07-21 como .xlsx CRUDO (mimeType xlsx, no hoja
-  # nativa). El conector lo lee bien: read_file_content OK 2026-07-21.
-  # INGEST /log: download_file_content(fileId) sin exportMimeType (se ignora en
-  # archivos no-nativos) -> base64 -> out/filled.xlsx -> pl sheet parse.
-  # Si algun dia lo convierte a hoja de Google, cambia el id -> pedir link nuevo.
-  drive_file_id: 1CA3RDuYXnb4uOwvey8nj57Nmeaz6d3ZD
-  title: 2026-07-strength-1.xlsx
-  url: https://docs.google.com/spreadsheets/d/1CA3RDuYXnb4uOwvey8nj57Nmeaz6d3ZD/edit
+  # Hoja de Google NATIVA (Benjamin convirtio el xlsx 2026-07-21; el .xlsx crudo
+  # 1CA3RDuYXnb4uOwvey8nj57Nmeaz6d3ZD quedo como duplicado obsoleto, borrable).
+  # Contenido verificado 2026-07-21 (Portada + SEMANA 1-6, cargas correctas).
+  # INGEST /log: download_file_content(fileId, exportMimeType=
+  #   application/vnd.openxmlformats-officedocument.spreadsheetml.sheet)
+  #   -> base64 -> out/filled.xlsx -> pl sheet parse (lee todas las SEMANA n).
+  drive_file_id: 13Cloty_VkNcW73Wy-IIUZz0jNSmDuemSA7zejaIG2d0
+  title: 2026-07-strength-1
+  url: https://docs.google.com/spreadsheets/d/13Cloty_VkNcW73Wy-IIUZz0jNSmDuemSA7zejaIG2d0/edit
 
 schemes:
   - id: top3
