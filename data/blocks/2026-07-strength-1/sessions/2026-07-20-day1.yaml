@@ -1,0 +1,35 @@
+date: '2026-07-20'
+block: 2026-07-strength-1
+week: 1
+day: 1
+entries:
+- exercise: squat
+  sets:
+  - weight: 215.0
+    reps: 3
+    rpe: 7.0
+- exercise: squat
+  sets:
+  - weight: 200.0
+    reps: 3
+  - weight: 200.0
+    reps: 3
+  - weight: 200.0
+    reps: 3
+- exercise: bench
+  sets:
+  - weight: 105.0
+    reps: 4
+    rpe: 6.5
+  - weight: 105.0
+    reps: 4
+    rpe: 6.5
+  - weight: 105.0
+    reps: 4
+    rpe: 6.5
+  - weight: 105.0
+    reps: 4
+    rpe: 6.5
+readiness: {}
+notes: S1D1 completa, todo a lo prescrito (reps/RPE/kg objetivo). Accesorios (leg-curl,
+  rueda-abdominal) completados; sin kg registrado esta vez.
