@@ -52,6 +52,7 @@ FIXED_COLS = ["Día", "Fecha", "Ejercicio", "Indicaciones", "Series", "RPE obj",
 TAIL_COLS = ["Dolor", "Notas"]
 N_FIXED = len(FIXED_COLS)
 COL_EXERCISE = 3  # 1-indexed
+COL_SERIES = 5  # 1-indexed ("3x3" -> 3 prescribed sets)
 COL_KG_OBJ = N_FIXED
 
 DAY_CELL_RE = re.compile(r"D(?:ía|ia)?\s*(\d+)", re.IGNORECASE)
@@ -59,6 +60,7 @@ WEEK_ROW_RE = re.compile(r"SEMANA\s*(\d+)", re.IGNORECASE)
 
 INSTRUCTIONS = [
     "Cómo registrar: reps hechas en 'Sn Reps'; 'Sn Kg' vacío = hiciste el Kg obj;",
+    "series iguales: llena solo S1 y el resto se asume igual (un Sn distinto cambia de ahí);",
     "otro peso va en 'Sn Kg' (coma o punto da igual); RPE por serie si puedes;",
     "Dolor: cualquier molestia (ej 'rodilla izq 3/10'); lo saltado queda en blanco.",
 ]
@@ -300,6 +302,12 @@ def parse_set_triplet(reps_v, kg_v, rpe_v, target_weight: float | None) -> Logge
     return LoggedSet(weight=weight, reps=reps, rpe=_parse_float(rpe_v))
 
 
+def _prescribed_sets(series_v) -> int | None:
+    """Leading set count from the Series cell: '3x3' -> 3, '1x3' -> 1."""
+    m = re.match(r"\s*(\d+)", _cell_str(series_v))
+    return int(m.group(1)) if m else None
+
+
 def _parse_date(v, fallback: Date) -> Date:
     if isinstance(v, datetime):
         return v.date()
@@ -342,12 +350,26 @@ class _WeekParser:
         if self.catalog:
             exercise = resolve_exercise(exercise, self.catalog) or exercise
         target_w = _parse_float(row[COL_KG_OBJ - 1])
-        sets = []
+        # His convention: fill only S1; the rest of the prescribed sets are
+        # identical. Parse the explicitly-filled triplets, then carry the last
+        # filled set forward to cover the prescribed count (from the Series cell,
+        # e.g. "3x3" -> 3). A later Sn, if filled, overrides from that set onward.
+        explicit: dict[int, LoggedSet] = {}
         for i in range(self.n_sets):
             base = N_FIXED + i * 3
             st = parse_set_triplet(row[base], row[base + 1], row[base + 2], target_w)
             if st:
-                sets.append(st)
+                explicit[i] = st
+        sets: list[LoggedSet] = []
+        if explicit:
+            prescribed = _prescribed_sets(row[COL_SERIES - 1]) or 0
+            fill_to = min(max(prescribed, max(explicit) + 1), self.n_sets)
+            carry: LoggedSet | None = None
+            for i in range(fill_to):
+                if i in explicit:
+                    carry = explicit[i]
+                if carry is not None:
+                    sets.append(carry.model_copy())
         pain_s = _cell_str(row[N_FIXED + 3 * self.n_sets])
         notes_s = _cell_str(row[N_FIXED + 3 * self.n_sets + 1])
         if not sets and not pain_s and not notes_s:

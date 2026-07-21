@@ -72,7 +72,11 @@ Reps/Kg/RPE … | Dolor | Notas`. `Ejercicio` shows catalog display names
 (SENTADILLA LB); parsing resolves names/aliases back to ids.
 `Indicaciones` = prescription cues (printed); `Notas` = his gym notes
 (parsed). Blank `Sn Kg` = done at Kg obj. Comma decimals are normal.
-Anything in `Dolor` becomes a pain-log entry.
+**He fills only `S1`; the rest of the prescribed sets (count from `Series`,
+e.g. `3x3` → 3) are identical** — the parser carries S1 forward to fill them,
+and a later `Sn`, if filled, overrides from that set onward. So logging his
+sheet also captures accessory loads (fill S1 once). Anything in `Dolor`
+becomes a pain-log entry.
 
 ## Safety rules (non-negotiable)
 

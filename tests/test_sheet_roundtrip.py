@@ -168,3 +168,48 @@ def test_prescription_notes_do_not_create_phantom_sessions(
     squat_row = next(r for r in ws.iter_rows(min_row=2) if r[2].value == "squat")
     assert squat_row[3].value == "PAUSA COMP"  # Indicaciones col
     assert parse_workbook(path, block) == {}
+
+
+def test_only_first_set_filled_expands_to_prescribed(
+    tmp_path, block, history, athlete, catalog
+):
+    """His convention: fill only S1; the rest of the prescribed sets are identical."""
+    targets = suggest_block(block, history, athlete, catalog, [], today=TODAY)
+    path = build_workbook(block, targets, tmp_path / "b.xlsx", catalog)
+    wb = load_workbook(path)
+    ws = wb["SEMANA 2"]
+    rows = {r[0].row: [c.value for c in r] for r in ws.iter_rows(min_row=2)}
+    squat_row = next(r for r, v in rows.items() if v[2] == "Back Squat")
+    ws.cell(row=squat_row, column=C_REPS(0), value="5")  # ONLY S1 reps, Kg blank = Kg obj
+    filled = tmp_path / "f.xlsx"
+    wb.save(filled)
+
+    parsed = parse_workbook(filled, block, catalog=catalog)
+    (sess,) = parsed[2]
+    squat = next(e for e in sess.entries if e.exercise == "squat")
+    assert len(squat.sets) == 5  # squat is 5x5 in the test block -> S1 expands to 5
+    assert all(s.reps == 5 and s.weight == 137.5 for s in squat.sets)
+
+
+def test_first_set_plus_later_override(tmp_path, block, history, athlete, catalog):
+    """S1 + a later Sn override: earlier sets inherit S1, from the override on inherit it."""
+    targets = suggest_block(block, history, athlete, catalog, [], today=TODAY)
+    path = build_workbook(block, targets, tmp_path / "b.xlsx", catalog)
+    wb = load_workbook(path)
+    ws = wb["SEMANA 2"]
+    rows = {r[0].row: [c.value for c in r] for r in ws.iter_rows(min_row=2)}
+    squat_row = next(r for r, v in rows.items() if v[2] == "Back Squat")
+    ws.cell(row=squat_row, column=C_REPS(0), value="5")  # S1 at Kg obj
+    ws.cell(row=squat_row, column=C_REPS(3), value="5")  # S4 override
+    ws.cell(row=squat_row, column=C_KG(3), value="130")  # S4 lighter
+    filled = tmp_path / "f.xlsx"
+    wb.save(filled)
+
+    parsed = parse_workbook(filled, block, catalog=catalog)
+    (sess,) = parsed[2]
+    squat = next(e for e in sess.entries if e.exercise == "squat")
+    assert len(squat.sets) == 5
+    assert squat.sets[0].weight == 137.5  # S1 = Kg obj
+    assert squat.sets[2].weight == 137.5  # S3 inherits S1
+    assert squat.sets[3].weight == 130.0  # S4 override
+    assert squat.sets[4].weight == 130.0  # S5 inherits the override
