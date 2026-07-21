@@ -1,0 +1,21 @@
+date: '2026-07-21'
+block: 2026-07-strength-1
+week: 1
+day: 2
+entries:
+- exercise: bench
+  sets:
+  - weight: 107.5
+    reps: 3
+    rpe: 7.0
+- exercise: bench
+  sets:
+  - weight: 102.5
+    reps: 3
+  - weight: 102.5
+    reps: 3
+  - weight: 102.5
+    reps: 3
+readiness: {}
+notes: S1D2 completa, todo a lo prescrito (reps/RPE/kg objetivo). Accesorios (militar,
+  hombros, triceps, pallof) completados; sin kg registrado esta vez.
