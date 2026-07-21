@@ -19,11 +19,14 @@ focus: strength
 status: active
 
 sheet:
-  # Revisado 2026-07-20 (estructura SBD): regenerar xlsx y re-subir; este id
-  # queda obsoleto cuando Benjamin suba la nueva planilla y pase el link.
-  drive_file_id: 1wX4k9KACdVblKhE3CfFlPzEnIMi7GYj2oS0pIxY-PUY
-  title: 202607strength1
-  url: https://docs.google.com/spreadsheets/d/1wX4k9KACdVblKhE3CfFlPzEnIMi7GYj2oS0pIxY-PUY/edit
+  # Subido por Benjamin 2026-07-21 como .xlsx CRUDO (mimeType xlsx, no hoja
+  # nativa). El conector lo lee bien: read_file_content OK 2026-07-21.
+  # INGEST /log: download_file_content(fileId) sin exportMimeType (se ignora en
+  # archivos no-nativos) -> base64 -> out/filled.xlsx -> pl sheet parse.
+  # Si algun dia lo convierte a hoja de Google, cambia el id -> pedir link nuevo.
+  drive_file_id: 1CA3RDuYXnb4uOwvey8nj57Nmeaz6d3ZD
+  title: 2026-07-strength-1.xlsx
+  url: https://docs.google.com/spreadsheets/d/1CA3RDuYXnb4uOwvey8nj57Nmeaz6d3ZD/edit
 
 schemes:
   - id: top3
