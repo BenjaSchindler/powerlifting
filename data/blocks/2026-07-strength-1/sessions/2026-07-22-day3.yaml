@@ -1,0 +1,22 @@
+date: '2026-07-22'
+block: 2026-07-strength-1
+week: 1
+day: 3
+entries:
+- exercise: deadlift
+  sets:
+  - weight: 215.0
+    reps: 3
+    rpe: 6.0
+- exercise: deadlift
+  sets:
+  - weight: 200.0
+    reps: 3
+  - weight: 200.0
+    reps: 3
+  - weight: 200.0
+    reps: 3
+readiness: {}
+notes: 'S1D3. Sumo tope 215x3 se sintio @6 (mas facil que el @7 objetivo). Banca sin
+  pausa NO hecha: todas las bancas ocupadas. Accesorios (traccion, remo, biceps) completados;
+  sin kg registrado.'
